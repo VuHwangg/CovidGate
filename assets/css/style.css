@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #243238;
+	background-color: #ffffff;
+}
+
+:root {
+    --main-color-blue: #505cfd;
+    --main-color-gray: #404044;
+}
