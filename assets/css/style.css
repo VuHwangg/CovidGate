@@ -1,3 +1,4 @@
+/* import fonts chữ => Những máy k có sẵn sẽ k bị lỗi font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
 
 * {
@@ -7,6 +8,7 @@
 }
 
 html {
+    font-family: Montserrat sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -21,4 +23,38 @@ body {
 :root {
     --main-color-blue: #505cfd;
     --main-color-gray: #404044;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.navbar {
+    padding: 0 12px;
+    background-color: rgba(63, 102, 175, 0.9) !important;
+    letter-spacing: 0.6px;
+}
+
+.navbar .nav-item a {
+    color: white !important;
+    opacity: 0.8;
+}
+
+.navbar .nav-item a:hover {
+    color: white !important;
+    opacity: 1;
+}
+
+.navbar .dropdown-menu a {
+    color: #243238 !important;
+}
+
+.navbar .btn {
+    color: #B05D4F;
+}
+
+.navbar .btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
 }
