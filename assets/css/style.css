@@ -25,7 +25,11 @@ body {
     --main-color-lightblue: #6973ad;
     --main-color-darkblue: #270949;
     --main-color-gray: #404044;
+    --main-color-orange: #ff914d;
 }
+
+
+/* Navigation Bar */
 
 .ml-auto {
     margin-left: auto;
@@ -36,6 +40,9 @@ body {
     background-color: rgba(70, 84, 163, 0.9) !important;
     letter-spacing: 0.3px;
     font-weight: 500;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar .nav-item a {
@@ -66,11 +73,39 @@ body {
 }
 
 .navbar .btn a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-weight: 500;
 }
 
 .navbar .btn:hover a {
     color: var(--main-color-blue);
+}
+
+
+/* Carousel */
+
+.carousel .carousel-inner .carousel-caption {
+    position: absolute;
+    top: 40%;
+    text-shadow: 5px 5px 8px #000;
+}
+
+.carousel .carousel-inner .btn-outline-light {
+    border: 2px solid white;
+}
+
+.carousel .carousel-inner .btn-outline-light a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.carousel .carousel-inner .btn-outline-light:hover a {
+    color: var(--main-color-blue);
+}
+
+.carousel .carousel-inner .btn-primary {
+    font-weight: 500;
+    padding: 10px 16px;
 }
