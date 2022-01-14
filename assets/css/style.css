@@ -26,6 +26,7 @@ body {
     --main-color-darkblue: #270949;
     --main-color-gray: #404044;
     --main-color-orange: #ff914d;
+    --main-color-lightorange: #f19e6a;
 }
 
 
@@ -82,13 +83,75 @@ body {
     color: var(--main-color-blue);
 }
 
+.navbar .dropdown-contact-menu .dropdown-toggle::after{
+    display: none;
+}
+
+.navbar .dropdown .dropdown-toggle .contact-icon {
+    color: white;
+    font-size: 30px;
+    line-height: 58px;
+}
+
+.navbar .dropdown .dropdown-toggle .contact-icon:hover {
+    color: var(--main-color-orange);
+}
+
+.navbar .dropdown .dropdown-menu-end {
+    background-color: var(--main-color-orange);
+}
+
+.navbar .dropdown-menu-end a:hover {
+    background-color: var(--main-color-orange);
+}
+
+.navbar .dropdown .dropdown-menu h6 {
+    color: white;
+    text-align: center;
+}
+
+.navbar .dropdown .dropdown-menu .dropdown-item {
+    opacity: 0.8;
+}
+
+.navbar .dropdown .dropdown-menu .dropdown-item:hover {
+    opacity: 1;
+}
+
+.navbar .dropdown .dropdown-menu .btn-contact {
+    margin-left: 22px;
+    font-weight: 500;
+}
+
+.navbar .dropdown .dropdown-menu .btn-contact:hover {
+    color: var(--main-color-orange);
+}
+
+.navbar .dropdown .dropdown-menu .list-icon-contact {
+    text-align: center;
+}
+
+.navbar .dropdown .dropdown-menu .icon-link-contact {
+    display: inline;
+    padding: 4px 6px;
+    font-size: 20px;
+}
+
 
 /* Carousel */
 
 .carousel .carousel-inner .carousel-caption {
     position: absolute;
     top: 40%;
+}
+
+.carousel-caption h1 {
     text-shadow: 5px 5px 8px #000;
+}
+
+.carousel-caption p {
+    text-shadow: 4px 4px 8px #000;
+    font-size: 17.5px;
 }
 
 .carousel .carousel-inner .btn-outline-light {
@@ -107,5 +170,5 @@ body {
 
 .carousel .carousel-inner .btn-primary {
     font-weight: 500;
-    padding: 10px 16px;
+    padding: 9px 16px;
 }

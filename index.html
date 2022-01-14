@@ -68,10 +68,65 @@
                                     <a href="#">Test COVID Online</a>
                                 </button>
                             </li>
+
+                            <!-- Nút 3 chấm: Contact Menu -->
+                            <li class="dropdown dropdown-contact-menu">
+                                <a class="dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-three-dots-vertical contact-icon"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><h6>Mọi Ý Kiến Đóng Góp Xin Liên Hệ Với Chúng Tôi</h6></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#"><i class="bi bi-telephone-fill"></i> +84 833 232 520</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="bi bi-envelope-fill"></i> chairteam@gmail.com</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="bi bi-geo-alt-fill"></i> FPT University</a></li>
+                                    <button type="button" class="btn btn-outline-light btn-contact" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@covidgate">Đóng Góp Trực Tiếp</button>
+                                    <li class="list-icon-contact">
+                                        <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-facebook"></i></a>
+                                        <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-instagram"></i></a>
+                                        <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-github"></i></a>
+                                        <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-linkedin"></i></a>
+                                        <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
-             </nav>
+            </nav>
+            
+            <!-- Modal gửi ý kiến đóng góp -->
+            <div class="modal-send-email">
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                                
+                            <div class="modal-body">
+                                <p>Cảm ơn bạn vì đã dành thời gian, mọi ý kiến đóng góp của các bạn sẽ đều là tài liệu giúp Chair Team chúng mình phát triển hơn trong tương lai!</p>     
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Người Nhận:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Tin Nhắn:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="liveAlertPlaceholder"></div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary" id="liveAlertBtn">Gửi Đóng Góp</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <!-- Carousel -->
@@ -91,10 +146,10 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Kiểm Tra COVID-19 Trực Tuyến</h1>
                         <p>Tính năng duy nhất chỉ có ở COVID Gate cho phép bạn kiểm tra trực tuyến tỉ lệ dương tính với COVID-19 ngay trên website</p>
+                        <button type="button" class="btn btn-primary btn-lg" id="liveToastBtn">Kiểm Tra Nâng Cao</button>
                         <button class="btn btn-outline-light btn-lg me-1" type="button">
                             <a href="#">Khám Phá Ngay</a>
                         </button>
-                        <button type="button" class="btn btn-primary btn-lg" id="liveToastBtn">Kiểm Tra Nâng Cao</button>
                     </div>
                 </div>
                 <div class="carousel-item">
