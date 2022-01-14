@@ -44,3 +44,9 @@ if (alertTrigger) {
     alert('Cảm ơn bạn vì những đóng góp hữu ích ^^!!!', 'success')
   })
 }
+
+// Tooltips 
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})

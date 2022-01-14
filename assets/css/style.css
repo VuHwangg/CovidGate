@@ -83,6 +83,9 @@ body {
     color: var(--main-color-blue);
 }
 
+
+/* Contact Menu */
+
 .navbar .dropdown-contact-menu .dropdown-toggle::after{
     display: none;
 }
@@ -137,6 +140,10 @@ body {
     font-size: 20px;
 }
 
+.navbar .navbar-toggler {
+    float: left;
+}
+
 
 /* Carousel */
 
@@ -172,3 +179,53 @@ body {
     font-weight: 500;
     padding: 9px 16px;
 }
+
+@media (max-width: 768px) {
+    .carousel {
+        top: 58px;
+    }
+}
+
+
+/* Covid Data */
+
+.container-section #the-line {
+    width: 100%;
+    border-bottom: 3px solid rgb(190, 190, 190);
+    margin: 0 0 24px;
+}
+
+.container-section {
+    margin: 36px 34px;
+}
+
+.container-section .day-update {
+    color: var(--main-color-orange);
+    font-weight: 500;
+}
+
+.container-section .case-data {
+    border-radius: 10px;
+    margin: 8px 12px;
+    padding: 4px 16px;
+    color: white;
+}
+
+.container-section .case-data p {
+    margin: 8px 8px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.container-section .case-infection {
+    background-color: rgba(216, 49, 49, 0.9);
+}
+
+.container-section .case-cured {
+    background-color: rgba(52, 179, 69, 0.9);
+}
+
+.container-section .case-death {
+    background-color: rgba(99, 98, 98, 0.9);
+}
+
