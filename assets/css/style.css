@@ -1,6 +1,7 @@
 /* import fonts chữ => Những máy k có sẵn sẽ k bị lỗi font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
 
+/** Main **/
 * {
     padding: 0;
     margin: 0;
@@ -30,7 +31,7 @@ body {
 }
 
 
-/* Navigation Bar */
+/** Navigation Bar **/
 
 .ml-auto {
     margin-left: auto;
@@ -84,7 +85,7 @@ body {
 }
 
 
-/* Contact Menu */
+/** Contact Menu **/
 
 .navbar .dropdown-contact-menu .dropdown-toggle::after{
     display: none;
@@ -145,7 +146,7 @@ body {
 }
 
 
-/* Carousel */
+/** Carousel **/
 
 .carousel .carousel-inner .carousel-caption {
     position: absolute;
@@ -187,45 +188,94 @@ body {
 }
 
 
-/* Covid Data */
+/** About Us **/
 
-.container-section #the-line {
-    width: 100%;
-    border-bottom: 3px solid rgb(190, 190, 190);
-    margin: 0 0 24px;
-}
+/* Container-section */
 
 .container-section {
-    margin: 36px 34px;
+    margin: 0 40px;
 }
 
-.container-section .day-update {
+.container-section #the-line {
+    width: calc(100% - 48px);
+    border-bottom: 3px solid rgb(190, 190, 190);
+    margin: 0 24px 20px;
+}
+
+.content-section {
+    margin: 60px 24px;
+}
+
+@media (max-width: 768px) {
+    .container-section {
+        margin: 0 12px;
+    }
+    .content-section {
+        margin: 30px 18px;
+    }
+    .about-project {
+        padding-top: 48px;
+    }
+}
+
+/** Content **/
+
+/* Pandemic Data */
+
+.pandemic-data .day-update {
     color: var(--main-color-orange);
     font-weight: 500;
 }
 
-.container-section .case-data {
+.pandemic-data .case-data {
     border-radius: 10px;
     margin: 8px 12px;
     padding: 4px 16px;
     color: white;
 }
 
-.container-section .case-data p {
+.pandemic-data .case-data p {
     margin: 8px 8px;
     font-weight: 500;
     font-size: 18px;
 }
 
-.container-section .case-infection {
+.pandemic-data .case-infection {
     background-color: rgba(216, 49, 49, 0.9);
 }
 
-.container-section .case-cured {
+.pandemic-data .case-cured {
     background-color: rgba(52, 179, 69, 0.9);
 }
 
-.container-section .case-death {
+.pandemic-data .case-death {
     background-color: rgba(99, 98, 98, 0.9);
 }
 
+
+/* Pandemic News */
+
+
+
+
+/* Pandemic Prevention */
+
+
+
+
+/* Pandemic Process */
+
+
+
+
+/* Pandemic Variations */
+
+
+
+
+/* Pandemic Vaccines */
+
+
+
+
+/* Pandemic At Home */
