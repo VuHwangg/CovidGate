@@ -283,7 +283,9 @@ body {
 
 /* Pandemic News */
 
-
+.page-content .pandemic-news {
+    color: var(--main-color-blue);
+}
 
 
 /* Pandemic Prevention */
