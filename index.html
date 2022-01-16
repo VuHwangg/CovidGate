@@ -33,7 +33,7 @@
 
                     <!-- Logo -->
                     <a class="navbar-brand" data-bs-toggle="tooltip" data-bs-placement="right" title="Trang Chủ" href="">
-                        <img src="./assets/img/logo_covidgate.png" alt="Logo COVID Gate" height="38px">
+                        <img src="./assets/img/logo/logo_covidgate.png" alt="Logo COVID Gate" height="38px">
                     </a>
 
                     <!-- Không đc thay đổi 5 thẻ div này -->
@@ -149,18 +149,18 @@
             <!-- Ảnh trong Carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/img/carousel_1.png" class="d-block w-100" alt="carousel_1">
+                    <img src="./assets/img/carousel/carousel_1.png" class="d-block w-100" alt="carousel_1">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Kiểm Tra COVID-19 Trực Tuyến</h1>
                         <p>Tính năng duy nhất chỉ có ở COVID Gate cho phép bạn kiểm tra trực tuyến tỉ lệ dương tính với COVID-19 ngay trên website</p>
-                        <button type="button" class="btn btn-primary btn-lg" id="liveToastBtn">Kiểm Tra Nâng Cao</button>
+                        <button type="button" class="btn btn-main btn-primary btn-lg" id="liveToastBtn">Kiểm Tra Nâng Cao</button>
                         <button class="btn btn-outline-light btn-lg me-1" type="button">
                             <a href="#">Khám Phá Ngay</a>
                         </button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/carousel_2.png" class="d-block w-100" alt="carousel_2">
+                    <img src="./assets/img/carousel/carousel_2.png" class="d-block w-100" alt="carousel_2">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Các Loại Vaccine COVID-19</h1>
                         <p>Thống kê đầy đủ mọi loại vaccine cho COVID-19 một cách chi tiết và trực quan nhất</p>
@@ -170,7 +170,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/carousel_3.png" class="d-block w-100" alt="carousel_3">
+                    <img src="./assets/img/carousel/carousel_3.png" class="d-block w-100" alt="carousel_3">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Các Biến Thể Mới Của Corona Virus</h1>
                         <p>Các chủng biến thể mới từ Corona Virus đã được ghi nhận, tính chất cũng như mức độ nguy hiểm của từng loại biến thể đối với nhân loại</p>
@@ -218,22 +218,119 @@
                     <h1 class="display-4">Xin chào, chào mừng bạn đã đến với COVID Gate!</h1>
                     <p class="lead">
                         Đây là một dự án phi lợi nhuận với mục đích là mang đến những 
-                        giá trị thông qua những kiến thức, những thông tin về dịch bệnh 
+                        giá trị thông qua kiến thức, thông tin, số liệu về dịch bệnh 
                         một cách đầy đủ và chính xác nhất. Tại đây chúng mình sẽ tổng hợp 
                         và đưa ra mọi thông tin cần thiết liên quan đến đại dịch COVID-19 
                         tại Việt Nam. Từ đó giúp các bạn có được cái nhìn rõ nhất về 
                         một kẻ thù chung mà chúng ta đã và đang phải đối mặt.</p>
-                    <hr class="my-4">
-                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <hr class="my-2" style="text-align: left; max-width: 646px;">
+                    <p>COVID Gate là một dự án được phát triển bởi Chair Team thuộc trường Đại Học FPT Hà Nội</p>
                     <p class="lead">
-                      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                      <a class="btn btn-main btn-primary btn-lg" href="#" role="button">Tìm Hiểu Thêm</a>
                     </p>
                   </div>
             </div>
+            <div id="the-line"></div>
 
             <!-- Team members -->
             <div class="team-members content-section">
-
+                <div class="container-fluid padding">
+                    
+                    <!-- Team description -->
+                    <div class="row padding">
+                        <div class="team-logo col-lg-6">
+                            <img src="./assets/img/about-us/Logo1 (no background) .png" alt="Chair Team" class="img-fluid">
+                        </div>
+                        <div class="jumbotron col-lg-6">
+                            <h1 class="display-4">Chúng mình là ai?</h1>
+                            <p class="lead">
+                                Đây là một dự án phi lợi nhuận với mục đích là mang đến những 
+                                giá trị thông qua kiến thức, thông tin, số liệu về dịch bệnh 
+                                một cách đầy đủ và chính xác nhất. Tại đây chúng mình sẽ tổng hợp 
+                                và đưa ra mọi thông tin cần thiết liên quan đến đại dịch COVID-19 
+                                tại Việt Nam. Từ đó giúp các bạn có được cái nhìn rõ nhất về 
+                                một kẻ thù chung mà chúng ta đã và đang phải đối mặt.</p>
+                            <hr class="my-2">
+                            <p>COVID Gate là một dự án được phát triển bởi Chair Team thuộc trường Đại Học FPT Hà Nội</p>
+                            <p class="lead">
+                                <a class="btn btn-main btn-primary btn-lg" role="button" data-bs-toggle="collapse" data-bs-target="#member-list">
+                                    Các Thành Viên Trong Nhóm
+                                    <i class="bi bi-caret-down-fill"></i>
+                                </a>
+                            </p>
+                          </div>
+                    </div>
+                    
+                    <!-- Member list -->
+                    <div class="row padding collapse" id="member-list">
+                        <!-- Trang -->
+                        <div class="member col-xs-6 col-sm-6 col-lg-4 col-xl-2">
+                            <div class="card">
+                                <img src="./assets/img/team-member/member0.png" class="card-img-top" alt="Member 1">
+                                <div class="card-body">
+                                  <h5 class="card-title">Đặng Thùy Trang</h5>
+                                  <p class="card-text">Trưởng Nhóm</p>
+                                  <a href="https://www.facebook.com/profile.php?id=100008414370908" class="btn btn-primary btn-main">Liên Hệ</a>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- Vũ -->
+                        <div class="member col-xs-6 col-sm-6 col-lg-4 col-xl-2">
+                            <div class="card">
+                                <img src="./assets/img/team-member/member0.png" class="card-img-top" alt="Member 2">
+                                <div class="card-body">
+                                  <h5 class="card-title">Hoàng Chu Anh Vũ</h5>
+                                  <p class="card-text">Trưởng Ban Chuyên Môn</p>
+                                  <a href="https://www.facebook.com/vu.hwang.308/" class="btn btn-primary btn-main">Liên Hệ</a>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- Việt Anh -->
+                        <div class="member col-xs-6 col-sm-6 col-lg-4 col-xl-2">
+                            <div class="card">
+                                <img src="./assets/img/team-member/member0.png" class="card-img-top" alt="Member 3">
+                                <div class="card-body">
+                                  <h5 class="card-title">Nguyễn Việt Anh</h5>
+                                  <p class="card-text">Ban Chuyên Môn</p>
+                                  <a href="https://www.facebook.com/Vanh2203" class="btn btn-primary btn-main">Liên Hệ</a>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- Nguyên -->
+                        <div class="member col-xs-6 col-sm-6 col-lg-4 col-xl-2">
+                            <div class="card">
+                                <img src="./assets/img/team-member/member0.png" class="card-img-top" alt="Member 1">
+                                <div class="card-body">
+                                  <h5 class="card-title">Lê Thanh Nguyên</h5>
+                                  <p class="card-text">Ban Chuyên Môn</p>
+                                  <a href="https://www.facebook.com/profile.php?id=100010555908396" class="btn btn-primary btn-main">Liên Hệ</a>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- Văn Nghĩa -->
+                        <div class="member col-xs-6 col-sm-6 col-lg-4 col-xl-2">
+                            <div class="card">
+                                <img src="./assets/img/team-member/member0.png" class="card-img-top" alt="Member 2">
+                                <div class="card-body">
+                                  <h5 class="card-title">Nguyễn Văn Nghĩa</h5>
+                                  <p class="card-text">Ban Chuyên Môn</p>
+                                  <a href="https://www.facebook.com/profile.php?id=100023099255555" class="btn btn-primary btn-main">Liên Hệ</a>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- Trọng Nghĩa -->
+                        <div class="member col-xs-6 col-sm-6 col-lg-4 col-xl-2">
+                            <div class="card">
+                                <img src="./assets/img/team-member/member0.png" class="card-img-top" alt="Member 3">
+                                <div class="card-body">
+                                  <h5 class="card-title">Lưu Trọng Nghĩa</h5>
+                                  <p class="card-text">Ban Truyền Thông</p>
+                                  <a href="https://www.facebook.com/nghiabin.2001" class="btn btn-primary btn-main">Liên Hệ</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -246,7 +343,7 @@
                 <div class="container-fluid padding">
                     <div class="row text-center">
                         <div class="col-12">
-                            <h1 class="display-4">Thống Kê Dữ Liệu Tại Việt Nam</h1>
+                            <h1 class="display-4">Số Liệu Về COVID-19 Tại Việt Nam</h1>
                         </div>
                         <div class="col-12">
                             <p>

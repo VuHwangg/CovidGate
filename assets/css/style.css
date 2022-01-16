@@ -30,6 +30,16 @@ body {
     --main-color-lightorange: #f19e6a;
 }
 
+.btn-main {
+    color: white;
+    background-color: var(--main-color-blue);
+    border: none;
+}
+
+.btn-main:hover {
+    background-color: var(--main-color-lightblue);
+}
+
 
 /** Navigation Bar **/
 
@@ -190,7 +200,7 @@ body {
 
 /** About Us **/
 
-/* Container-section */
+/* Container-section & Content-section */
 
 .container-section {
     margin: 0 40px;
@@ -217,6 +227,24 @@ body {
         padding-top: 48px;
     }
 }
+
+/* About Project */
+
+
+
+/* Team members */
+
+.about-us .team-members #member-list .member {
+    padding-bottom: 24px;
+}
+
+.about-us .team-members #member-list .member .card-text {
+    font-size: 15.5px;
+}
+
+.about-us .team-members .team-logo {
+}
+
 
 /** Content **/
 
