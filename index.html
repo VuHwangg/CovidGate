@@ -35,24 +35,21 @@
                     <a class="navbar-brand" data-bs-toggle="tooltip" data-bs-placement="right" title="Trang Chủ" href="">
                         <img src="./assets/img/logo/logo_covidgate.png" alt="Logo COVID Gate" height="38px">
                     </a>
-
-                    <!-- Không đc thay đổi 5 thẻ div này -->
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-
+                    
                     <!-- Responsive - Nút menu target đến các thẻ có id:navbarResponsive -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <div class="btn-navbar-menu">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="nav-icon">
+                                <i class="bi bi-list"></i>
+                            </span>
+                        </button>
+                    </div>
 
                     <!-- Các đề mục dẫn đến đường link tương ứng -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Tin tức dịch bệnh</a>
+                                <a class="nav-link" href="#pandemic-news-HCAV">Tin tức dịch bệnh</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Biện pháp phòng dịch</a>
@@ -71,7 +68,7 @@
                                   </ul>
                             </li>
                             <li>
-                                <button class="btn btn-outline-light me-2" type="button">
+                                <button class="btn-heading btn btn-outline-light me-2" type="button">
                                     <a href="#">Test COVID Online</a>
                                 </button>
                             </li>
@@ -137,13 +134,13 @@
         </header>
 
         <!-- Carousel - Băng Chuyền Ảnh -->
-        <div class="carousel slide" id="carouselExampleCaptions" data-bs-ride="carousel">
+        <div class="carousel slide" id="carousel-main" data-bs-ride="carousel">
             
             <!-- Carousel Indicators -->
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             
             <!-- Ảnh trong Carousel -->
@@ -181,11 +178,11 @@
                 </div>
             </div>
             
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-main" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-main" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -221,8 +218,8 @@
                         giá trị thông qua kiến thức, thông tin, số liệu về dịch bệnh 
                         một cách đầy đủ và chính xác nhất. Tại đây chúng mình sẽ tổng hợp 
                         và đưa ra mọi thông tin cần thiết liên quan đến đại dịch COVID-19 
-                        tại Việt Nam. Từ đó giúp các bạn có được cái nhìn rõ nhất về 
-                        một kẻ thù chung mà chúng ta đã và đang phải đối mặt.</p>
+                        tại Việt Nam cũng như trên toàn thế giới. Từ đó giúp các bạn có được 
+                        cái nhìn rõ nhất về một kẻ thù chung mà chúng ta đã và đang phải đối mặt.</p>
                     <hr class="my-2" style="text-align: left; max-width: 646px;">
                     <p>COVID Gate là một dự án được phát triển bởi Chair Team thuộc trường Đại Học FPT Hà Nội</p>
                     <p class="lead">
@@ -230,22 +227,28 @@
                     </p>
                   </div>
             </div>
-            <div id="the-line"></div>
 
             <!-- Team members -->
             <div class="team-members content-section">
+                <div id="the-line"></div>
                 <div class="container-fluid padding">
                     
                     <!-- Team description -->
                     <div class="row padding">
-                        <div class="team-logo col-lg-6">
+                        <div class="team-logo col-lg-12 col-xl-6">
                             <img src="./assets/img/about-us/Logo1 (no background) .png" alt="Chair Team" class="img-fluid">
                         </div>
-                        <div class="jumbotron col-lg-6">
+                        <div class="jumbotron col-lg-12 col-xl-6">
                             <h1 class="display-4">Chúng mình là ai?</h1>
                             <p class="lead">
-                                Chúng mình là Chair Team, nhóm sinh viên năm 2 Chuyên ngành 
-                                Kỹ Thuật Phần Mềm thuộc trường Đại Học FPT Hà Nội.
+                                Chúng mình là Chair Team, một nhóm sinh viên năm 2 Chuyên ngành 
+                                Kỹ Thuật Phần Mềm thuộc trường Đại Học FPT Hà Nội. Với cùng chung 
+                                một niềm đam mê trong việc học cách phát triển và xây dựng website. 
+                                Vì thế thông qua dự án COVID Gate này, chúng mình muốn biến những đam mê 
+                                đó cùng với kinh nghiệm trong suốt quá trình học tập và nhiệt huyết 
+                                của tuổi trẻ thành thứ có thể mang lại những giá trị thực có ích cho 
+                                xã hội. Và chính dự án này sẽ là công cụ giúp Chair Team bọn mình 
+                                đạt được nguyện vọng đấy. 
                             </p>
                             <hr class="my-2">
                             <p>COVID Gate là một dự án được phát triển bởi Chair Team thuộc trường Đại Học FPT Hà Nội</p>
@@ -279,10 +282,12 @@
                                             <h5 class="card-title member-name">Đặng Thùy Trang</h5>
                                             <p class="card-text member-role">Trưởng Nhóm</p>
                                             <p class="card-text"><small class="text-muted">
-                                                Quản lý nhân sự.<br/>
-                                                Phân chia công việc, giám sát các ban, đốc thúc các thành viên làm việc đúng timeline.
-                                                Kiểm định chất lượng đầu ra trong từng giai đoạn, xây dựng tầm nhìn dự án.
-                                                Đặt ra các quy tắc, mục tiêu, kế hoạch cho nhóm phát triển.
+                                                Quản lý nhân sự.
+                                                Phân chia công việc, giám sát và điều hành các ban.
+                                                Kiểm định chất lượng đầu ra, xây dựng tầm nhìn dự án.
+                                                Đặt ra các quy tắc, kế hoạch cho nhóm phát triển.
+                                                Tham gia lập trình, đóng góp ý tưởng, nội dung, thông tin, 
+                                                dữ liệu cho website.
                                             </small></p>
                                         </div>
                                     </div>
@@ -308,10 +313,12 @@
                                             <h5 class="card-title member-name">Hoàng Chu Anh Vũ</h5>
                                             <p class="card-text member-role">Trưởng Ban Chuyên Môn</p>
                                             <p class="card-text"><small class="text-muted">
-                                                Quản lý dự án. <br/>
+                                                Quản lý dự án. 
                                                 Giám sát, định hướng, đánh giá tiến độ gia công website.
                                                 Kiểm duyệt chất lượng kỹ thuật, chất lượng sản phẩm của dự án.
-                                                Gia công, xây dựng website.
+                                                Cập nhật, áp dụng những framework mới cho website.
+                                                Tham gia lập trình, đóng góp ý tưởng, nội dung, thông tin, 
+                                                dữ liệu cho website.
                                             </small></p>
                                         </div>
                                     </div>
@@ -338,7 +345,9 @@
                                             <p class="card-text member-role">Ban Chuyên Môn</p>
                                             <p class="card-text"><small class="text-muted">
                                                 Lập trình viên chuyên mảng back-end<br/>
-                                                Gia công, xây dựng website.
+                                                Tham gia lập trình, xây dựng website.<br/>
+                                                Hỗ trợ tìm kiếm và đóng góp ý tưởng, nội dung, thông tin, dữ liệu 
+                                                lên trên website.
                                             </small></p>
                                         </div>
                                     </div>
@@ -365,7 +374,9 @@
                                             <p class="card-text member-role">Ban Chuyên Môn</p>
                                             <p class="card-text"><small class="text-muted">
                                                 Lập trình viên chuyên mảng front-end<br/>                                           
-                                                Gia công, xây dựng website.
+                                                Tham gia lập trình, xây dựng website.<br/>
+                                                Hỗ trợ tìm kiếm và đóng góp ý tưởng, nội dung, thông tin, dữ liệu 
+                                                lên trên website.
                                             </small></p>
                                         </div>
                                     </div>
@@ -391,7 +402,7 @@
                                             <h5 class="card-title member-name">Lê Thanh Nguyên</h5>
                                             <p class="card-text member-role">Ban Nội Dung</p>
                                             <p class="card-text"><small class="text-muted">
-                                                Kiểm duyệt chất lượng thông tin. <br/>
+                                                Kiểm duyệt, đánh giá chất lượng nội dung thông tin. <br/>
                                                 Sưu tầm, tổng hợp thông tin, viết nội dung để đưa lên website. 
                                             </small></p>
                                         </div>
@@ -433,9 +444,11 @@
         <!-- Content -->
         <div class="page-content container-section">
 
-            <!-- Pandemic Data -->
-            <div class="pandemic-data">
-                <div id="the-line"></div>
+            <!-- Pandemic Data & News -->
+            <div class="pandemic-data" id="pandemic-news-HCAV">
+                <div class="content-section">
+                    <div id="the-line"></div>
+                </div>
                 <div class="container-fluid padding">
                     <div class="row text-center">
                         <div class="col-12">
@@ -468,12 +481,197 @@
                             </div>
                         </div>
                     </div>
+                    <div class="detail-data-button row text-center padding">
+                        <a class="btn btn-main btn-primary btn-lg" href="#" role="button">Cập Nhật Số Liệu Chính Xác Và Chi Tiết Nhất Tại COVID Gate Tracker</a>
+                    </div>
                 </div>
             </div>
-
+            
             <!-- Pandemic News -->
-            <div class="pandemic-news content-section">
-                <h1>Pandemic News</h1> 
+            <div class="pandemic-news content-section">   
+
+                <!-- Việt Nam News -->
+                <div class="vietname-news row">
+
+                    <!-- News classify: Việt Nam -->
+                    <div class="news-classify">
+                        <h2>
+                            <a href="https://covid19.gov.vn/ban-tin-covid-19.htm" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-caret-right-fill"></i>
+                                Tin Tức Về Dịch Bệnh Trong Nước
+                            </a>
+                        </h2>
+                        <hr class="my-2" style="max-width: 540px;">
+                    </div>
+
+                    <!-- Việt Nam news 1 -->
+                    <div class="col-lg-6">
+                        <div class="news-content card">
+                            <a href="https://covid19.gov.vn/thu-tuong-qua-kho-khan-tp-hcm-va-nganh-y-te-truong-thanh-len-rat-nhieu-17122012509344728.htm" target="_blank" rel="noopener noreferrer">
+                                <div class="news-image">
+                                    <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/25/thu-tuong-1643012934086462841456-1643077209032-16430772094001143667423.jpg" class="card-img-top" alt="image_1">
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="card-title">Thủ tướng: Qua khó khăn, TP. HCM và ngành y tế trưởng thành lên rất nhiều</h2>
+                                    <p class="card-text">Thủ tướng Phạm Minh Chính ghi nhận, biểu dương, đánh giá cao những thành quả TP. HCM đạt được trong năm 2021, đặc biệt là trong công tác phòng, chống dịch COVID-19.</p>
+                                    <p class="card-text"><small class="text-muted">25/01/2022 09:34 (GMT+7)</small></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <!-- Việt Nam news 2 -->
+                        <div class="news-content card mb-3">
+                            <a href="https://covid19.gov.vn/benh-vien-da-nang-trien-khai-dieu-tri-benh-nhan-sau-mac-covid-19-171220124174730342.htm" target="_blank" rel="noopener noreferrer">
+                                <div class="row g-0">
+                                    <div class="news-image col-md-4">
+                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/ttxvn20220124benhviendanang-1643021221194-16430212217021657099884.jpg" class="img-fluid rounded-start" alt="image_2">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Bệnh viện Đà Nẵng triển khai điều trị bệnh nhân sau mắc COVID-19</h5>
+                                          <p class="card-text">Hơn 2/3 bệnh nhân COVID-19 sau khi đã xác định hồi phục vẫn còn để lại những rối loạn về chức năng và triệu chứng, bệnh lý kéo dài có thể vài tháng thậm chí lâu hơn,..</p>
+                                          <p class="card-text"><small class="text-muted">24/01/2022 17:47 (GMT+7)</small></p>
+                                        </div>
+                                    </div>
+                                </div>        
+                            </a>
+                        </div>
+
+                        <!-- Việt Nam news 3 -->
+                        <div class="news-content card mb-3">
+                            <a href="https://covid19.gov.vn/don-tet-an-toan-than-toc-phu-vaccine-mui-3-171220124090049389.htm" target="_blank" rel="noopener noreferrer">
+                                <div class="row g-0">
+                                    <div class="news-image col-md-4">
+                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/20220122085234-16429059321211225805315-1642907066420858377375-1642989623103-1642989623346493868348.jpeg" class="img-fluid rounded-start" alt="image_3">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Đón Tết an toàn, 'thần tốc' phủ vaccine mũi 3</h5>
+                                          <p class="card-text">Ghi nhận của PV Báo Sức khỏe&Đời sống trên địa bàn Quận Thanh Xuân (Hà Nội), trong chiến dịch "thần tốc" phủ vaccine cho người dân.</p>
+                                          <p class="card-text"><small class="text-muted">24/01/2022 09:00 (GMT+7)</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <!-- Việt Nam news 4 -->
+                        <div class="news-content card mb-3">
+                            <a href="https://suckhoedoisong.vn/sang-25-1-gan-800-ca-covid-19-nang-dang-tho-may-ecmo-13-tinh-thanh-nao-ghi-nhan-f0-nhiem-omicron-169220125074057345.htm" target="_blank" rel="noopener noreferrer">
+                                <div class="row g-0">
+                                    <div class="news-image col-md-4">
+                                        <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2021/10/16/cach-ly-dieu-tri-benh-nhan-16343823775761139659239.jpeg" class="img-fluid rounded-start" alt="image_4">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Sáng 25/1: Gần 800 ca COVID-19 nặng đang thở máy, ECMO; 13 tỉnh, thành nào ghi nhận F0 nhiễm Omicron?</h5>
+                                          <p class="card-text">SKĐS - Bộ Y tế cho biết, đến nay cả nước đã có hơn 1,84 triệu bệnh nhân COVID-19 khỏi, trong số các ca đang điều trị có gần 800 trường hợp nặng phải thở máy, ECMO;..</p>
+                                          <p class="card-text"><small class="text-muted">25-01-2022 8:02 (GMT+7)</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quốc Tế News -->
+                <div class="vietname-news row">
+
+                    <!-- News classify: Quốc Tế -->
+                    <div class="news-classify" style="padding-top: 24px;">
+                        <h2>
+                            <a href="https://covid19.gov.vn/tinh-hinh-the-gioi.htm" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-caret-right-fill"></i>
+                                Tin Tức Về Dịch Bệnh Trên Thế Giới
+                            </a>
+                        </h2>
+                        <hr class="my-2" style="max-width: 560px;">
+                    </div>
+                    
+                    <!-- Quốc Tế news 1 -->
+                    <div class="news-content col-lg-6">
+                        <div class="card mb-3">
+                            <a href="https://covid19.gov.vn/so-ca-mac-covid-19-o-han-quoc-tang-len-muc-cao-nhat-171220125091744733.htm" target="_blank" rel="noopener noreferrer">
+                                <div class="row g-0">
+                                    <div class="news-image col-md-4">
+                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/25/han-quoc-250122-1643077044001-164307704416749382366.jpg" class="img-fluid rounded-start" alt="image_5">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Số ca mắc COVID-19 ở Hàn Quốc tăng lên mức cao nhất</h5>
+                                          <p class="card-text">Phóng viên TTXVN tại Seoul đưa tin số ca mắc mới COVID-19 ở Hàn Quốc ngày 25/1 dự kiến được ghi nhận ở mức 9.000. Đây là con số cao nhất kể từ khi ...</p>
+                                          <p class="card-text"><small class="text-muted">25/01/2022 09:17 (GMT+7)</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quốc Tế news 2 -->
+                    <div class="news-content col-lg-6">
+                        <div class="card mb-3">
+                            <a href="https://covid19.gov.vn/my-han-che-su-dung-2-lieu-phap-dieu-tri-khang-the-don-dong-cho-benh-nhan-covid-19-171220125091706217.htm" target="_blank" rel="noopener noreferrer">
+                                <div class="row g-0">
+                                    <div class="news-image col-md-4">
+                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/25/thuoc-250122-1643077004428-1643077004835449093125.jpg" class="img-fluid rounded-start" alt="image_6">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Mỹ hạn chế sử dụng 2 liệu pháp điều trị kháng thể đơn dòng cho bệnh nhân COVID-19</h5>
+                                          <p class="card-text">Cơ quan Quản lý thực phẩm và dược phẩm (FDA) Mỹ ngày 24/1 đã hạn chế đáng kể việc sử dụng 2 liệu pháp điều trị kháng thể đơn dòng do 2 hãng ...</p>
+                                          <p class="card-text"><small class="text-muted">25/01/2022 17:47 (GMT+7)</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quốc Tế news 3 -->
+                    <div class="news-content col-lg-6">
+                        <div class="card mb-3">
+                            <a href="https://covid19.gov.vn/han-quoc-chuyen-sang-phuong-thuc-ung-pho-voi-bien-the-omicron-171220124174247186.htm" target="_blank" rel="noopener noreferrer">
+                                <div class="row g-0">
+                                    <div class="news-image col-md-4">
+                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/han-quoc-24122-1643020947034-1643020947198662170981.jpg" class="img-fluid rounded-start" alt="image_7">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Hàn Quốc chuyển sang phương thức ứng phó với biến thể Omicron</h5>
+                                          <p class="card-text">Ngày 24/1, Tổng thống Hàn Quốc Moon Jae-in đã chỉ thị chính phủ nước này nhanh chóng chuyển sang các biện pháp ứng phó mới nhằm ngăn chặn ...</p>
+                                          <p class="card-text"><small class="text-muted">24/01/2022 17:47 (GMT+7)</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                        
+                    <!-- Quốc Tế news 4 -->
+                    <div class="news-content col-lg-6">
+                        <div class="card mb-3">
+                            <a href="https://covid19.gov.vn/cac-truong-dai-hoc-my-no-luc-doi-pho-voi-so-ca-mac-covid-19-tang-cao-171220124174151226.htm" target="_blank" rel="noopener noreferrer">
+                                <div class="row g-0">
+                                    <div class="news-image col-md-4">
+                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/my-ca-mac-24012022-1643020846042-1643020846576360070090.jpg" class="img-fluid rounded-start" alt="image_8">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Các trường đại học Mỹ nỗ lực đối phó với số ca mắc COVID-19 tăng cao</h5>
+                                          <p class="card-text">Số ca mắc COVID-19 trong các trường đại học đang gia tăng trên toàn nước Mỹ. Đây cũng là tuần có số ca mắc cao nhất mà đại học này ghi nhận ...</p>
+                                          <p class="card-text"><small class="text-muted">24/01/2022 17:47 (GMT+7)</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Các biện pháp phòng chống dịch, thông tin, thói quen sai lệch phổ biến cần tránh -->
