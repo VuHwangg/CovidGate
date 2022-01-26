@@ -233,7 +233,8 @@ body {
 /* Container-section & Content-section */
 
 .container-section {
-    margin: 0 40px;
+    max-width: 1414px;
+    margin: auto;
 }
 
 .container-section #the-line {
@@ -426,7 +427,6 @@ body {
 
 .pandemic-news .news-image {
     overflow: hidden; /* ẩn vùng ảnh bị thừa khi zoom ra */
-    position: relative;
     border-radius: 4px;
 }
 
@@ -443,6 +443,22 @@ body {
     transform: scale(1.2);
 }
 
+.pandemic-news .news-video-content {
+    padding-bottom: 12px;
+}
+
+.pandemic-news .news-video-content iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.pandemic-news .news-video-content:hover iframe {
+    /* Zoom animation */
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
 /* Pandemic Prevention: Nguyên */
 
