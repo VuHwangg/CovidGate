@@ -53,9 +53,13 @@ body {
     background-color: rgba(70, 84, 163, 0.9) !important;
     letter-spacing: 0.3px;
     font-weight: 500;
+    font-size: 22px;
     position: fixed;
     width: 100%;
     z-index: 1000;
+    top: 0;
+    width: 100%; /* Full width */
+    transition: 0.3s; /* Add a transition effect (when scrolling - and font size is decreased) */
 }
 
 .navbar .nav-item a {
@@ -471,10 +475,6 @@ body {
 
 
 /* Pandemic Variations: Trọng Nghĩa */
-#pandemic-variations-title
-{
-    font-size: 45px;
-}
 
 
 

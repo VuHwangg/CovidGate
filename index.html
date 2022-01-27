@@ -28,7 +28,7 @@
         <header class="page-header">
 
             <!-- Navigation Bar -->
-             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+             <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
                 <div class="container-fluid">
 
                     <!-- Logo -->
@@ -52,19 +52,19 @@
                                 <a class="nav-link" href="#pandemic-news-HCAV">Tin tức dịch bệnh</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Biện pháp phòng dịch</a>
+                                <a class="nav-link" href="#pandemic-prevention">Biện pháp phòng dịch</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Cách li tại nhà</a>
+                                <a class="nav-link" href="#pandemic-at-home">Cách li tại nhà</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Corona và những sự thật
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Lịch sử và quá trình hình thành</a></li>
-                                    <li><a class="dropdown-item" href="#">Các biến thể từng được ghi nhận</a></li>
-                                    <li><a class="dropdown-item" href="#">Các loại vaccine hiện hành</a></li>
+                                    <li><a class="dropdown-item" href="#pandemic-process">Lịch sử và quá trình hình thành</a></li>
+                                    <li><a class="dropdown-item" href="#pandemic-variations">Các biến thể từng được ghi nhận</a></li>
+                                    <li><a class="dropdown-item" href="#pandemic-vaccines">Các loại vaccine hiện hành</a></li>
                                   </ul>
                             </li>
                             <li>
@@ -749,55 +749,26 @@
             </div>
 
             <!-- Các biện pháp phòng chống dịch, thông tin, thói quen sai lệch phổ biến cần tránh -->
-            <div class="pandemic-prevention content-section">
+            <div class="pandemic-prevention content-section" id="pandemic-prevention">
                 Pandemic Prevention: Nguyên
             </div>
 
             <!-- Lịch sử và quá trình hình thành đại dịch -->
-            <div class="pandemic-process content-section">
+            <div class="pandemic-process content-section" id="pandemic-process">
                 Pandemic Process: Trang
                 <h1>I'm here, Jasmineee</h1>
             </div>
 
             <!-- Thông tin về các biến thể của Corona virus từng đc ghi nhận (github.com/longz3r)-->
-            <div class="pandemic-variations content-section">
-                <div class="col-12">
-                    <h1 class="display-4" id="pandemic-variations-title">Các biến thể COVID-19 đã được ghi nhận</h1>
-                    <div class="h2">SARS-CoV-2 (Gốc)</div>
-                    <div class="h2">Biến thể đang được theo dõi (VBM)</div>
-                        <ul>
-                        <li>Alpha (B.1.1.7 và biến thể dòng Q)</li>
-                        <li>Beta (B.1.351 và các dòng phụ)</li>
-                        <li>Gamma (P.1 và các dòng phụ)</li>
-                        <li>Epsilon (B.1.427 và B.1.429)</li>
-                        <li>Eta (B.1.525)</li>
-                        <li>Iota (B.1.526)</li>
-                        <li>Kappa (B.1.617.1)</li>
-                        <li>1.617.3</li>
-                        <li>Mu (B.1.621, B.1.621.1)</li>
-                        <li>Zeta (P.2)</li>
-                        </ul>
-                    <div class="h2">Biến thể đáng lo ngại (VOC)</div>
-                        <ul>
-                        <li>Delta (B.1.617.2 và các dòng AY)</li>
-                        <li>Omicron (B.1.1.529 và dòng BA)</li>
-                        </ul>
-                    </li>
-                    <div class="text1">- Đến nay, chưa có biến thể có hậu quả nghiêm trọng nào được tìm thấy tại Hoa Kỳ.</div>
-                    <div class="text2">- Vắc-xin đã được phê duyệt và được phép sử dụng ở Hoa Kỳ có hiệu quả chống lại biến thể chủ yếu lưu hành ở Hoa Kỳ và hiện có các phương pháp điều trị hiệu quả.</div>
-                    </ul>
-                    <a id="theo_cdc_vn" href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/variants/variant-classifications.html" target="_blank">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Theo CDC Việt Nam
-                    </a>
+            <div class="pandemic-variations content-section" id="pandemic-variations">
+                <h1>Các biến thể COVID-19 từng được ghi nhận</h1>
+                <div class="col">
+                    <div class="bien-the-goc"></div>
                 </div>
             </div>
 
             <!-- Thông tin về các loại vaccine hiện hành (số lượng, nước sx, ..) -->
-            <div class="pandemic-vaccines content-section">
+            <div class="pandemic-vaccines content-section" id="pandemic-vaccines">
                 Pandemic Vaccines
                 <p>
                     Với tình hình dịch bệnh đang hoành hành trên toàn thế giới rất nhiều quốc gia cũng như các tổ chức y tế đã vào cuộc để sản xuất vaccine 
@@ -944,7 +915,7 @@
             </div>
 
             <!-- Cách li tại nhà NVA -->
-            <div class="pandemic-at-home content-section">
+            <div class="pandemic-at-home content-section" id="pandemic-at-home">
                 <h1 class="col-12 mt-3 text-center">Cách li tại nhà</h1>
                 <section class="container-fluid  d-flex justify-content-center pt-5 h-100 min-vh-100">
                     <div class="container-fluid">

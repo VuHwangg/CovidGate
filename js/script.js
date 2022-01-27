@@ -50,3 +50,16 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
+// Navbar thu nho khi scroll
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.fontSize = "15px";
+  } else {
+    document.getElementById("navbar").style.fontSize = "22px";
+  }
+}
+
+//hien hinh anh bien the khi hover
