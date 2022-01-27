@@ -41,6 +41,15 @@ body {
     background-color: var(--main-color-lightblue);
 }
 
+/* dảk mode */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+#dark-mode-toggle {
+    /* ko bt center kieu gi */
+}
 
 /** Navigation Bar **/
 
