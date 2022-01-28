@@ -66,4 +66,5 @@ function scrollFunction() {
 function darkmode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
+  element.classList.toggle("col-lg-6-dark");
 }
