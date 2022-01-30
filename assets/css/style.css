@@ -557,8 +557,10 @@ body {
 
 
 
-/* Pandemic Variations: Trọng Nghĩa */
-
+/* Pandemic Variations: Long */
+#long-last-text {
+    padding-bottom: 30px;
+}
 
 
 
