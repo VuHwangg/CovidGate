@@ -62,3 +62,64 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
+
+// Navbar thu nho khi scroll
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.fontSize = "15px";
+  } else {
+    document.getElementById("navbar").style.fontSize = "22px";
+  }
+}
+
+//dảk mode
+let toggle_times = 0
+function darkmode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+  toggle_times += 1;
+  if (toggle_times % 2 == 0) {
+    document.getElementById("news-vn-title").style.color = "var(--main-color-darkgray)";
+    // document.getElementById("world-news-title").style.color = "var(--main-color-darkgray)";
+    // lightmode_element("news-box");
+    // lightmode_element("vn-news-box-2")
+    // lightmode_element("vn-news-box-3")
+    // lightmode_element("vn-news-box-4")
+    console.log("light mode");
+  } else {
+    darkmode_element("news-vn-title");
+    // document.getElementById("news-box").style.color = "white";
+    // document.getElementById("news-box").style.color = "#243238";
+    // Viet Nam news
+    darkmode_element("vn-news-box-1");
+    darkmode_element("vn-news-box-2");
+    darkmode_element("vn-news-box-3");
+    darkmode_element("vn-news-box-4");
+    // quoc te news
+    darkmode_element("world-news-box-1");
+    darkmode_element("world-news-box-2");
+    darkmode_element("world-news-box-3");
+    darkmode_element("world-news-box-4");
+    //video news
+    darkmode_element("video-news-box-1");
+    darkmode_element("video-news-box-2");
+    darkmode_element("video-news-box-3");
+    darkmode_element("video-news-box-4");
+
+    // darkmode_element("news-title")
+    console.log("dark mode")
+  }
+}
+
+function darkmode_element (element) {
+  document.getElementById(element).style.color = "white"
+  document.getElementById(element).style.backgroundColor = "#243238"
+}
+
+function lightmode_element (element) {
+  document.getElementById(element).style.color = "Black"
+  document.getElementById(element).style.backgroundColor = "white"
+}
+

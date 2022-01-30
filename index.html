@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- link file style.css -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    
+
     <!-- link file icon của themify -->
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <!-- src icon của fontawesome -->
@@ -28,6 +28,7 @@
         <header class="page-header">
 
             <!-- Navigation Bar -->
+
              <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
 
@@ -52,19 +53,19 @@
                                 <a class="nav-link" href="#pandemic-news-HCAV">Tin tức dịch bệnh</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Biện pháp phòng dịch</a>
+                                <a class="nav-link" href="#pandemic-prevention">Biện pháp phòng dịch</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Cách li tại nhà</a>
+                                <a class="nav-link" href="#pandemic-at-home">Cách li tại nhà</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Corona và những sự thật
                                 </a>
                                 <ul class="dropdown-menu dropdown-list" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Lịch sử và quá trình hình thành</a></li>
-                                    <li><a class="dropdown-item" href="#">Các biến thể từng được ghi nhận</a></li>
-                                    <li><a class="dropdown-item" href="#">Các loại vaccine hiện hành</a></li>
+                                    <li><a class="dropdown-item" href="#pandemic-process">Lịch sử và quá trình hình thành</a></li>
+                                    <li><a class="dropdown-item" href="#pandemic-variations">Các biến thể từng được ghi nhận</a></li>
+                                    <li><a class="dropdown-item" href="#pandemic-vaccines">Các loại vaccine hiện hành</a></li>
                                   </ul>
                             </li>
                             <li>
@@ -81,10 +82,17 @@
                             <i class="bi bi-three-dots-vertical contact-icon"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <div class="checkbox">
+                                <label class="switch">
+                                    <input type="checkbox" onclick="darkmode()">
+                                    <span class="slider round"></span>
+                                    </label>
+                            </div>
+                            <div class="dark-mode-text">Chế độ tối</div>
                             <li><h6>Mọi Ý Kiến Đóng Góp Xin Liên Hệ Với Chúng Tôi</h6></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-telephone-fill"></i> +84 833 232 520</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-envelope-fill"></i> chairteam@gmail.com</a></li>
+                            <li><a class="dropdown-item" href="mailto:chairteam@gmail.com"><i class="bi bi-envelope-fill"></i> chairteam@gmail.com</a></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-geo-alt-fill"></i> FPT University</a></li>
                             <button type="button" class="btn btn-outline-light btn-contact" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@covidgate">Đóng Góp Trực Tiếp</button>
                             <li class="list-icon-contact">
@@ -499,7 +507,7 @@
                     <!-- News classify: Việt Nam -->
                     <div class="news-classify">
                         <h2>
-                            <a href="https://covid19.gov.vn/ban-tin-covid-19.htm" target="_blank" rel="noopener noreferrer">
+                            <a href="https://covid19.gov.vn/ban-tin-covid-19.htm" target="_blank" rel="noopener noreferrer" id="news-vn-title">
                                 <i class="bi bi-caret-right-fill"></i>
                                 Tin Tức Về Dịch Bệnh Trong Nước
                             </a>
@@ -514,7 +522,7 @@
                                 <div class="news-image">
                                     <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/25/thu-tuong-1643012934086462841456-1643077209032-16430772094001143667423.jpg" class="card-img-top" alt="image_1">
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body" id="vn-news-box-1"> 
                                     <h2 class="card-title">Thủ tướng: Qua khó khăn, TP. HCM và ngành y tế trưởng thành lên rất nhiều</h2>
                                     <p class="card-text">Thủ tướng Phạm Minh Chính ghi nhận, biểu dương, đánh giá cao những thành quả TP. HCM đạt được trong năm 2021, đặc biệt là trong công tác phòng, chống dịch COVID-19. Thủ tướng nhấn mạnh việc TP. HCM có đóng góp rất quan trọng ...</p>
                                     <p class="card-text"><small class="text-muted">25/01/2022 09:34 (GMT+7)</small></p>
@@ -532,7 +540,7 @@
                                         <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/ttxvn20220124benhviendanang-1643021221194-16430212217021657099884.jpg" class="img-fluid rounded-start" alt="image_2">
                                     </div>
                                     <div class="col-md-8">
-                                        <div class="card-body">
+                                        <div class="card-body" id="vn-news-box-2">
                                           <h5 class="card-title">Bệnh viện Đà Nẵng triển khai điều trị bệnh nhân sau mắc COVID-19</h5>
                                           <p class="card-text">Hơn 2/3 bệnh nhân COVID-19 sau khi đã xác định hồi phục vẫn còn để lại những rối loạn về chức năng và triệu chứng, bệnh lý kéo dài có thể vài tháng thậm chí lâu hơn,..</p>
                                           <p class="card-text"><small class="text-muted">24/01/2022 17:47 (GMT+7)</small></p>
@@ -550,7 +558,7 @@
                                         <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/20220122085234-16429059321211225805315-1642907066420858377375-1642989623103-1642989623346493868348.jpeg" class="img-fluid rounded-start" alt="image_3">
                                     </div>
                                     <div class="col-md-8">
-                                        <div class="card-body">
+                                        <div class="card-body" id="vn-news-box-3">
                                           <h5 class="card-title">Đón Tết an toàn, 'thần tốc' trong việc tiêm vaccine mũi 3</h5>
                                           <p class="card-text">Ghi nhận của PV Báo Sức khỏe&Đời sống trên địa bàn Quận Thanh Xuân (Hà Nội), trong chiến dịch "thần tốc" phủ vaccine cho người dân.</p>
                                           <p class="card-text"><small class="text-muted">24/01/2022 09:00 (GMT+7)</small></p>
@@ -567,7 +575,7 @@
                                     <div class="news-image col-md-4">
                                         <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2021/10/16/cach-ly-dieu-tri-benh-nhan-16343823775761139659239.jpeg" class="img-fluid rounded-start" alt="image_4">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-8" id="vn-news-box-4">
                                         <div class="card-body">
                                           <h5 class="card-title">Sáng 25/1: Gần 800 ca COVID-19 nặng đang thở máy, ECMO; 13 tỉnh, thành nào ghi nhận F0 nhiễm Omicron?</h5>
                                           <p class="card-text">SKĐS - Bộ Y tế cho biết, đến nay cả nước đã có hơn 1,84 triệu bệnh nhân COVID-19 khỏi, trong số các ca đang điều trị có gần 800 trường hợp nặng phải thở máy, ECMO;..</p>
@@ -586,7 +594,7 @@
                     <!-- News classify: Quốc Tế -->
                     <div class="news-classify" style="padding-top: 24px;">
                         <h2>
-                            <a href="https://covid19.gov.vn/tinh-hinh-the-gioi.htm" target="_blank" rel="noopener noreferrer">
+                            <a href="https://covid19.gov.vn/tinh-hinh-the-gioi.htm" target="_blank" rel="noopener noreferrer" id="news-title">
                                 <i class="bi bi-caret-right-fill"></i>
                                 Tin Tức Về Dịch Bệnh Trên Thế Giới
                             </a>
@@ -603,7 +611,7 @@
                                         <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/25/han-quoc-250122-1643077044001-164307704416749382366.jpg" class="img-fluid rounded-start" alt="image_5">
                                     </div>
                                     <div class="col-md-8">
-                                        <div class="card-body">
+                                        <div class="card-body" id="world-news-box-1">
                                           <h5 class="card-title">Số ca mắc COVID-19 ở Hàn Quốc tăng lên mức cao nhất</h5>
                                           <p class="card-text">Phóng viên TTXVN tại Seoul đưa tin số ca mắc mới COVID-19 ở Hàn Quốc ngày 25/1 dự kiến được ghi nhận ở mức 9.000. Đây là con số cao nhất kể từ khi ...</p>
                                           <p class="card-text"><small class="text-muted">25/01/2022 09:17 (GMT+7)</small></p>
@@ -623,7 +631,7 @@
                                         <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/25/thuoc-250122-1643077004428-1643077004835449093125.jpg" class="img-fluid rounded-start" alt="image_6">
                                     </div>
                                     <div class="col-md-8">
-                                        <div class="card-body">
+                                        <div class="card-body" id="world-news-box-2">
                                           <h5 class="card-title">Mỹ hạn chế sử dụng 2 liệu pháp điều trị kháng thể đơn dòng cho bệnh nhân</h5>
                                           <p class="card-text">Cơ quan Quản lý thực phẩm và dược phẩm (FDA) Mỹ ngày 24/1 đã hạn chế đáng kể việc sử dụng 2 liệu pháp điều trị kháng thể đơn dòng do 2 hãng ...</p>
                                           <p class="card-text"><small class="text-muted">25/01/2022 17:47 (GMT+7)</small></p>
@@ -643,7 +651,7 @@
                                         <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/han-quoc-24122-1643020947034-1643020947198662170981.jpg" class="img-fluid rounded-start" alt="image_7">
                                     </div>
                                     <div class="col-md-8">
-                                        <div class="card-body">
+                                        <div class="card-body" id="world-news-box-3">
                                           <h5 class="card-title">Hàn Quốc chuyển sang phương thức ứng phó với biến thể Omicron</h5>
                                           <p class="card-text">Ngày 24/1, Tổng thống Hàn Quốc Moon Jae-in đã chỉ thị chính phủ nước này nhanh chóng chuyển sang các biện pháp ứng phó mới nhằm ngăn chặn ...</p>
                                           <p class="card-text"><small class="text-muted">24/01/2022 17:47 (GMT+7)</small></p>
@@ -663,7 +671,7 @@
                                         <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/my-ca-mac-24012022-1643020846042-1643020846576360070090.jpg" class="img-fluid rounded-start" alt="image_8">
                                     </div>
                                     <div class="col-md-8">
-                                        <div class="card-body">
+                                        <div class="card-body" id="world-news-box-4">
                                           <h5 class="card-title">Các trường đại học Mỹ nỗ lực đối phó với số ca mắc COVID-19 tăng cao</h5>
                                           <p class="card-text">Số ca mắc COVID-19 trong các trường đại học đang gia tăng trên toàn nước Mỹ. Đây cũng là tuần có số ca mắc cao nhất mà đại học này ghi nhận ...</p>
                                           <p class="card-text"><small class="text-muted">24/01/2022 17:47 (GMT+7)</small></p>
@@ -696,7 +704,7 @@
                                 <div class="news-video">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/L_cNoOo7ll0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body" id="video-news-box-1">
                                     <h5 class="card-title">6 biện pháp đảm bảo thích ứng an toàn, linh hoạt, kiểm soát hiệu quả dịch COVID-19</h5>
                                     <p class="card-text"><small class="text-muted">24/10/2021 07:33 (GMT+7)</small></p>
                                 </div>
@@ -711,7 +719,7 @@
                                 <div class="news-video">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/nktnZyiZ4ns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body" id="video-news-box-2">
                                     <h5 class="card-title">Bộ Y tế hướng dẫn phân loại và phạm vi đánh giá cấp độ dịch</h5>
                                     <p class="card-text"><small class="text-muted">15/10/2021 17:19 (GMT+7)</small></p>
                                 </div>
@@ -726,7 +734,7 @@
                                 <div class="news-video">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/kMIOZS03774" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body" id="video-news-box-3">
                                     <h5 class="card-title">Hướng dẫn tự lấy mẫu xét nghiệm COVID-19 tại nhà</h5>
                                     <p class="card-text"><small class="text-muted">09/10/2021 14:31 (GMT+7)</small></p>
                                 </div>
@@ -741,7 +749,7 @@
                                 <div class="news-video">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/nFGaf_Dqm0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body" id="video-news-box-4">
                                     <h5 class="card-title">Hướng dẫn sử dụng thuốc điều trị COVID-19 tại nhà</h5>
                                     <p class="card-text"><small class="text-muted">05/10/2021 14:31 (GMT+7)</small></p>
                                 </div>
@@ -752,23 +760,153 @@
             </div>
 
             <!-- Các biện pháp phòng chống dịch, thông tin, thói quen sai lệch phổ biến cần tránh -->
-            <div class="pandemic-prevention content-section">
+            <div class="pandemic-prevention content-section" id="pandemic-prevention">
                 Pandemic Prevention: Nguyên
             </div>
 
             <!-- Lịch sử và quá trình hình thành đại dịch -->
-            <div class="pandemic-process content-section">
+            <div class="pandemic-process content-section" id="pandemic-process">
                 Pandemic Process: Trang
                 <h1>I'm here, Jasmineee</h1>
             </div>
 
-            <!-- Thông tin về các biến thể của Corona virus từng đc ghi nhận -->
-            <div class="pandemic-variations content-section">
-                Pandemic Variations: Trọng Nghĩa
+            <!-- Thông tin về các biến thể của Corona virus từng đc ghi nhận (github.com/longz3r)-->
+            <div class="pandemic-variations content-section" id="pandemic-variations">
+                <h1>Các biến thể COVID-19 từng được ghi nhận</h1>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col">Tên</th>
+                            <th scope="col">Dòng</th>
+                            <th scope="col">Ngày phát hiện</th>
+                            <th scope="col">Trạng thái</th>
+                            <th scope="col">Nguồn gốc</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Alpha</td>
+                            <td>B.1.1.7</td>
+                            <td>9/2020</td>
+                            <td>Đáng lo ngại (VOC)</td>
+                            <td>Luân Đôn và vùng đông nam nước Anh</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Beta</td>
+                            <td>B.1.351</td>
+                            <td>5/2020</td>
+                            <td>Đáng lo ngại (VOC)</td>
+                            <td>Khu vực phía Nam Châu Phi</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Gamma</td>
+                            <td>P.1</td>
+                            <td>11/2021</td>
+                            <td>Đáng lo ngại (VOC)</td>
+                            <td>Brazil</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Delta</td>
+                            <td>B.1.617.2</td>
+                            <td>10/2020</td>
+                            <td>Đáng lo ngại (VOC)</td>
+                            <td>Ấn độ</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Omicron</td>
+                            <td>B.1.1.529</td>
+                            <td>11/2021</td>
+                            <td>Đáng lo ngại (VOC)</td>
+                            <td>Khu vực phía Nam Châu Phi</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Epsilon</td>
+                            <td>B.1.427 và B.1.429</td>
+                            <td>1/2021 và 3/2021</td>
+                            <td>Đang được theo dõi (VBM)</td>
+                            <td>California, Mĩ</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Eta</td>
+                            <td>B.1.525</td>
+                            <td>12/2020</td>
+                            <td>Đang được theo dõi (VBM)</td>
+                            <td>Anh và Nigeria</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Kappa</td>
+                            <td>B.1.617.1</td>
+                            <td>12/2020</td>
+                            <td>Đang được theo dõi (VBM)</td>
+                            <td>Ấn Độ</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Mu</td>
+                            <td>B.1.621 và B.1.621.1</td>
+                            <td>1/2021</td>
+                            <td>Đang được theo dõi (VBM)</td>
+                            <td>Colombia</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Zeta</td>
+                            <td>P.2</td>
+                            <td></td>
+                            <td>Đang được theo dõi (VBM)</td>
+                            <td>Rio de Janeiro, Brazil</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Theta</td>
+                            <td>P.3</td>
+                            <td>2/2021</td>
+                            <td>Đang được theo dõi (VBM)</td>
+                            <td>Philippines</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Iota</td>
+                            <td>B.1.526</td>
+                            <td>11/2020</td>
+                            <td>Đang được theo dõi (VBM)</td>
+                            <td>Thành phố New York</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Lambda</td>
+                            <td>C.37</td>
+                            <td>8/2020</td>
+                            <td>Đang được theo dõi (VBM)</td>
+                            <td>Peru</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="long-info">
+                    <h5>Các loại trạng thái của biến thể</h5>
+                    <ul><li><strong>Biến thể đáng quan tâm (VOI):</strong> Biến thể với các chỉ dấu gien cụ thể đã được liên kết với những thay đổi với liên kết thụ thể, giảm trung hòa bởi các kháng thể được tạo ra để chống lại tình trạng lây nhiễm hoặc tiêm chủng trước đó, giảm hiệu quả của các biện pháp điều trị, tác động chẩn đoán tiềm tàng, hoặc gia tăng dự đoán về khả năng lây truyền hoặc độ nghiêm trọng của bệnh.</li></ul>
+                    <ul><li><strong>Biến thể đáng lo ngại (VOC):</strong> Một biến thể theo đó có bằng chứng về sự gia tăng khả năng lây truyền, bệnh nghiêm trọng hơn (ví dụ, tăng mức nhập viện hoặc tử vong), giảm đáng kể khả năng trung hòa bởi các kháng thể được tạo ra trong quá trình lây nhiễm hoặc tiêm chủng trước đó, giảm hiệu quả của các phương pháp điều trị hoặc vắc-xin, hoặc các thất bại trong việc phát hiện chẩn đoán.</li></ul>
+                    <ul><li><strong>Biến thể đang được theo dõi (VBM):</strong> Biến thể cho thấy có khả năng hoặc tác động rõ ràng đối với các biện pháp đối phó y tế đã được phê duyệt hoặc cho phép sử dụng hoặc có liên quan đến bệnh nặng hơn hoặc lây truyền tăng cao nhưng không còn được phát hiện hoặc đang lưu hành ở mức rất thấp</li></ul>
+                    <ul><li><strong>Biến thể có hậu quả nghiêm trọng (VOHC):</strong> Biến thể có bằng chứng rõ ràng rằng các biện pháp phòng ngừa hoặc biện pháp ứng phó y tế (MCM) đã giảm đáng kể hiệu quả so với các biến thể lưu hành trước đó. (Hiện chưa có biến thể nào thuộc trạng thái này)</li></ul>
+                </div>
+                <div class="card-body bg-tertiary"><h2 class="card-title mb-1 h2 mb-3 text-left">Các định nghĩa quan trọng</h2><ul>
+                    <li><strong><a title="Các định nghĩa quan trọng"></a>Đột biến:</strong> Đột biến là một biến đổi trong bộ gen của vi-rút (mã di truyền). Đột biến xảy ra thường xuyên nhưng đôi khi thay đổi đặc tính của vi-rút.</li>
+                    <li><strong>Dòng:</strong> Dòng là một nhóm các vi-rút có mối liên hệ chặt chẽ với một dạng sơ khai chung. SARS-CoV-2 có nhiều dòng; tất cả đều gây bệnh COVID-19.</li>
+                    <li id=long-last-text><strong>Biến thể:</strong> Biến thể là một bộ gen vi-rút (mã di truyền) có thể chứa một hoặc nhiều đột biến. Trong một số trường hợp, một nhóm các biến thể có thay đổi gen tương tự như một dòng hoặc nhóm các dòng, có thể được chỉ định bởi các tổ chức y tế công như <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/variants/variant-classifications.html#concern" target="_blank">Biến thể đáng lo ngại (VOC)</a> hoặc <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/variants/variant-classifications.html#interest" target="_blank">Biến thể đáng quan tâm (VOI)</a> do các thuộc tính và đặc tính chung có thể đỏi hỏi phải có hành động từ góc độ y tế công.</li>
+                    <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/variants/variant-classifications.html" target="_blank" class="btn mt-auto btn-primary">Tìm hiểu thêm</a>
             </div>
 
             <!-- Thông tin về các loại vaccine hiện hành (số lượng, nước sx, ..) -->
-            <div class="pandemic-vaccines content-section">
+            <div class="pandemic-vaccines content-section" id="pandemic-vaccines">
                 Pandemic Vaccines
                 <p>
                     Với tình hình dịch bệnh đang hoành hành trên toàn thế giới rất nhiều quốc gia cũng như các tổ chức y tế đã vào cuộc để sản xuất vaccine 
@@ -915,7 +1053,7 @@
             </div>
 
             <!-- Cách li tại nhà NVA -->
-            <div class="pandemic-at-home content-section">
+            <div class="pandemic-at-home content-section" id="pandemic-at-home">
                 <h1 class="col-12 mt-3 text-center">Cách li tại nhà</h1>
                 <section class="container-fluid  d-flex justify-content-center pt-5 h-100 min-vh-100">
                     <div class="container-fluid">
@@ -928,38 +1066,38 @@
                               <h1>Hãy ở nhà</h1>
                               <p>Ở nhà Hầu hết mọi người mắc COVID-19 bị bệnh nhẹ và có thể hồi phục tại nhà mà không cần chăm sóc y tế. Đừng rời khỏi nhà của quý vị, ngoại trừ khi cần sự chăm sóc y tế. Đừng đến các khu vực công cộng.</p>
                               <p>Chăm sóc bản thân. Nghỉ ngơi và uống nước thường xuyên. Dùng các loại thuốc không cần kê toa, chẳng hạn như acetaminophen, để giúp quý vị cảm thấy tốt hơn.</p>
-                              <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" id="nva-img" target="_blank" rel="noopener noreferrer" class="btn mt-auto btn-primary">Read more</a>
+                              <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" id="nva-img" target="_blank" rel="noopener noreferrer" class="btn mt-auto btn-primary">Tìm hiểu thêm</a>
                           </div>
                         </div>
               
                         <!-- Chủ động cách ly -->
                         <div class="col-lg-3 col-md-4">
                           <div class="box bg-light border h-100 d-flex p-4 flex-column text-dark">
-                              <img class="img-fluid" src="https://images.unsplash.com/photo-1610814651936-61f4b9e31679?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHN0YXklMjBhdCUyMGhvbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="New York">
+                              <img class="img-fluid" src="https://i.ytimg.com/vi/Nc8YxtimK_U/hqdefault.jpg" alt="cach ly tai nha">
                               <h1>Chủ động cách ly</h1>
                               <p>Cố gắng ở trong phòng riêng và tránh xa người khác và thú cưng trong nhà quý vị càng nhiều càng tốt. Nếu có thể, quý vị nên sử dụng phòng vệ sinh riêng. Nếu quý vị cần ở gần người khác hoặc động vật trong hoặc ngoài nhà, hãy đeo khẩu trang.</p>
-                              <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" id="nva-img" target="_blank" rel="noopener noreferrer" class="btn mt-auto btn-primary">Read more</a>
+                              <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" id="nva-img" target="_blank" rel="noopener noreferrer" class="btn mt-auto btn-primary">Tìm hiểu thêm</a>
                           </div>
                         </div>
               
                         <!-- Theo dõi triệu chứng -->
                         <div class="col-lg-3 col-md-4">
                           <div class="box bg-light border h-100 d-flex p-4 flex-column text-dark">
-                              <img src="https://images.unsplash.com/photo-1610814651936-61f4b9e31679?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHN0YXklMjBhdCUyMGhvbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                              <img src="https://backend.aih.com.vn/assets/uploads/myfiles/files/theo-doi-cover.jpg" alt="tu theo doi suc khoe">
                               <h1>Theo dõi bản thân</h1>
                               <p>Các triệu chứng của COVID-19 bao gồm sốt, ho hoặc các triệu chứng khác.</p>
                               <p>Thực hiện theo các hướng dẫn chăm sóc từ nhà cung cấp dịch vụ chăm sóc sức khỏe và sở y tế địa phương. Cơ quan y tế địa phương sẽ đưa ra hướng dẫn cách kiểm tra các triệu chứng của quý vị và báo cáo thông tin.</p>
-                              <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" id="nva-img" target="_blank" rel="noopener noreferrer" class="btn mt-auto btn-primary">Read more</a>
+                              <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" id="nva-img" target="_blank" rel="noopener noreferrer" class="btn mt-auto btn-primary">Tìm hiểu thêm</a>
                           </div>
                         </div>
                         <!-- Rửa tay thường xuyên -->
                         <div class="col-lg-3 col-md-4">
                           <div class="box bg-light border h-100 d-flex p-4 flex-column text-dark">
-                              <img src="https://images.unsplash.com/photo-1610814651936-61f4b9e31679?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHN0YXklMjBhdCUyMGhvbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                              <img src="https://vinmec-prod.s3.amazonaws.com/images/20200218_111020_836991_handwashing1_gayr.max-1800x1800.jpg" alt="">
                               <h1>Hãy rửa tay</h1>
                               <p>Rửa tay thường xuyên bằng xà phòng và nước trong ít nhất 20 giây. Điều này đặc biệt quan trọng sau khi xì mũi, ho hoặc hắt hơi; đi vào phòng vệ sinh; và trước khi ăn hoặc chuẩn bị thức ăn.</p>
                               <p>Rửa kỹ các đồ dùng này sau khi sử dụng bằng xà phòng và nước hoặc cho vào máy rửa chén.</p>
-                              <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" id="nva-img" target="_blank" rel="noopener noreferrer" class="btn mt-auto btn-primary">Read more</a>
+                              <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" id="nva-img" target="_blank" rel="noopener noreferrer" class="btn mt-auto btn-primary">Tìm hiểu thêm</a>
                           </div>
                         </div>
                       </div>
@@ -971,11 +1109,17 @@
 
         <!-- Footer -->
         <div class="page-footer">
-
+            <p id="footer-text-about">COVID Gate là một dự án được phát triển bởi Chair Team thuộc trường Đại Học FPT Hà Nội</p>
+            <img src="./assets/img/about-us/Logo1 (no background) .png" id="footer-chair-team" class="img-fluid">
+        </div>
+        <div class="footer-text-help">
+            <a href="https://github.com/VuHwangg/CovidGate" target="_blank" rel="noopener noreferrer" id="footer-text-help">Giúp đỡ chúng tôi
+                <span >
+                <Image src="assets/img/logo/github.svg" id="footer-github-svg">
+                </span>
+                </a>
         </div>
     </div>
-
-
 
 
     <!-- src js của bootstrap -->
@@ -983,7 +1127,5 @@
     
     <!-- src js trong thư mục js -->
     <script src="./js/script.js"></script>
-    
-
 </body>
 </html>
