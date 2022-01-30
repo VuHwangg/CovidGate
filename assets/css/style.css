@@ -64,7 +64,7 @@ body {
     z-index: 1000;
     top: 0;
     width: 100%; /* Full width */
-    transition: 0.3s; /* Add a transition effect (when scrolling - and font size is decreased) */
+    transition: 0.5s; /* Add a transition effect (when scrolling - and font size is decreased) */
 }
 
 .navbar .nav-item a {
