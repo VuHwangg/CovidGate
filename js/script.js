@@ -1,4 +1,15 @@
 
+// Navigation Bar
+let nav = document.querySelector(".navbar");
+window.addEventListener("scroll", ()=>{
+  if(document.documentElement.scrollTop > 20){
+    nav.classList.add("nav-sticky")
+  }else{
+    nav.classList.remove("nav-sticky")
+  }
+});
+
+
 // Toasts - Cửa sổ pop up
 var toastTrigger = document.getElementById('liveToastBtn')
 var toastLiveExample = document.getElementById('liveToast')
@@ -50,6 +61,7 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
 
 // Navbar thu nho khi scroll
 window.onscroll = function() {scrollFunction()};
@@ -110,3 +122,4 @@ function lightmode_element (element) {
   document.getElementById(element).style.color = "Black"
   document.getElementById(element).style.backgroundColor = "white"
 }
+

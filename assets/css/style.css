@@ -54,9 +54,8 @@ body {
 }
 
 .navbar {
-    padding: 0 12px;
-    background-color: rgba(70, 84, 163, 0.9) !important;
-    letter-spacing: 0.3px;
+    margin-top: 12px;
+    padding: 0 18px;
     font-weight: 500;
     font-size: 22px;
     position: fixed;
@@ -67,25 +66,69 @@ body {
     transition: 0.5s; /* Add a transition effect (when scrolling - and font size is decreased) */
 }
 
-.navbar .nav-item a {
-    color: white !important;
-    line-height: 42px;
+.nav-sticky {
+    margin-top: auto;
+    padding: 0 12px;
+    background-color: rgba(70, 84, 163, 1) !important;
 }
 
-.navbar .nav-item a:hover {
+.nav-sticky .navbar-brand img {
+    height: 40px !important;
+}
+
+.navbar .navbar-collapse a {
+    text-shadow: 5px 5px 10px #000;
+    font-size: 17px;
+}
+
+.nav-sticky .navbar-collapse a {
+    text-shadow: none;
+}
+
+.navbar .nav-item {
+    margin: 6px 0px;
+}
+
+.navbar .nav-item .nav-link {
+    position: relative;
     color: white !important;
+}
+
+/* animation border bottom */
+    .navbar .nav-item .nav-link:before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 0;
+        bottom: 0;
+        background-color: var(--main-color-lightorange);
+
+    /* animation center */
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.5s ease;
+        
+    /* animation left to right 
+        transition: all 0.5s ease;    
+    */
+    }
+
+    .navbar .nav-item .nav-link:hover:before {
+        width: 90%;
+    }
+
+.navbar .dropdown-list {
     background-color: var(--main-color-lightblue);
+    padding: 0;
+    margin-top: 8px;
 }
 
-.navbar .dropdown-menu {
-    background-color: var(--main-color-lightblue);
-}
-
-.navbar .dropdown-menu a {
+.navbar .dropdown-list li a {
     color: white !important;
+    padding: 8px 16px;
 }
 
-.navbar .dropdown-menu a:hover {
+.navbar .dropdown-list li a:hover {
     background-color: #848ec7bb;
 }
 
@@ -214,6 +257,7 @@ body {
 
 .navbar .dropdown .dropdown-menu .dropdown-item {
     opacity: 0.8;
+    color: white;
 }
 
 .navbar .dropdown .dropdown-menu .dropdown-item:hover {
@@ -275,6 +319,15 @@ body {
 
 /** Carousel **/
 
+.carousel {
+    max-width: 1800px;
+    background-color: black;
+}
+
+.carousel .carousel-inner img {
+    opacity: 0.7;
+}
+
 .carousel .carousel-inner .carousel-caption {
     position: absolute;
     top: 40%;
@@ -308,12 +361,6 @@ body {
     padding: 9px 16px;
 }
 
-@media (max-width: 768px) {
-    .carousel {
-        top: 58px;
-    }
-}
-
 
 /** About Us **/
 
@@ -340,9 +387,6 @@ body {
     }
     .content-section {
         margin: 30px 18px;
-    }
-    .about-project {
-        padding-top: 48px;
     }
 }
 
