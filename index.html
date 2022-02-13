@@ -16,8 +16,8 @@
     
     <!-- link file icon của themify -->
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
-    <!-- src icon của fontawesome -->
-    <script src="https://kit.fontawesome.com/8a467d7f49.js" crossorigin="anonymous"></script>
+    <!-- link icon của fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <!-- link icon của bootstrap-icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
@@ -28,12 +28,12 @@
         <header class="page-header">
 
             <!-- Navigation Bar -->
-             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
 
                     <!-- Logo -->
-                    <a class="navbar-brand" data-bs-toggle="tooltip" data-bs-placement="right" title="Trang Chủ" href="">
-                        <img src="./assets/img/logo/logo_covidgate.png" alt="Logo COVID Gate" height="38px">
+                    <a class="navbar-brand" data-bs-toggle="tooltip" data-bs-placement="right" title="Trang Chủ" href="#">
+                        <img src="./assets/img/logo/logo_covidgate.png" alt="Logo COVID Gate" height="52px">
                     </a>
                     
                     <!-- Responsive - Nút menu target đến các thẻ có id:navbarResponsive -->
@@ -49,7 +49,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#pandemic-news-HCAV">Tin tức dịch bệnh</a>
+                                <a class="nav-link" href="#pandemic-news">Tin tức dịch bệnh</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Biện pháp phòng dịch</a>
@@ -61,8 +61,13 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Corona và những sự thật
                                 </a>
+<<<<<<< HEAD
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="partTrang.html">Lịch sử và quá trình hình thành</a></li>
+=======
+                                <ul class="dropdown-menu dropdown-list" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Lịch sử và quá trình hình thành</a></li>
+>>>>>>> 2e5dcf0faa43c892d375524a815d029317eccfb4
                                     <li><a class="dropdown-item" href="#">Các biến thể từng được ghi nhận</a></li>
                                     <li><a class="dropdown-item" href="#">Các loại vaccine hiện hành</a></li>
                                   </ul>
@@ -84,16 +89,16 @@
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <li><h6>Mọi Ý Kiến Đóng Góp Xin Liên Hệ Với Chúng Tôi</h6></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-telephone-fill"></i> +84 833 232 520</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-envelope-fill"></i> chairteam@gmail.com</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-geo-alt-fill"></i> FPT University</a></li>
+                            <li><a class="dropdown-item" href="tel:0833232520"><i class="bi bi-telephone-fill"></i> +84 833 232 520</a></li>
+                            <li><a class="dropdown-item" href="mailto:chairteam@gmail.com"><i class="bi bi-envelope-fill"></i> chairteam@gmail.com</a></li>
+                            <li><a class="dropdown-item" href="https://www.google.com/maps/dir/22.2538228,106.4759266/fpt+university/@21.6081128,105.5910615,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x31345b465a4e65fb:0xaae6040cfabe8fe!2m2!1d105.5270643!2d21.01325" target="_blank" rel="noopener noreferrer"><i class="bi bi-geo-alt-fill"></i> FPT University</a></li>
                             <button type="button" class="btn btn-outline-light btn-contact" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@covidgate">Đóng Góp Trực Tiếp</button>
                             <li class="list-icon-contact">
                                 <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-facebook"></i></a>
-                                <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-instagram"></i></a>
-                                <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-github"></i></a>
-                                <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-linkedin"></i></a>
                                 <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-twitter"></i></a>
+                                <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-instagram"></i></a>
+                                <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-linkedin"></i></a>
+                                <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-github"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -137,13 +142,16 @@
         <!-- Carousel - Băng Chuyền Ảnh -->
         <div class="carousel slide" id="carousel-main" data-bs-ride="carousel">
             
-            <!-- Carousel Indicators -->
+            <!--             
+            Carousel Indicators
+            
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            
+             -->
+
             <!-- Ảnh trong Carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -446,7 +454,7 @@
         <div class="page-content container-section">
 
             <!-- Pandemic Data & News -->
-            <div class="pandemic-data" id="pandemic-news-HCAV">
+            <div class="pandemic-data" id="pandemic-news">
                 <div class="content-section">
                     <div id="the-line"></div>
                 </div>
@@ -507,14 +515,14 @@
 
                     <!-- Việt Nam news 1 -->
                     <div class="col-lg-6">
-                        <div class="news-content card">
+                        <div class="news-content card h-100">
                             <a href="https://covid19.gov.vn/thu-tuong-qua-kho-khan-tp-hcm-va-nganh-y-te-truong-thanh-len-rat-nhieu-17122012509344728.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="news-image">
                                     <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/25/thu-tuong-1643012934086462841456-1643077209032-16430772094001143667423.jpg" class="card-img-top" alt="image_1">
                                 </div>
                                 <div class="card-body">
                                     <h2 class="card-title">Thủ tướng: Qua khó khăn, TP. HCM và ngành y tế trưởng thành lên rất nhiều</h2>
-                                    <p class="card-text">Thủ tướng Phạm Minh Chính ghi nhận, biểu dương, đánh giá cao những thành quả TP. HCM đạt được trong năm 2021, đặc biệt là trong công tác phòng, chống dịch COVID-19.</p>
+                                    <p class="card-text">Thủ tướng Phạm Minh Chính ghi nhận, biểu dương, đánh giá cao những thành quả TP. HCM đạt được trong năm 2021, đặc biệt là trong công tác phòng, chống dịch COVID-19. Thủ tướng nhấn mạnh việc TP. HCM có đóng góp rất quan trọng ...</p>
                                     <p class="card-text"><small class="text-muted">25/01/2022 09:34 (GMT+7)</small></p>
                                 </div>
                             </a>
@@ -549,7 +557,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
-                                          <h5 class="card-title">Đón Tết an toàn, 'thần tốc' phủ vaccine mũi 3</h5>
+                                          <h5 class="card-title">Đón Tết an toàn, 'thần tốc' trong việc tiêm vaccine mũi 3</h5>
                                           <p class="card-text">Ghi nhận của PV Báo Sức khỏe&Đời sống trên địa bàn Quận Thanh Xuân (Hà Nội), trong chiến dịch "thần tốc" phủ vaccine cho người dân.</p>
                                           <p class="card-text"><small class="text-muted">24/01/2022 09:00 (GMT+7)</small></p>
                                         </div>
@@ -579,7 +587,7 @@
                 </div>
 
                 <!-- Quốc Tế News -->
-                <div class="vietname-news row">
+                <div class="world-news row">
 
                     <!-- News classify: Quốc Tế -->
                     <div class="news-classify" style="padding-top: 24px;">
@@ -593,8 +601,8 @@
                     </div>
                     
                     <!-- Quốc Tế news 1 -->
-                    <div class="news-content col-lg-6">
-                        <div class="card mb-3">
+                    <div class="col-lg-6">
+                        <div class="news-content card mb-3">
                             <a href="https://covid19.gov.vn/so-ca-mac-covid-19-o-han-quoc-tang-len-muc-cao-nhat-171220125091744733.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
                                     <div class="news-image col-md-4">
@@ -613,8 +621,8 @@
                     </div>
 
                     <!-- Quốc Tế news 2 -->
-                    <div class="news-content col-lg-6">
-                        <div class="card mb-3">
+                    <div class="col-lg-6">
+                        <div class="news-content card mb-3">
                             <a href="https://covid19.gov.vn/my-han-che-su-dung-2-lieu-phap-dieu-tri-khang-the-don-dong-cho-benh-nhan-covid-19-171220125091706217.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
                                     <div class="news-image col-md-4">
@@ -622,7 +630,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
-                                          <h5 class="card-title">Mỹ hạn chế sử dụng 2 liệu pháp điều trị kháng thể đơn dòng cho bệnh nhân COVID-19</h5>
+                                          <h5 class="card-title">Mỹ hạn chế sử dụng 2 liệu pháp điều trị kháng thể đơn dòng cho bệnh nhân</h5>
                                           <p class="card-text">Cơ quan Quản lý thực phẩm và dược phẩm (FDA) Mỹ ngày 24/1 đã hạn chế đáng kể việc sử dụng 2 liệu pháp điều trị kháng thể đơn dòng do 2 hãng ...</p>
                                           <p class="card-text"><small class="text-muted">25/01/2022 17:47 (GMT+7)</small></p>
                                         </div>
@@ -633,8 +641,8 @@
                     </div>
 
                     <!-- Quốc Tế news 3 -->
-                    <div class="news-content col-lg-6">
-                        <div class="card mb-3">
+                    <div class="col-lg-6">
+                        <div class="news-content card mb-3">
                             <a href="https://covid19.gov.vn/han-quoc-chuyen-sang-phuong-thuc-ung-pho-voi-bien-the-omicron-171220124174247186.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
                                     <div class="news-image col-md-4">
@@ -653,8 +661,8 @@
                     </div>
                         
                     <!-- Quốc Tế news 4 -->
-                    <div class="news-content col-lg-6">
-                        <div class="card mb-3">
+                    <div class="col-lg-6">
+                        <div class="news-content card mb-3">
                             <a href="https://covid19.gov.vn/cac-truong-dai-hoc-my-no-luc-doi-pho-voi-so-ca-mac-covid-19-tang-cao-171220124174151226.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
                                     <div class="news-image col-md-4">
@@ -673,6 +681,80 @@
                     </div>
                 </div>
 
+                <!-- Video News -->
+                <div class="video-news row">
+
+                    <!-- News classify: Video -->
+                    <div class="news-classify" style="padding-top: 24px;">
+                        <h2>
+                            <a href="https://covid19.gov.vn/video.htm" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-caret-right-fill"></i>
+                                Video
+                            </a>
+                        </h2>
+                        <hr class="my-2" style="max-width: 140px;">
+                    </div>
+
+                    <!-- Video news 1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="news-video-content card h-100">
+                            <a href="https://covid19.gov.vn/6-bien-phap-dam-bao-thich-ung-an-toan-linh-hoat-kiem-soat-hieu-qua-dich-covid-19-171211019073253778.htm" target="_blank" rel="noopener noreferrer">
+                                <div class="news-video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L_cNoOo7ll0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">6 biện pháp đảm bảo thích ứng an toàn, linh hoạt, kiểm soát hiệu quả dịch COVID-19</h5>
+                                    <p class="card-text"><small class="text-muted">24/10/2021 07:33 (GMT+7)</small></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Video news 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="news-video-content card h-100">
+                            <a href="https://covid19.gov.vn/bo-y-te-huong-dan-phan-loai-va-pham-vi-danh-gia-cap-do-dich-171211015182641182.htm" target="_blank" rel="noopener noreferrer">
+                                <div class="news-video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nktnZyiZ4ns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Bộ Y tế hướng dẫn phân loại và phạm vi đánh giá cấp độ dịch</h5>
+                                    <p class="card-text"><small class="text-muted">15/10/2021 17:19 (GMT+7)</small></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Video news 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="news-video-content card h-100">
+                            <a href="https://covid19.gov.vn/huong-dan-tu-lay-mau-xet-nghiem-covid-19-tai-nha-171211009143132481.htm" target="_blank" rel="noopener noreferrer">
+                                <div class="news-video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kMIOZS03774" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Hướng dẫn tự lấy mẫu xét nghiệm COVID-19 tại nhà</h5>
+                                    <p class="card-text"><small class="text-muted">09/10/2021 14:31 (GMT+7)</small></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Video news 4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="news-video-content card h-100">
+                            <a href="https://covid19.gov.vn/huong-dan-su-dung-thuoc-dieu-tri-covid-19-tai-nha-17121100515443193.htm" target="_blank" rel="noopener noreferrer">
+                                <div class="news-video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nFGaf_Dqm0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Hướng dẫn sử dụng thuốc điều trị COVID-19 tại nhà</h5>
+                                    <p class="card-text"><small class="text-muted">05/10/2021 14:31 (GMT+7)</small></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Các biện pháp phòng chống dịch, thông tin, thói quen sai lệch phổ biến cần tránh -->
@@ -898,8 +980,70 @@
         </div>
 
         <!-- Footer -->
-        <div class="page-footer">
+        <footer class="page-footer">
+            <div class="footer-content">
 
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <img src="./assets/img/logo/logo_covidgate.png" alt="Logo COVID Gate" height="52px">
+                    </div>
+                    <div class="description">
+                        <p>
+                            Một dự án phi lợi nhuận với mục đích là mang đến những giá trị thông qua kiến thức, 
+                            thông tin, số liệu về dịch bệnh một cách đầy đủ và chính xác.Tại đây chúng mình sẽ 
+                            tổng hợp và đưa ra mọi thông tin cần thiết liên quan đến đại dịch COVID-19 tại Việt 
+                            Nam cũng như trên toàn thế giới.
+                        </p>
+                    </div>
+                    <div class="media-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section footer-links">
+                    <h2>Truy Cập</h2>
+                    <ul>
+                        <li><a href="#">Tin tức dịch bệnh</a></li>
+                        <li><a href="#">Số liệu chi tiết</a></li>
+                        <li><a href="#">Cách li tại nhà</a></li>
+                        <li><a href="#">Quá trình hình thành</a></li>
+                        <li><a href="#">Các loại biến thể</a></li>
+                        <li><a href="#">Các loại vaccine</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section footer-contact">
+                    <h2>Liện Hệ</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>&nbsp;</span>
+                            <span>
+                                Trường Đại Học FPT Hà Nội <br>
+                                Khu Công nghệ cao Hòa Lạc, Km29 Đại lộ Thăng Long, Thạch Thất, Hà Nội<br>
+                                Việt Nam
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class="bi bi-telephone-fill" aria-hidden="true"></i>&nbsp;</span>
+                            <span>
+                                <a href="tel:0833232520">+84 833 232 520</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class="bi bi-envelope-fill" aria-hidden="true"></i>&nbsp;</span>
+                            <span><a href="mailto:chairteam@gmail.com">chairteam@gmail.com</a></span>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>Copyright &copy;2022 All right reserved | Website is a product of Chair Team</p>
+            </div>
         </div>
     </div>
 
