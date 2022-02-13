@@ -260,12 +260,13 @@ ul {
 /** Carousel **/
 
 .carousel {
-    max-width: 1800px;
+    
     background-color: black;
 }
 
 .carousel .carousel-inner img {
     opacity: 0.7;
+
 }
 
 .carousel .carousel-inner .carousel-caption {
