@@ -8,25 +8,7 @@ window.addEventListener("scroll", ()=>{
     nav.classList.remove("nav-sticky")
   }
 });
-table{
-  border:1px solid black;
-}
-th{
-  border:1px solid black;
-}
-td{
-  border:1px solid black;
-}
-table, th, td{
-  border:1px solid #ccc;
-}
-table{
-  border-collapse:collapse;
-}
-tr:hover{
-  background-color:#ddd;
-  cursor:pointer;
-}
+
 
 
 // Toasts - Cửa sổ pop up
@@ -79,3 +61,4 @@ if (alertTrigger) {
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
+})
