@@ -9,8 +9,6 @@ window.addEventListener("scroll", ()=>{
   }
 });
 
-
-
 // Toasts - Cửa sổ pop up
 var toastTrigger = document.getElementById('liveToastBtn')
 var toastLiveExample = document.getElementById('liveToast')

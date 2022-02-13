@@ -701,7 +701,25 @@ min-height: 400px;
 
 /* Pandemic Vaccines: Văn Nghĩa */
 
-
+table{
+    border:1px solid black;
+  }
+  th{
+    border:1px solid black;
+  }
+  td{
+    border:1px solid black;
+  }
+  table, th, td{
+    border:1px solid #ccc;
+  }
+  table{
+    border-collapse:collapse;
+  }
+  tr:hover{
+    background-color:#ddd;
+    cursor:pointer;
+  }
 
 
 /* Pandemic At Home: Việt Anh */
