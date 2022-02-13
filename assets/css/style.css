@@ -552,13 +552,18 @@ ul {
 
 
 /* Pandemic Process: Trang 
+*/
 #main{
 
 }
+#main-heading{
+    
+}
+
 /* tiêu đề, khung header*/
 #header{
 
-    height: 60px;
+    height: 80px;
     width: 100%;
     background-color:rgba(70, 84, 163, 0.9);
     position: fixed;
@@ -566,21 +571,39 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1000;
 }
 
 #home{
     margin-top: 100px;
 }
+#main #content{
+height: 1000px;
+width: 1080px;
+/* background-color: #ff914d; */
+float: right;
+min-height: 400px;
+}
+
+
+#box-nav{
+    z-index: 10000;
+
+}
 
 #nav-heading {
     margin-top: 100px;
+    z-index: 10000;
+
 }
 /*tạo nav*/
 #nav-heading li{
 
     /* display: inline-block; */
+    text-align: center;
 
 }
+
 
 
 #nav-heading li a{ /*chỉnh màu + căn giữa nav*/
@@ -601,7 +624,7 @@ ul {
 #box-nav{
     height: 500px;
     width: 178px;
-    background-color: cornflowerblue;
+    background-color: rgba(70, 84, 163, 0.9);
 }
 
 
@@ -612,29 +635,55 @@ ul {
 #content{
 
 
-}
 
-#content .news-content1{
-    height: 500px;
+}
+#content1.news-content-1{
+    height: 800px;
     width: 800px;
-    background-color: #ff914d;
-
-
-
-    
+    position: relative;
 }
+.news-content-1{
+    height: 200px;
+    width: 450px;
+    margin-left: 200px;
+    display: inline-block;
+    margin-left: 50px;
+
+    }
+
+.news-content-2{
+        height: 100px;
+        width: 200px;
+        display: inline-block;
+
+        
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 #footer{
+    background-color: black;
+    width: 1000px;
+    height: 60px;
+    color: white;
 
 }
 
 
 
-*/
+
 
 
 
