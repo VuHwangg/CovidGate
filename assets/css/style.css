@@ -449,8 +449,90 @@ body {
 
 
 
-/* Pandemic Process: Trang */
+/* Pandemic Process: Trang 
+#main{
 
+}
+/* tiêu đề, khung header*/
+#header{
+
+    height: 60px;
+    width: 100%;
+    background-color:rgba(70, 84, 163, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#home{
+    margin-top: 100px;
+}
+
+#nav-heading {
+    margin-top: 100px;
+}
+/*tạo nav*/
+#nav-heading li{
+
+    /* display: inline-block; */
+
+}
+
+
+#nav-heading li a{ /*chỉnh màu + căn giữa nav*/
+    color: white;
+    text-decoration: none;
+    line-height: 60px;/*cho c.cao chữ = c.cao header để căn giữa*/
+    padding: 0 40px;
+    display: inline-block;
+
+}
+
+#nav-heading li:hover a{
+    color: black;
+    background-color: #ccc;
+
+}
+
+#box-nav{
+    height: 500px;
+    width: 178px;
+    background-color: cornflowerblue;
+}
+
+
+
+
+
+
+#content{
+
+
+}
+
+#content .news-content1{
+    height: 500px;
+    width: 800px;
+    background-color: #ff914d;
+
+
+
+    
+}
+
+
+
+
+
+#footer{
+
+}
+
+
+
+*/
 
 
 
