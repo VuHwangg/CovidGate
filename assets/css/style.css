@@ -22,6 +22,11 @@ body {
 	background-color: #ffffff;
 }
 
+::selection{
+    color: #fff;
+    background: #4654A3;
+}
+
 :root {
     --main-color-blue: #4654A3;
     --main-color-lightblue: #6973ad;
@@ -31,6 +36,7 @@ body {
     --main-color-orange: #ff914d;
     --main-color-lightorange: #f19e6a;
 }
+
 
 ul {
     margin: 0;
@@ -254,12 +260,13 @@ ul {
 /** Carousel **/
 
 .carousel {
-    max-width: 1800px;
+    
     background-color: black;
 }
 
 .carousel .carousel-inner img {
     opacity: 0.7;
+
 }
 
 .carousel .carousel-inner .carousel-caption {
@@ -703,7 +710,25 @@ min-height: 400px;
 
 /* Pandemic Vaccines: Văn Nghĩa */
 
-
+table{
+    border:1px solid black;
+  }
+  th{
+    border:1px solid black;
+  }
+  td{
+    border:1px solid black;
+  }
+  table, th, td{
+    border:1px solid #ccc;
+  }
+  table{
+    border-collapse:collapse;
+  }
+  tr:hover{
+    background-color:#ddd;
+    cursor:pointer;
+  }
 
 
 /* Pandemic At Home: Việt Anh */

@@ -1,0 +1,519 @@
+/* importing google fonts */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@500&family=Oswald:wght@700&family=Raleway:wght@500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+:root {
+    --main-color-blue: #4654A3;
+    --main-color-lightblue: #6973ad;
+    --main-color-darkblue: #270949;
+    --main-color-gray: #404044;
+    --main-color-darkgray: #243238;
+    --main-color-orange: #f7853e;
+    --main-color-lightorange: #f19e6a;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(180deg, #ce003d, #2e4bc6);
+    background-size: 400% 400%;
+    animation: gradientFade 12s ease infinite;
+}
+
+@keyframes gradientFade {
+    0%{
+        background-position: 47% 0%;
+    }
+    50%{
+        background-position: 54% 100%;
+    }
+    100%{
+        background-position: 47% 0%;
+    }
+}
+
+::selection{
+    color: #fff;
+    background: #ff914d;
+}
+
+.start_btn,
+.info_box,
+.quiz_box,
+.result_box{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.start_btn{
+    top: 50%;
+}
+
+.info_box,
+.result_box{
+    top: 55%;
+}
+
+
+.quiz_box{
+    top: 62%;
+}
+
+.info_box.activeInfo,
+.quiz_box.activeQuiz,
+.result_box.activeResult{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.top{
+    position: relative;
+    width: 100vw;
+}
+
+/* Back Button */
+.top .back_btn{
+    position: absolute;
+    margin: 10px;
+}
+
+.top .back_btn a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.top .back_btn a span {
+    transition: all 0.4s ease;
+}
+
+.top .back_btn a:hover span{
+    padding-left: 8px;
+}
+
+.top .logo{
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 64px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* LOGO COVID Gate */
+.top .logo span{
+    color: #ff914d;
+    font-family: inherit;
+}
+
+.title{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    color: #fff;
+    font-size: 30px;
+    width: 95%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+.start_btn button{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #f3772a;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.start_btn button:hover {
+    background-color: var(--main-color-orange);
+    color: white;
+}
+
+.info_box{
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.info_box .info-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info_box .info-list{
+    padding: 15px 30px;
+}
+
+.info_box .info-list .info{
+    margin: 5px 0;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.info_box .info-list .info span{
+    font-weight: 600;
+    color: var(--main-color-orange);
+}
+.info_box .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+    border-top: 1px solid lightgrey;
+}
+
+.info_box .buttons button{
+    margin: 0 5px;
+    padding: 5px 12px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--main-color-orange);
+    transition: all 0.3s ease;
+}
+
+.quiz_box{
+    width: 550px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.quiz_box header{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+
+.quiz_box header .quiz-title{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--main-color-gray);
+    margin: auto;
+}
+
+.quiz_box header .quiz-title span{
+    color: var(--main-color-blue);
+}
+
+.quiz_box header .time_line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background: #ff914d;
+}
+
+section{
+    padding: 25px 30px 20px 30px;
+    background: #fff;
+}
+
+section .que_text{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+section .option_list{
+    padding: 20px 0px;
+    display: block;   
+}
+
+section .option_list .option{
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .option_list .option:last-child{
+    margin-bottom: 0px;
+}
+
+section .option_list .option:hover{
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+}
+
+section .option_list .option.correct{
+    color: #fff;
+    background: #f1ac80;
+    border: 1px solid #ff914d;
+}
+
+section .option_list .option.disabled{
+    pointer-events: none;
+}
+
+section .option_list .option .icon{
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    line-height: 24px;
+}
+
+footer{
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+
+footer .total_que span{
+    display: flex;
+    user-select: none;
+}
+
+footer .total_que span p{
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+footer .total_que span p:first-child{
+    padding-left: 0px;
+}
+
+footer button{
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    background: var(--main-color-orange);
+    border: 1px solid var(--main-color-orange);
+    line-height: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+footer button:hover{
+    background: #eb7125;
+}
+
+footer button.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.result_box{
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    padding: 25px 30px;
+    width: 600px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.result_box .complete_text{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.result_box .score_text .red{
+    background-color: #ce003d;
+    color: #fff;
+    margin-top: 10px;
+    padding: 2px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.result_box .score_text span{
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.result_box .score_text span .percent{
+    color: #eb7125;
+    font-weight: 600;
+}
+
+.result_box .buttons{
+    display: flex;
+    margin: 20px 0;
+}
+
+.result_box .buttons button{
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--main-color-orange);
+    transition: all 0.3s ease;
+}
+
+.buttons button.restart{
+    color: #fff;
+    background: var(--main-color-orange);
+}
+
+.buttons button.restart:hover{
+    background: #eb7125;
+}
+
+.buttons button.quit{
+    color: var(--main-color-orange);
+    background: #fff;
+}
+
+.buttons button.quit:hover{
+    color: #fff;
+    background: var(--main-color-orange);
+}
+
+@media (max-width: 1000px) {
+    .title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .top .logo {
+        font-size: 52px;
+        right: 0;
+        transform: translate(0%);
+    }
+    .title {
+        top: 16%;
+        font-size: 16px;
+    }
+    .content-box {
+        width: 100% !important;
+    }
+    .result_box {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 470px) {
+    .title{
+        top: 14%;
+        font-size: 14px;
+    }
+}
+
+/* Vòng tròn tiến độ phần trắm mắc bệnh */
+
+  .circle{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    cursor: default;
+  }
+  .circle .box,
+  .circle .box span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .circle .box{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: all 0.2s;
+  }
+  .circle:hover .box{
+    transform: translate(-50%, -50%) scale(0.91);
+  }
+  .circle .box span{
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .circle .box span{
+    font-size: 38px;
+    font-family: sans-serif;
+    font-weight: 600;
+    transform: translate(-45%, -45%);
+    transition: all 0.1s;
+  }
+  .circle:hover .box span{
+    transform: translate(-45%, -45%) scale(1.09);
+  }
