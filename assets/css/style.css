@@ -260,13 +260,12 @@ ul {
 /** Carousel **/
 
 .carousel {
-    max-width: 1800px;
+    
     background-color: black;
 }
 
 .carousel .carousel-inner img {
     opacity: 0.7;
-    width: 100%;
 }
 
 .carousel .carousel-inner .carousel-caption {
@@ -576,7 +575,7 @@ ul {
 /* tiêu đề, khung header*/
 #header{
 
-    height: 80px;
+    height: 70px;
     width: 100%;
     background-color:rgba(70, 84, 163, 0.9);
     position: fixed;
@@ -585,10 +584,14 @@ ul {
     right: 0;
     bottom: 0;
     z-index: 1000;
+    
 }
 
 #home{
-    margin-top: 100px;
+    margin-top: 600px;
+    margin-left: 30px;
+    line-height: 70px;
+    
 }
 #main #content{
 height: 1000px;
@@ -671,6 +674,11 @@ min-height: 400px;
 
         
     }
+
+#content1 h1{
+    text-align: center;
+    margin-bottom: 14px;
+}    
 
 
 
