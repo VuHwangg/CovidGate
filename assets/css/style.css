@@ -266,6 +266,7 @@ ul {
 
 .carousel .carousel-inner img {
     opacity: 0.7;
+    width: 100%;
 }
 
 .carousel .carousel-inner .carousel-caption {
@@ -280,6 +281,11 @@ ul {
 .carousel-caption p {
     text-shadow: 4px 4px 8px #000;
     font-size: 17.5px;
+}
+
+.carousel .carousel-inner .btn-main a {
+    text-decoration: none;
+    color: white;
 }
 
 .carousel .carousel-inner .btn-outline-light {
@@ -562,6 +568,7 @@ ul {
 #main{
 
 }
+
 #main-heading{
     
 }
@@ -722,10 +729,15 @@ table{
 
 
 /* Pandemic At Home: Việt Anh */
-#nva-img:hover{
-    color: black;
+#pandemic-at-home .box .btn {
+    background-color: var(--main-color-blue);
+    color: #fff;
+    font-size: 18px;
 }
 
+#pandemic-at-home .box .btn:hover {
+    background-color: var(--main-color-lightblue);
+}
 
 /*** FOOTER ***/
 

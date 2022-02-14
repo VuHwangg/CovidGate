@@ -59,11 +59,13 @@ body{
     top: 50%;
 }
 
-.info_box,
-.result_box{
+.info_box{
     top: 55%;
 }
 
+.result_box{
+    top: 60%;
+}
 
 .quiz_box{
     top: 62%;
@@ -389,6 +391,33 @@ footer button.show{
 
 .result_box .score_text .red{
     background-color: #ce003d;
+    color: #fff;
+    margin-top: 10px;
+    padding: 2px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.result_box .score_text .yellow{
+    background-color: #d1bf1a;
+    color: #fff;
+    margin-top: 10px;
+    padding: 2px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.result_box .score_text .blue{
+    background-color: #133dc7;
+    color: #fff;
+    margin-top: 10px;
+    padding: 2px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.result_box .score_text .green{
+    background-color: #14b13b;
     color: #fff;
     margin-top: 10px;
     padding: 2px 0;

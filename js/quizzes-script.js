@@ -99,28 +99,72 @@ function optionSelected(answer){
     clearInterval(counter); //clear counter
     clearInterval(counterLine); //clear counterLine
     let userAns = answer.textContent; //getting user selected option
-    let ans_1 = questions[que_count].answer1; //getting correct answer from array
+    
+    //getting correct answer from array
+    let ans_0 = questions[que_count].answer0; 
+    let ans_1 = questions[que_count].answer1; 
     let ans_2 = questions[que_count].answer2;
     let ans_3 = questions[que_count].answer3;
     let ans_4 = questions[que_count].answer4;
+    let ans_5 = questions[que_count].answer5;
+    let ans_6 = questions[que_count].answer6;
+    let ans_7 = questions[que_count].answer7;
+    let ans_8 = questions[que_count].answer8;
+    let ans_9 = questions[que_count].answer9;
+    let ans_10 = questions[que_count].answer10;
     const allOptions = option_list.children.length; //getting all option items
     
+    if(userAns == ans_0){
+        userScore += 0; 
+        answer.classList.add("correct"); 
+        console.log("Your score = " + userScore);
+    }
     if(userAns == ans_1){ //if user selected option is equal to array's correct answer
-        userScore += 0; //upgrading score value with 1
+        userScore += 1; //upgrading score value with 1
         answer.classList.add("correct"); //adding green color to correct selected option
         console.log("Your score = " + userScore);
     }
     if(userAns == ans_2){
-        userScore += 3; 
+        userScore += 2; 
         answer.classList.add("correct"); 
         console.log("Your score = " + userScore);
     }
     if(userAns == ans_3){
-        userScore += 6; 
+        userScore += 3; 
         answer.classList.add("correct"); 
         console.log("Your score = " + userScore);
     }
     if(userAns == ans_4){
+        userScore += 4; 
+        answer.classList.add("correct"); 
+        console.log("Your score = " + userScore);
+    }
+    if(userAns == ans_5){
+        userScore += 5; 
+        answer.classList.add("correct"); 
+        console.log("Your score = " + userScore);
+    }
+    if(userAns == ans_6){
+        userScore += 6; 
+        answer.classList.add("correct"); 
+        console.log("Your score = " + userScore);
+    }
+    if(userAns == ans_7){
+        userScore += 7; 
+        answer.classList.add("correct"); 
+        console.log("Your score = " + userScore);
+    }
+    if(userAns == ans_8){
+        userScore += 8; 
+        answer.classList.add("correct"); 
+        console.log("Your score = " + userScore);
+    }
+    if(userAns == ans_9){
+        userScore += 9; 
+        answer.classList.add("correct"); 
+        console.log("Your score = " + userScore);
+    }
+    if(userAns == ans_10){
         userScore += 10; 
         answer.classList.add("correct"); 
         console.log("Your score = " + userScore);
@@ -136,17 +180,21 @@ function showResult(){
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 20){ // if user scored more than 3
+    if (userScore >= 80){ 
         //creating a new span tag and passing the user score number and total question number
         let scoreTag = '<h4 class="red">[Cực Kỳ Nguy Hiểm]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang rất cao lên tới <span class="percent">'+ userScore +'%</span>. Hãy đến trạm y tế gần nhất để khai báo và kiểm tra COVID_19 bằng thiết bị chuyên dụng ngay bây giờ. Ngoài ra đừng quên đeo khẩu trang và tránh tiếp xúc với những người xung quanh bạn.</span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
-    else if(userScore > 1){ // if user scored more than 1
-        let scoreTag = '<span>and nice , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+    else if(userScore >= 50 && userScore < 80){ 
+        let scoreTag = '<h4 class="yellow">[Nguy Hiểm]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang khá cao lên tới <span class="percent">'+ userScore +'%</span>. Tạm thời hãy tránh tiếp xúc với những người xung quanh, đeo khẩu trang khi ra ngoài khi giao tiếp. Mua và sử dụng que test COVID-19 càng sớm càng tốt để có được kết quả chính xác nhất.</span>';
         scoreText.innerHTML = scoreTag;
     }
-    else{ // if user scored less than 1
-        let scoreTag = '<span>and sorry , You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+    else if(userScore >= 20 && userScore < 50){ 
+        let scoreTag = '<h4 class="blue">[Tạm Thời An Toàn]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang ở mức không quá nguy hiểm với <span class="percent">'+ userScore +'%</span>. Trong một vài ngày nữa nếu không có bất kỳ triệu chứng nào của bệnh COVID-19 thì bạn có thể hoàn toàn yên tâm về tình hình sức khỏe của bản thân mình. Mặc dù vậy bạn vẫn cần phải chủ động cách li với những người xung quanh trong khoảng thời gian này.</span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else{
+        let scoreTag = '<h4 class="green">[An Toàn]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang ở mức tạm thời an toàn với <span class="percent">'+ userScore +'%</span>. Mặc dù vậy vẫn tuyệt đối không được chủ quan trong việc phòng và chống dịch bằng những biện pháp như luôn đeo khẩu trang khi ra khỏi nhà, hạn chế tiếp xúc gần,.. và luôn luôn tuân thủ theo quy tắc 5K.</span>';
         scoreText.innerHTML = scoreTag;
     }
 }

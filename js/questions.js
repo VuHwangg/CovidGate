@@ -3,10 +3,10 @@ let questions = [
     {
     numb: 1,
     question: "Số thời gian trung bình mà bạn rời khỏi nhà trong một ngày là bao nhiêu?",
-    answer2: "Trong khoảng từ 30 phút tới 2 tiếng",
-    answer3: "Trong khoảng từ 2 tiếng tới 4 tiếng",
-    answer4: "Nhiều hơn 4 tiếng",
-    answer1: "Tôi không bao giờ ra khỏi nhà",
+    answer5: "Trong khoảng từ 30 phút tới 2 tiếng",
+    answer7: "Trong khoảng từ 2 tiếng tới 4 tiếng",
+    answer10: "Nhiều hơn 4 tiếng",
+    answer2: "Tôi không bao giờ ra khỏi nhà",
     options: [
       "Trong khoảng từ 30 phút tới 2 tiếng",
       "Trong khoảng từ 2 tiếng tới 4 tiếng",
@@ -16,45 +16,31 @@ let questions = [
   },
     {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer1: "Common Style Sheet",
-    answer2: "Colorful Style Sheet",
-    answer3: "Computer Style Sheet",
-    answer4: "Cascading Style Sheet",
+    question: "Bạn đã tiêm bao nhiêu mũi Vaccine COVID-19?",
+    answer10: "Chưa tiêm mũi nào",
+    answer7: "Đã tiêm 1 mũi",
+    answer4: "Đã tiêm 2 mũi",
+    answer1: "Đã tiêm đủ 3 mũi",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "Chưa tiêm mũi nào",
+      "Đã tiêm 1 mũi",
+      "Đã tiêm 2 mũi",
+      "Đã tiêm đủ 3 mũi"
     ]
   },
     {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer1: "Hypertext Preprocessor",
-    answer2: "Hypertext Programming",
-    answer3: "Hypertext Preprogramming",
-    answer4: "Hometext Preprocessor",
+    question: "Trong khoảng 2 tuần trở lại đây bạn có tiếp xúc với người nào được báo cáo là nghi nhiễm COVID-19 chưa?",
+    answer10: "Đã từng tiếp xúc với F0",
+    answer8: "Đã từng tiếp xúc với F1, F2",
+    answer5: "Đã từng tiếp xúc với F3, F4, F5,..",
+    answer1: "Chưng từng tiếp xúc",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "Đã từng tiếp xúc với F0",
+      "Đã từng tiếp xúc với F1, F2",
+      "Đã từng tiếp xúc với F3, F4, F5,..",
+      "Chưng từng tiếp xúc"
     ]
   },
-  
-  // you can uncomment the below codes and make duplicate as more as you want to add question
-  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
 
-  //   {
-  //   numb: 6,
-  //   question: "Your Question is Here",
-  //   answer: "Correct answer of the question is here",
-  //   options: [
-  //     "Option 1",
-  //     "option 2",
-  //     "option 3",
-  //     "option 4"
-  //   ]
-  // },
 ];

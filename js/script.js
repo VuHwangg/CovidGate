@@ -10,10 +10,50 @@ window.addEventListener("scroll", ()=>{
 });
 
 // Toasts - Cửa sổ pop up
-var toastTrigger = document.getElementById('liveToastBtn')
+var toastTrigger1 = document.getElementById('liveToastBtn1')
+var toastTrigger2 = document.getElementById('liveToastBtn2')
+var toastTrigger3 = document.getElementById('liveToastBtn3')
+var toastTrigger4 = document.getElementById('liveToastBtn4')
+var toastTrigger5 = document.getElementById('liveToastBtn5')
+var toastTrigger6 = document.getElementById('liveToastBtn6')
 var toastLiveExample = document.getElementById('liveToast')
-if (toastTrigger) {
-  toastTrigger.addEventListener('click', function () {
+if (toastTrigger1) {
+  toastTrigger1.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
+if (toastTrigger2) {
+  toastTrigger2.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
+if (toastTrigger3) {
+  toastTrigger3.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
+if (toastTrigger4) {
+  toastTrigger4.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
+if (toastTrigger5) {
+  toastTrigger5.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
+if (toastTrigger6) {
+  toastTrigger6.addEventListener('click', function () {
     var toast = new bootstrap.Toast(toastLiveExample)
 
     toast.show()
