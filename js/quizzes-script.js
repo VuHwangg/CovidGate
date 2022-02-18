@@ -179,21 +179,32 @@ function showResult(){
     info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
+    const scorePercent = result_box.querySelector(".score_percent");
     const scoreText = result_box.querySelector(".score_text");
+
+    // tag percentTag sẽ được thêm vào thẻ div có tên .score_percent
     if (userScore >= 80){ 
-        //creating a new span tag and passing the user score number and total question number
+        //creating a new span tag and passing the user score number
+        let percentTag = '<h1 class="red">'+ userScore +'.0%</h1>';
+        scorePercent.innerHTML = percentTag;
         let scoreTag = '<h4 class="red">[Cực Kỳ Nguy Hiểm]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang rất cao lên tới <span class="percent">'+ userScore +'%</span>. Hãy đến trạm y tế gần nhất để khai báo và kiểm tra COVID_19 bằng thiết bị chuyên dụng ngay bây giờ. Ngoài ra đừng quên đeo khẩu trang và tránh tiếp xúc với những người xung quanh bạn.</span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
-    else if(userScore >= 50 && userScore < 80){ 
-        let scoreTag = '<h4 class="yellow">[Nguy Hiểm]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang khá cao lên tới <span class="percent">'+ userScore +'%</span>. Tạm thời hãy tránh tiếp xúc với những người xung quanh, đeo khẩu trang khi ra ngoài khi giao tiếp. Mua và sử dụng que test COVID-19 càng sớm càng tốt để có được kết quả chính xác nhất.</span>';
+    else if(userScore >= 50 && userScore < 80){
+        let percentTag = '<h1 class="orange">'+ userScore +'.0%</h1>';
+        scorePercent.innerHTML = percentTag;
+        let scoreTag = '<h4 class="orange">[Nguy Hiểm]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang khá cao lên tới <span class="percent">'+ userScore +'%</span>. Tạm thời hãy tránh tiếp xúc với những người xung quanh, đeo khẩu trang khi ra ngoài khi giao tiếp. Mua và sử dụng que test COVID-19 càng sớm càng tốt để có được kết quả chính xác nhất.</span>';
         scoreText.innerHTML = scoreTag;
     }
     else if(userScore >= 20 && userScore < 50){ 
-        let scoreTag = '<h4 class="blue">[Tạm Thời An Toàn]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang ở mức không quá nguy hiểm với <span class="percent">'+ userScore +'%</span>. Trong một vài ngày nữa nếu không có bất kỳ triệu chứng nào của bệnh COVID-19 thì bạn có thể hoàn toàn yên tâm về tình hình sức khỏe của bản thân mình. Mặc dù vậy bạn vẫn cần phải chủ động cách li với những người xung quanh trong khoảng thời gian này.</span>';
+        let percentTag = '<h1 class="yellow">'+ userScore +'.0%</h1>';
+        scorePercent.innerHTML = percentTag;
+        let scoreTag = '<h4 class="yellow">[Tạm Thời An Toàn]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang ở mức không quá nguy hiểm với <span class="percent">'+ userScore +'%</span>. Trong một vài ngày nữa nếu không có bất kỳ triệu chứng nào của bệnh COVID-19 thì bạn có thể hoàn toàn yên tâm về tình hình sức khỏe của bản thân mình. Mặc dù vậy bạn vẫn cần phải chủ động cách li với những người xung quanh trong khoảng thời gian này.</span>';
         scoreText.innerHTML = scoreTag;
     }
     else{
+        let percentTag = '<h1 class="green">'+ userScore +'.0%</h1>';
+        scorePercent.innerHTML = percentTag;
         let scoreTag = '<h4 class="green">[An Toàn]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang ở mức tạm thời an toàn với <span class="percent">'+ userScore +'%</span>. Mặc dù vậy vẫn tuyệt đối không được chủ quan trong việc phòng và chống dịch bằng những biện pháp như luôn đeo khẩu trang khi ra khỏi nhà, hạn chế tiếp xúc gần,.. và luôn luôn tuân thủ theo quy tắc 5K.</span>';
         scoreText.innerHTML = scoreTag;
     }
@@ -205,16 +216,4 @@ function queCounter(index){
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
 
-
-// Vòng tròn tiến độ phần trăm tỉ lệ mắc bệnh
-
-let options = {
-    startAngle: -1.55,
-    size: 150,
-    value: showResult.userScore,
-    fill: {gradient: ['#a445b2', '#fa4299']}
-  }
-  $(".circle .bar").circleProgress(options).on('circle-animation-progress',
-  function(event, progress, stepValue){
-    $(this).parent().find("span").text(String(stepValue.toFixed(1)) + "%");
-  });
+// fill: {gradient: ['#a445b2', '#fa4299']}
