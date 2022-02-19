@@ -6,10 +6,12 @@ const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
+const notion_text = document.querySelector(".notion");
 
 // if startQuiz button clicked
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo"); //show info box
+    notion_text.classList.remove("notion-text");
 }
 
 // if exitQuiz button clicked

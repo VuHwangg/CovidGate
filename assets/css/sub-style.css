@@ -45,6 +45,7 @@ body{
 }
 
 .start_btn,
+.feedback_btn,
 .info_box,
 .quiz_box,
 .result_box{
@@ -56,7 +57,13 @@ body{
 }
 
 .start_btn{
+    top: 48%;
+    transform: translate(-50%, -100%);
+}
+
+.feedback_btn{
     top: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .info_box{
@@ -121,7 +128,7 @@ body{
     font-family: inherit;
 }
 
-.title{
+.title_part{
     position: absolute;
     top: 18%;
     left: 50%;
@@ -135,7 +142,7 @@ body{
 
 .notion {
     position: absolute;
-    top: 62%;
+    top: 65%;
     left: 50%;
     color: #f7ddcd;
     font-size: 20px;
@@ -150,22 +157,37 @@ body{
     font-weight: 700;
 }
 
-.start_btn button{
+.start_btn button,
+.feedback_btn button{
+    width: 300px;
     font-size: 30px;
     font-weight: 700;
     padding: 15px 30px;
     outline: none;
     border: none;
     border-radius: 5px;
-    color: #f3772a;
-    background: #fff;
     cursor: pointer;
     transition: all 0.4s ease;
 }
 
+.start_btn button {
+    color: var(--main-color-orange);
+    background-color: #fff;
+}
+
+.feedback_btn button {
+    color: #fff;
+    background-color: var(--main-color-orange);
+}
+
 .start_btn button:hover {
     background-color: var(--main-color-orange);
-    color: white;
+    color: #fff;
+}
+
+.feedback_btn button:hover {
+    color: var(--main-color-orange);
+    background-color: #fff;
 }
 
 
@@ -234,7 +256,7 @@ body{
 /* Box "Câu hỏi" */
 
 .quiz_box{
-    width: 900px;
+    width: 1000px;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
@@ -448,6 +470,7 @@ footer button.show{
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     color: #fff;
+    margin-bottom: 8px;
     padding: 2px 0;
     text-align: center;
     font-size: 18px;
@@ -459,6 +482,7 @@ footer button.show{
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     color: #fff;
+    margin-bottom: 8px;
     padding: 2px 0;
     text-align: center;
     font-size: 18px;
@@ -470,6 +494,7 @@ footer button.show{
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     color: #fff;
+    margin-bottom: 8px;
     padding: 2px 0;
     text-align: center;
     font-size: 18px;
@@ -481,6 +506,7 @@ footer button.show{
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     color: #fff;
+    margin-bottom: 8px;
     padding: 2px 0;
     text-align: center;
     font-size: 18px;
@@ -536,7 +562,7 @@ footer button.show{
 }
 
 @media (max-width: 1000px) {
-    .title {
+    .title_part {
         font-size: 20px;
     }
 }
@@ -553,7 +579,7 @@ footer button.show{
         right: 0;
         transform: translate(0%);
     }
-    .title {
+    .title_part {
         top: 16%;
         font-size: 16px;
     }
@@ -569,8 +595,19 @@ footer button.show{
 }
 
 @media (max-width: 470px) {
-    .title{
+    .title_part{
         top: 14%;
         font-size: 14px;
+    }
+    .start_btn{
+        top: 43%;
+        transform: translate(-50%, -100%);
+    }
+    .feedback_btn{
+        top: 45%;
+        transform: translate(-50%, 0%);
+    }
+    .notion {
+        top: 62%;
     }
 }

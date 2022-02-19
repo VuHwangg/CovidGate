@@ -224,7 +224,7 @@ ul {
     float: left;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .navbar {
         top: 0;
         padding: 0;
@@ -244,9 +244,16 @@ ul {
         padding-left: 8px;
     }
     .navbar .btn-heading {
-        margin-bottom: 24px;
         margin-top: 24px;
+        margin-bottom: 24px;
         padding: 8px 24px;
+        width: 200px;
+    }
+    .navbar .btn-contact {
+        display: block !important;
+        margin-bottom: 28px;
+        padding: 8px 24px;
+        width: 200px;
     }
     .navbar .btn-navbar-menu {
         padding: 8.5px 0;
@@ -275,7 +282,7 @@ ul {
 }
 
 .feedback-modal .modal-header .btn-close {
-    margin-right: 12px;
+    margin-right: 8px;
 }
 
 .feedback-modal .modal-body .col-form-label {
@@ -418,7 +425,7 @@ ul {
 
 @media (max-width: 500px) {
     .about-us {
-        margin-top: 58px;
+        margin-top: 68px;
     }
 }
 
