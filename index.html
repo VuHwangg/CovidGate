@@ -88,7 +88,7 @@
                             <li><a class="dropdown-item" href="tel:0833232520"><i class="bi bi-telephone-fill"></i> +84 833 232 520</a></li>
                             <li><a class="dropdown-item" href="mailto:teamchairfpt@gmail.com"><i class="bi bi-envelope-fill"></i> teamchairfpt@gmail.com</a></li>
                             <li><a class="dropdown-item" href="https://www.google.com/maps/dir/22.2538228,106.4759266/fpt+university/@21.6081128,105.5910615,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x31345b465a4e65fb:0xaae6040cfabe8fe!2m2!1d105.5270643!2d21.01325" target="_blank" rel="noopener noreferrer"><i class="bi bi-geo-alt-fill"></i> FPT University</a></li>
-                            <button type="button" class="btn btn-outline-light btn-contact" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@covidgate">Đóng Góp Trực Tiếp</button>
+                            <button type="button" class="btn btn-outline-light btn-contact" data-bs-toggle="modal" data-bs-target="#send-mail-modal">Đóng Góp Trực Tiếp</button>
                             <li class="list-icon-contact">
                                 <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-facebook"></i></a>
                                 <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-twitter"></i></a>
@@ -100,36 +100,45 @@
                     </div>
                 </div>
             </nav>
-            
-            <!-- Modal gửi ý kiến đóng góp -->
-            <div class="modal-send-email">
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+            <!-- Modal gửi Feedback -->
+
+            <div class="feedback-modal">
+                <div class="modal fade" id="send-mail-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Gửi Feedback Đến Cho "Chair Team"</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                                
                             <div class="modal-body">
                                 <p>Cảm ơn bạn vì đã dành thời gian, mọi ý kiến đóng góp của các bạn sẽ đều là tài liệu giúp Chair Team chúng mình phát triển hơn trong tương lai!</p>     
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Người Nhận:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
+                                <form class="gform pure-form pure-form-stacked" method="POST" data-email="teamchairfpt@gmail.com"
+                                action="https://script.google.com/macros/s/AKfycbzOZzKt2MJraPAWq14kjECP5e_hDPCUxauhuFr2OMP3Q0pCPGfSe1XlzA77rQaq7kT8rw/exec">
+                                    <div class="form-elements">
+
                                     </div>
                                     <div class="mb-3">
-                                        <label for="message-text" class="col-form-label">Tin Nhắn:</label>
-                                        <textarea class="form-control" id="message-text"></textarea>
+                                        <label for="recipient-name" class="col-form-label">Tên Của Bạn:</label>
+                                        <input type="text" name="name" class="form-control" required placeholder="Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Địa Chỉ Email Của Bạn:</label>
+                                        <input type="email" name="email" class="form-control" required placeholder="Email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Những Đóng Góp Của Bạn:</label>
+                                        <textarea  name="message" rows="5" cols="22" class="form-control" required placeholder="Nội dung tin nhắn"></textarea>
+                                    </div>
+                                    <div class="thankyou_message">
+                                        <p><i class="bi bi-check-circle-fill"></i> Cảm ơn bạn vì những đóng góp hữu ích !!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-submit" id="liveAlertBtn">Gửi Feedback</button>
                                     </div>
                                 </form>
                             </div>
-                            <div id="liveAlertPlaceholder"></div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                            <button type="button" class="btn btn-primary" id="liveAlertBtn">Gửi Đóng Góp</button>
                         </div>
-                      </div>
                     </div>
                 </div>
             </div>
@@ -155,7 +164,7 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Kiểm Tra COVID-19 Trực Tuyến</h1>
                         <p>Tính năng duy nhất chỉ có ở COVID Gate cho phép bạn kiểm tra trực tuyến tỉ lệ dương tính với COVID-19 ngay trên website</p>
-                        <button type="button" class="btn btn-main btn-primary btn-lg">
+                        <button type="button" class="btn btn-main btn-lg">
                             <a href="quizzes.html">Kiểm Tra Ngay</a>
                         </button>
                         <button id="liveToastBtn1" class="btn btn-outline-light btn-lg me-1" type="button">
@@ -220,7 +229,7 @@
             <div class="about-project content-section">
                 <div class="jumbotron">
                     <h1 class="display-4">Xin chào, chào mừng bạn đã đến với COVID Gate!</h1>
-                    <p class="lead">
+                    <p class="lead" style="font-weight: 350;">
                         Đây là một dự án phi lợi nhuận với mục đích là mang đến những 
                         giá trị thông qua kiến thức, thông tin, số liệu về dịch bệnh 
                         một cách đầy đủ và chính xác nhất. Tại đây chúng mình sẽ tổng hợp 
@@ -229,8 +238,13 @@
                         cái nhìn rõ nhất về một kẻ thù chung mà chúng ta đã và đang phải đối mặt.</p>
                     <hr class="my-2" style="text-align: left; max-width: 646px;">
                     <p>COVID Gate là một dự án được phát triển bởi Chair Team thuộc trường Đại Học FPT Hà Nội</p>
-                    <p class="lead">
-                      <a id="liveToastBtn5" class="btn btn-main btn-primary btn-lg" role="button">Tìm Hiểu Thêm</a>
+                    <p class="lead btn-about">
+                        <a class="btn btn-main btn-lg" href="./assets/download/COVID_Gate PROPOSAL.pdf" target="_blank" rel="noopener noreferrer" role="button">Tìm Hiểu Thêm</a>
+                    </p>
+                    <p class="lead btn-about">
+                        <a class="btn btn-outline-main btn-lg" href="./assets/download/COVID_Gate PROPOSAL.pdf" download role="button">
+                            <i class="bi bi-cloud-arrow-down-fill"></i></i>&nbsp;Tải Xuống Bản Đề Xuất Dự Án
+                        </a>
                     </p>
                   </div>
             </div>
@@ -241,13 +255,13 @@
                 <div class="container-fluid padding">
                     
                     <!-- Team description -->
-                    <div class="row padding">
+                    <div class="row padding team-description">
                         <div class="team-logo col-lg-12 col-xl-6">
                             <img src="./assets/img/about-us/Logo1 (no background) .png" alt="Chair Team" class="img-fluid">
                         </div>
                         <div class="jumbotron col-lg-12 col-xl-6">
                             <h1 class="display-4">Chúng mình là ai?</h1>
-                            <p class="lead">
+                            <p class="lead" style="font-weight: 350;">
                                 Chúng mình là Chair Team, một nhóm sinh viên năm 2 Chuyên ngành 
                                 Kỹ Thuật Phần Mềm thuộc trường Đại Học FPT Hà Nội. Với cùng chung 
                                 một niềm đam mê trong việc học cách phát triển và xây dựng website. 
@@ -260,7 +274,7 @@
                             <hr class="my-2">
                             <p>COVID Gate là một dự án được phát triển bởi Chair Team thuộc trường Đại Học FPT Hà Nội</p>
                             <p class="lead">
-                                <a class="btn btn-main btn-primary btn-lg" role="button" data-bs-toggle="collapse" data-bs-target="#member-list">
+                                <a class="btn btn-main btn-lg" role="button" data-bs-toggle="collapse" data-bs-target="#member-list">
                                     Các Thành Viên Trong Nhóm
                                     <i class="bi bi-caret-down-fill"></i>
                                 </a>
@@ -434,7 +448,7 @@
                                     <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title member-name">Lưu Trọng Nghĩa</h5>
-                                            <p class="card-text member-role">Ban Truyền Thông</p>
+                                            <p class="card-text member-role">Ban Nội Dung</p>
                                             <p class="card-text"><small class="text-muted">
                                                 Tham gia sưu tầm, tìm kiếm, tổng hợp thông tin, viết nội dung để đưa lên website.
                                             </small></p>
@@ -772,7 +786,7 @@
             </div>
 
             <!-- Thông tin về các loại vaccine hiện hành (số lượng, nước sx, ..) -->
-            <!-- <div class="pandemic-vaccines content-section">
+             <div class="pandemic-vaccines content-section">
                 Pandemic Vaccines
                 <p>Vaccine covid 19 trên thế giới hiện nay được rất nhiều các nước trên thế giới sản xuất chủ yếu dựa vào các
                      cơ chế sinh học sau:
@@ -939,7 +953,7 @@
                          </tr>
                      </table>
                 </p>
-            </div> -->
+            </div> 
 
             <!-- Cách li tại nhà NVA -->
             <div id="pandemic-at-home" class="content-section">
@@ -1028,13 +1042,13 @@
                     <h2>Truy Cập</h2>
                     <ul>
                         <li><a href="#pandemic-news">Tin tức dịch bệnh</a></li>
-                        <li><a href="#">Số liệu chi tiết</a></li>
-                        <li><a href="#">Cách li tại nhà</a></li>
-                        <li><a href="#">Quá trình hình thành</a></li>
+                        <li><a href="./quizzes-Vu.html">Test COVID-19 trực tuyến</a></li>
+                        <li><a href="#pandemic-at-home">Cách li tại nhà</a></li>
+                        <li><a href="./formation-Trang.html">Quá trình hình thành</a></li>
                         <li><a href="#">Các loại biến thể</a></li>
                         <li><a href="#">Các loại vaccine</a></li>
                     </ul>
-                </div>
+                </div> 
 
                 <div class="footer-section footer-contact">
                     <h2>Liện Hệ</h2>
@@ -1072,8 +1086,11 @@
     <!-- src js của bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
-    <!-- src js của script.js -->
+    <!-- src js của chung website -->
     <script src="./js/script.js"></script>
+
+    <!-- src js của Contact Us -->
+    <script src="./js/send-feedback.js" data-cfasync="false" type="text/javascript"></script>
     
 
 </body>

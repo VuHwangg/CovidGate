@@ -45,13 +45,6 @@ if (toastTrigger4) {
     toast.show()
   })
 }
-if (toastTrigger5) {
-  toastTrigger5.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveExample)
-
-    toast.show()
-  })
-}
 if (toastTrigger6) {
   toastTrigger6.addEventListener('click', function () {
     var toast = new bootstrap.Toast(toastLiveExample)
@@ -61,21 +54,8 @@ if (toastTrigger6) {
 }
 
 // Modal Send Email - Cửa sổ send email
-var exampleModal = document.getElementById('exampleModal')
-exampleModal.addEventListener('show.bs.modal', function (event) {
-  // Button that triggered the modal
-  var button = event.relatedTarget
-  // Extract info from data-bs-* attributes
-  var recipient = button.getAttribute('data-bs-whatever')
-  // If necessary, you could initiate an AJAX request here
-  // and then do the updating in a callback.
-  //
-  // Update the modal's content.
-  var modalTitle = exampleModal.querySelector('.modal-title')
-  var modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-  modalTitle.textContent = 'Gửi đóng góp đến cho ' + recipient
-  modalBodyInput.value = recipient
+var sendMailModal = document.getElementById('send-mail-modal')
+sendMailModal.addEventListener('show.bs.modal', function (event) {
 })
 
 // Thông báo gửi đóng góp thành công

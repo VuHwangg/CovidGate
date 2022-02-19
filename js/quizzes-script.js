@@ -187,25 +187,25 @@ function showResult(){
         //creating a new span tag and passing the user score number
         let percentTag = '<h1 class="red">'+ userScore +'.0%</h1>';
         scorePercent.innerHTML = percentTag;
-        let scoreTag = '<h4 class="red">[Cực Kỳ Nguy Hiểm]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang rất cao lên tới <span class="percent">'+ userScore +'%</span>. Hãy đến trạm y tế gần nhất để khai báo và kiểm tra COVID_19 bằng thiết bị chuyên dụng ngay bây giờ. Ngoài ra đừng quên đeo khẩu trang và tránh tiếp xúc với những người xung quanh bạn.</span>';
+        let scoreTag = '<h4 class="red">[Cực Kỳ Nguy Hiểm]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang rất cao lên tới <span class="percent">'+ userScore +'%</span>. Hãy đến trạm y tế hoặc bệnh viện gần nhất để khai báo và kiểm tra COVID_19 bằng thiết bị chuyên dụng ngay bây giờ. Ngoài ra đừng quên đeo khẩu trang, sát khuẩn và tránh tiếp xúc với những người xung quanh bạn.</span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
     else if(userScore >= 50 && userScore < 80){
         let percentTag = '<h1 class="orange">'+ userScore +'.0%</h1>';
         scorePercent.innerHTML = percentTag;
-        let scoreTag = '<h4 class="orange">[Nguy Hiểm]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang khá cao lên tới <span class="percent">'+ userScore +'%</span>. Tạm thời hãy tránh tiếp xúc với những người xung quanh, đeo khẩu trang khi ra ngoài khi giao tiếp. Mua và sử dụng que test COVID-19 càng sớm càng tốt để có được kết quả chính xác nhất.</span>';
+        let scoreTag = '<h4 class="orange">[Nguy Hiểm]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang khá cao lên tới <span class="percent">'+ userScore +'%</span>. Tạm thời hãy tránh tiếp xúc với những người xung quanh, đeo khẩu trang khi ra ngoài và khi giao tiếp. Tự mua và sử dụng que test COVID-19 hoặc đến các trạm y tế, bệnh viện gần nhất càng sớm càng tốt để có được kết quả chính xác nhất.</span>';
         scoreText.innerHTML = scoreTag;
     }
     else if(userScore >= 20 && userScore < 50){ 
         let percentTag = '<h1 class="yellow">'+ userScore +'.0%</h1>';
         scorePercent.innerHTML = percentTag;
-        let scoreTag = '<h4 class="yellow">[Tạm Thời An Toàn]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang ở mức không quá nguy hiểm với <span class="percent">'+ userScore +'%</span>. Trong một vài ngày nữa nếu không có bất kỳ triệu chứng nào của bệnh COVID-19 thì bạn có thể hoàn toàn yên tâm về tình hình sức khỏe của bản thân mình. Mặc dù vậy bạn vẫn cần phải chủ động cách li với những người xung quanh trong khoảng thời gian này.</span>';
+        let scoreTag = '<h4 class="yellow">[Tạm Thời An Toàn]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang ở mức không quá nguy hiểm với <span class="percent">'+ userScore +'%</span>. Trong 7 ngày nữa nếu không có bất kỳ triệu chứng nào của bệnh COVID-19 thì bạn có thể hoàn toàn yên tâm về tình hình sức khỏe của bản thân mình. Mặc dù vậy bạn không được chủ quan và cần phải chủ động cách li với những người xung quanh trong khoảng thời gian này.</span>';
         scoreText.innerHTML = scoreTag;
     }
     else{
         let percentTag = '<h1 class="green">'+ userScore +'.0%</h1>';
         scorePercent.innerHTML = percentTag;
-        let scoreTag = '<h4 class="green">[An Toàn]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang ở mức tạm thời an toàn với <span class="percent">'+ userScore +'%</span>. Mặc dù vậy vẫn tuyệt đối không được chủ quan trong việc phòng và chống dịch bằng những biện pháp như luôn đeo khẩu trang khi ra khỏi nhà, hạn chế tiếp xúc gần,.. và luôn luôn tuân thủ theo quy tắc 5K.</span>';
+        let scoreTag = '<h4 class="green">[An Toàn]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang ở mức tạm thời an toàn với <span class="percent">'+ userScore +'%</span>. Mặc dù vậy vẫn tuyệt đối không được chủ quan trong việc phòng và chống dịch bằng những biện pháp như luôn đeo khẩu trang khi ra khỏi nhà, hạn chế tiếp xúc gần,.. và luôn luôn tuân thủ theo quy tắc 5K của bộ y tế.</span>';
         scoreText.innerHTML = scoreTag;
     }
 }

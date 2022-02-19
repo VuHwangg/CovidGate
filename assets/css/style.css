@@ -43,16 +43,27 @@ ul {
     padding: 0;
 }
 
+
+/* Button */
+
 .btn-main {
     color: white;
     background-color: var(--main-color-blue);
-    border: none;
+    border: var(--main-color-blue) 3px solid;
 }
-
 .btn-main:hover {
+    color: white;
     background-color: var(--main-color-lightblue);
 }
 
+.btn-outline-main {
+    color: var(--main-color-blue);
+    border: var(--main-color-blue) 3px solid;
+}
+.btn-outline-main:hover {
+    color: white;
+    background-color: var(--main-color-lightblue);
+}
 
 /** Navigation Bar **/
 
@@ -256,6 +267,52 @@ ul {
     }
 }
 
+/* Feedback Modal */
+
+.feedback-modal .modal-header {
+    background-color: var(--main-color-orange);
+    color: white;
+}
+
+.feedback-modal .modal-header .btn-close {
+    margin-right: 12px;
+}
+
+.feedback-modal .modal-body .col-form-label {
+    color: var(--main-color-orange);
+    font-weight: 700;
+}
+
+.feedback-modal .modal-body .thankyou_message {
+    display:none;
+    background-color: #a8f5b5;
+    padding: 6px 16px;
+}
+
+.feedback-modal .modal-body .thankyou_message p{
+    color: #009e00;
+    margin: 0;
+    text-align: center;
+}
+
+.feedback-modal .modal-body .modal-footer {
+    padding-bottom: 0;
+}
+
+.feedback-modal .modal-body .modal-footer .btn-submit {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--main-color-orange);
+    color: white;
+    border: 3px var(--main-color-orange) solid;
+}
+
+.feedback-modal .modal-body .modal-footer .btn-submit:hover {
+    background-color: white;
+    color: var(--main-color-orange);
+}
+
 
 /** Carousel **/
 
@@ -285,10 +342,11 @@ ul {
 .carousel .carousel-inner .btn-main a {
     text-decoration: none;
     color: white;
+    font-weight: 600;
 }
 
 .carousel .carousel-inner .btn-outline-light {
-    border: 2px solid white;
+    border: 3px solid white;
 }
 
 .carousel .carousel-inner .btn-outline-light a {
@@ -315,6 +373,18 @@ ul {
     .carousel .carousel-inner {
         display: none;
     }
+}
+
+/** Toast **/
+
+.toasts .toast-header {
+    background-color: var(--main-color-orange);
+    color: white;
+}
+
+.toasts .toast-body {
+    background-color: var(--main-color-lightorange);
+    color: white;
 }
 
 
@@ -354,9 +424,25 @@ ul {
 
 /* About Project */
 
+.about-project .btn-about {
+    display: inline-block;
+}
+
+.about-project .btn-about .btn {
+    padding: 6px 16px;
+    font-weight: 500;
+}
+
+.about-project .btn-about i {
+    font-size: 21px;
+}
 
 
 /* Team members */
+
+.team-members .team-description .btn {
+    font-weight: 500;
+}
 
 .team-members #member-list .member {
     padding-top: 24px;
