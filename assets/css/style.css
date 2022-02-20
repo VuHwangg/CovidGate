@@ -830,15 +830,23 @@ table{
 
 
 /* Pandemic At Home: Việt Anh */
-#pandemic-at-home .box .btn {
-    background-color: var(--main-color-blue);
-    color: #fff;
-    font-size: 18px;
+.nva-modal ::-webkit-scrollbar{
+    width: 20px;
+
 }
 
-#pandemic-at-home .box .btn:hover {
-    background-color: var(--main-color-lightblue);
+.nva-modal ::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to bottom, #ddd6f3, #faaca8);
+    border-radius: 100rem;
+    
 }
+
+.nva-modal ::-webkit-scrollbar-track{
+    background-color: #ccc;
+    
+}
+
+
 
 /*** FOOTER ***/
 
