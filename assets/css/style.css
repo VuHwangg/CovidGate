@@ -846,6 +846,12 @@ table{
     
 }
 
+#pandemic-at-home .modal .modal-header {
+    background-color: var(--main-color-blue);
+    color: white;
+}
+
+
 
 
 /*** FOOTER ***/
