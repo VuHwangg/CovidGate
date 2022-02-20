@@ -10,10 +10,43 @@ window.addEventListener("scroll", ()=>{
 });
 
 // Toasts - Cửa sổ pop up
-var toastTrigger = document.getElementById('liveToastBtn')
+var toastTrigger1 = document.getElementById('liveToastBtn1')
+var toastTrigger2 = document.getElementById('liveToastBtn2')
+var toastTrigger3 = document.getElementById('liveToastBtn3')
+var toastTrigger4 = document.getElementById('liveToastBtn4')
+var toastTrigger5 = document.getElementById('liveToastBtn5')
+var toastTrigger6 = document.getElementById('liveToastBtn6')
 var toastLiveExample = document.getElementById('liveToast')
-if (toastTrigger) {
-  toastTrigger.addEventListener('click', function () {
+if (toastTrigger1) {
+  toastTrigger1.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
+if (toastTrigger2) {
+  toastTrigger2.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
+if (toastTrigger3) {
+  toastTrigger3.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
+if (toastTrigger4) {
+  toastTrigger4.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
+if (toastTrigger6) {
+  toastTrigger6.addEventListener('click', function () {
     var toast = new bootstrap.Toast(toastLiveExample)
 
     toast.show()
@@ -21,21 +54,8 @@ if (toastTrigger) {
 }
 
 // Modal Send Email - Cửa sổ send email
-var exampleModal = document.getElementById('exampleModal')
-exampleModal.addEventListener('show.bs.modal', function (event) {
-  // Button that triggered the modal
-  var button = event.relatedTarget
-  // Extract info from data-bs-* attributes
-  var recipient = button.getAttribute('data-bs-whatever')
-  // If necessary, you could initiate an AJAX request here
-  // and then do the updating in a callback.
-  //
-  // Update the modal's content.
-  var modalTitle = exampleModal.querySelector('.modal-title')
-  var modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-  modalTitle.textContent = 'Gửi đóng góp đến cho ' + recipient
-  modalBodyInput.value = recipient
+var sendMailModal = document.getElementById('send-mail-modal')
+sendMailModal.addEventListener('show.bs.modal', function (event) {
 })
 
 // Thông báo gửi đóng góp thành công

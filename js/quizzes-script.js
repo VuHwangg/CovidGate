@@ -6,10 +6,12 @@ const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
+const notion_text = document.querySelector(".notion");
 
 // if startQuiz button clicked
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo"); //show info box
+    notion_text.classList.remove("notion-text");
 }
 
 // if exitQuiz button clicked
@@ -99,28 +101,72 @@ function optionSelected(answer){
     clearInterval(counter); //clear counter
     clearInterval(counterLine); //clear counterLine
     let userAns = answer.textContent; //getting user selected option
-    let ans_1 = questions[que_count].answer1; //getting correct answer from array
+    
+    //getting correct answer from array
+    let ans_0 = questions[que_count].answer0; 
+    let ans_1 = questions[que_count].answer1; 
     let ans_2 = questions[que_count].answer2;
     let ans_3 = questions[que_count].answer3;
     let ans_4 = questions[que_count].answer4;
+    let ans_5 = questions[que_count].answer5;
+    let ans_6 = questions[que_count].answer6;
+    let ans_7 = questions[que_count].answer7;
+    let ans_8 = questions[que_count].answer8;
+    let ans_9 = questions[que_count].answer9;
+    let ans_10 = questions[que_count].answer10;
     const allOptions = option_list.children.length; //getting all option items
     
+    if(userAns == ans_0){
+        userScore += 0; 
+        answer.classList.add("correct"); 
+        console.log("Your score = " + userScore);
+    }
     if(userAns == ans_1){ //if user selected option is equal to array's correct answer
-        userScore += 0; //upgrading score value with 1
+        userScore += 1; //upgrading score value with 1
         answer.classList.add("correct"); //adding green color to correct selected option
         console.log("Your score = " + userScore);
     }
     if(userAns == ans_2){
-        userScore += 3; 
+        userScore += 2; 
         answer.classList.add("correct"); 
         console.log("Your score = " + userScore);
     }
     if(userAns == ans_3){
-        userScore += 6; 
+        userScore += 3; 
         answer.classList.add("correct"); 
         console.log("Your score = " + userScore);
     }
     if(userAns == ans_4){
+        userScore += 4; 
+        answer.classList.add("correct"); 
+        console.log("Your score = " + userScore);
+    }
+    if(userAns == ans_5){
+        userScore += 5; 
+        answer.classList.add("correct"); 
+        console.log("Your score = " + userScore);
+    }
+    if(userAns == ans_6){
+        userScore += 6; 
+        answer.classList.add("correct"); 
+        console.log("Your score = " + userScore);
+    }
+    if(userAns == ans_7){
+        userScore += 7; 
+        answer.classList.add("correct"); 
+        console.log("Your score = " + userScore);
+    }
+    if(userAns == ans_8){
+        userScore += 8; 
+        answer.classList.add("correct"); 
+        console.log("Your score = " + userScore);
+    }
+    if(userAns == ans_9){
+        userScore += 9; 
+        answer.classList.add("correct"); 
+        console.log("Your score = " + userScore);
+    }
+    if(userAns == ans_10){
         userScore += 10; 
         answer.classList.add("correct"); 
         console.log("Your score = " + userScore);
@@ -135,18 +181,33 @@ function showResult(){
     info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
+    const scorePercent = result_box.querySelector(".score_percent");
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 20){ // if user scored more than 3
-        //creating a new span tag and passing the user score number and total question number
-        let scoreTag = '<h4 class="red">[Cực Kỳ Nguy Hiểm]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang rất cao lên tới <span class="percent">'+ userScore +'%</span>. Hãy đến trạm y tế gần nhất để khai báo và kiểm tra COVID_19 bằng thiết bị chuyên dụng ngay bây giờ. Ngoài ra đừng quên đeo khẩu trang và tránh tiếp xúc với những người xung quanh bạn.</span>';
+
+    // tag percentTag sẽ được thêm vào thẻ div có tên .score_percent
+    if (userScore >= 80){ 
+        //creating a new span tag and passing the user score number
+        let percentTag = '<h1 class="red">'+ userScore +'.0%</h1>';
+        scorePercent.innerHTML = percentTag;
+        let scoreTag = '<h4 class="red">[Cực Kỳ Nguy Hiểm]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang rất cao lên tới <span class="percent">'+ userScore +'%</span>. Hãy đến trạm y tế hoặc bệnh viện gần nhất để khai báo và kiểm tra COVID_19 bằng thiết bị chuyên dụng ngay bây giờ. Ngoài ra đừng quên đeo khẩu trang, sát khuẩn và tránh tiếp xúc với những người xung quanh bạn.</span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
-    else if(userScore > 1){ // if user scored more than 1
-        let scoreTag = '<span>and nice , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+    else if(userScore >= 50 && userScore < 80){
+        let percentTag = '<h1 class="orange">'+ userScore +'.0%</h1>';
+        scorePercent.innerHTML = percentTag;
+        let scoreTag = '<h4 class="orange">[Nguy Hiểm]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang khá cao lên tới <span class="percent">'+ userScore +'%</span>. Tạm thời hãy tránh tiếp xúc với những người xung quanh, đeo khẩu trang khi ra ngoài và khi giao tiếp. Tự mua và sử dụng que test COVID-19 hoặc đến các trạm y tế, bệnh viện gần nhất càng sớm càng tốt để có được kết quả chính xác nhất.</span>';
         scoreText.innerHTML = scoreTag;
     }
-    else{ // if user scored less than 1
-        let scoreTag = '<span>and sorry , You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+    else if(userScore >= 20 && userScore < 50){ 
+        let percentTag = '<h1 class="yellow">'+ userScore +'.0%</h1>';
+        scorePercent.innerHTML = percentTag;
+        let scoreTag = '<h4 class="yellow">[Tạm Thời An Toàn]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang ở mức không quá nguy hiểm với <span class="percent">'+ userScore +'%</span>. Trong 7 ngày nữa nếu không có bất kỳ triệu chứng nào của bệnh COVID-19 thì bạn có thể hoàn toàn yên tâm về tình hình sức khỏe của bản thân mình. Mặc dù vậy bạn không được chủ quan và cần phải chủ động cách li với những người xung quanh trong khoảng thời gian này.</span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else{
+        let percentTag = '<h1 class="green">'+ userScore +'.0%</h1>';
+        scorePercent.innerHTML = percentTag;
+        let scoreTag = '<h4 class="green">[An Toàn]</h4><span>Tỷ lệ nhiễm bệnh của bạn đang ở mức tạm thời an toàn với <span class="percent">'+ userScore +'%</span>. Mặc dù vậy vẫn tuyệt đối không được chủ quan trong việc phòng và chống dịch bằng những biện pháp như luôn đeo khẩu trang khi ra khỏi nhà, hạn chế tiếp xúc gần,.. và luôn luôn tuân thủ theo quy tắc 5K của bộ y tế.</span>';
         scoreText.innerHTML = scoreTag;
     }
 }
@@ -157,16 +218,4 @@ function queCounter(index){
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
 
-
-// Vòng tròn tiến độ phần trăm tỉ lệ mắc bệnh
-
-let options = {
-    startAngle: -1.55,
-    size: 150,
-    value: showResult.userScore,
-    fill: {gradient: ['#a445b2', '#fa4299']}
-  }
-  $(".circle .bar").circleProgress(options).on('circle-animation-progress',
-  function(event, progress, stepValue){
-    $(this).parent().find("span").text(String(stepValue.toFixed(1)) + "%");
-  });
+// fill: {gradient: ['#a445b2', '#fa4299']}

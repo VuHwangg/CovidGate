@@ -45,6 +45,7 @@ body{
 }
 
 .start_btn,
+.feedback_btn,
 .info_box,
 .quiz_box,
 .result_box{
@@ -56,14 +57,22 @@ body{
 }
 
 .start_btn{
-    top: 50%;
+    top: 48%;
+    transform: translate(-50%, -100%);
 }
 
-.info_box,
-.result_box{
+.feedback_btn{
+    top: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.info_box{
     top: 55%;
 }
 
+.result_box{
+    top: 60%;
+}
 
 .quiz_box{
     top: 62%;
@@ -119,7 +128,7 @@ body{
     font-family: inherit;
 }
 
-.title{
+.title_part{
     position: absolute;
     top: 18%;
     left: 50%;
@@ -131,26 +140,61 @@ body{
     text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
 }
 
-.start_btn button{
+.notion {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    color: #f7ddcd;
+    font-size: 20px;
+    width: 60%;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+.notion span {
+    color: var(--main-color-lightorange);
+    font-weight: 700;
+}
+
+.start_btn button,
+.feedback_btn button{
+    width: 300px;
     font-size: 30px;
     font-weight: 700;
     padding: 15px 30px;
     outline: none;
     border: none;
     border-radius: 5px;
-    color: #f3772a;
-    background: #fff;
     cursor: pointer;
     transition: all 0.4s ease;
 }
 
-.start_btn button:hover {
-    background-color: var(--main-color-orange);
-    color: white;
+.start_btn button {
+    color: var(--main-color-orange);
+    background-color: #fff;
 }
 
+.feedback_btn button {
+    color: #fff;
+    background-color: var(--main-color-orange);
+}
+
+.start_btn button:hover {
+    background-color: var(--main-color-orange);
+    color: #fff;
+}
+
+.feedback_btn button:hover {
+    color: var(--main-color-orange);
+    background-color: #fff;
+}
+
+
+/* Box "Lưu ý trước khi kiểm tra" */
+
 .info_box{
-    width: 540px;
+    width: 900px;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
@@ -208,8 +252,11 @@ body{
     transition: all 0.3s ease;
 }
 
+
+/* Box "Câu hỏi" */
+
 .quiz_box{
-    width: 550px;
+    width: 1000px;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
@@ -366,12 +413,15 @@ footer button.show{
     transform: scale(1);
 }
 
+
+/* Box "Kết quả" */
+
 .result_box{
     background: #fff;
     border-radius: 5px;
     display: flex;
     padding: 25px 30px;
-    width: 600px;
+    width: 900px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -381,16 +431,82 @@ footer button.show{
     transition: all 0.3s ease;
 }
 
+.result_box .score_percent{
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: -20px;
+    margin-bottom: -5px;
+}
+
+.result_box .score_percent .red {
+    background: -webkit-linear-gradient(45deg, #fd1131, #550000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.result_box .score_percent .orange {
+    background: -webkit-linear-gradient(45deg, #fab32f, #aa0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.result_box .score_percent .yellow {
+    background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.result_box .score_percent .green {
+    background: -webkit-linear-gradient(45deg, #08e200, #02461e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .result_box .complete_text{
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 10px;
 }
 
 .result_box .score_text .red{
-    background-color: #ce003d;
+    background-image: linear-gradient(45deg, #fd1131, #550000);
+    background-size: 100%;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
     color: #fff;
-    margin-top: 10px;
+    margin-bottom: 8px;
+    padding: 2px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.result_box .score_text .orange{
+    background-image: linear-gradient(45deg, #fab32f, #aa0000);
+    background-size: 100%;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    color: #fff;
+    margin-bottom: 8px;
+    padding: 2px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.result_box .score_text .yellow{
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    color: #fff;
+    margin-bottom: 8px;
+    padding: 2px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.result_box .score_text .green{
+    background-image: linear-gradient(45deg, #08e200, #02461e);
+    background-size: 100%;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    color: #fff;
+    margin-bottom: 8px;
     padding: 2px 0;
     text-align: center;
     font-size: 18px;
@@ -446,8 +562,14 @@ footer button.show{
 }
 
 @media (max-width: 1000px) {
-    .title {
+    .title_part {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .content-box {
+        width: 100% !important;
     }
 }
 
@@ -457,63 +579,35 @@ footer button.show{
         right: 0;
         transform: translate(0%);
     }
-    .title {
+    .title_part {
         top: 16%;
         font-size: 16px;
     }
-    .content-box {
-        width: 100% !important;
+    .info_box{
+        top: 60%;
     }
     .result_box {
         padding: 25px 20px;
     }
-}
-
-@media (max-width: 470px) {
-    .title{
-        top: 14%;
-        font-size: 14px;
+    .notion {
+        font-size: 16px;
     }
 }
 
-/* Vòng tròn tiến độ phần trắm mắc bệnh */
-
-  .circle{
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    cursor: default;
-  }
-  .circle .box,
-  .circle .box span{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-  .circle .box{
-    height: 100%;
-    width: 100%;
-    background: #fff;
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(0.8);
-    transition: all 0.2s;
-  }
-  .circle:hover .box{
-    transform: translate(-50%, -50%) scale(0.91);
-  }
-  .circle .box span{
-    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .circle .box span{
-    font-size: 38px;
-    font-family: sans-serif;
-    font-weight: 600;
-    transform: translate(-45%, -45%);
-    transition: all 0.1s;
-  }
-  .circle:hover .box span{
-    transform: translate(-45%, -45%) scale(1.09);
-  }
+@media (max-width: 470px) {
+    .title_part{
+        top: 14%;
+        font-size: 14px;
+    }
+    .start_btn{
+        top: 43%;
+        transform: translate(-50%, -100%);
+    }
+    .feedback_btn{
+        top: 45%;
+        transform: translate(-50%, 0%);
+    }
+    .notion {
+        top: 62%;
+    }
+}
