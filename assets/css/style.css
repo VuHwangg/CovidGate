@@ -700,13 +700,13 @@ min-height: 400px;
 
 }
 
-#nav-heading {
+#nav-heading-trang {
     margin-top: 100px;
     z-index: 10000;
 
 }
 /*tạo nav*/
-#nav-heading li{
+#nav-heading-trang li{
 
     /* display: inline-block; */
     text-align: center;
@@ -715,7 +715,7 @@ min-height: 400px;
 
 
 
-#nav-heading li a{ /*chỉnh màu + căn giữa nav*/
+#nav-heading-trang li a{ /*chỉnh màu + căn giữa nav*/
     color: white;
     text-decoration: none;
     line-height: 60px;/*cho c.cao chữ = c.cao header để căn giữa*/
@@ -724,7 +724,7 @@ min-height: 400px;
 
 }
 
-#nav-heading li:hover a{
+#nav-heading-trang li:hover a{
     color: black;
     background-color: #ccc;
 
@@ -743,9 +743,8 @@ min-height: 400px;
 
 #content{
 
-
-
 }
+
 #content1.news-content-1{
     height: 800px;
     width: 800px;
@@ -776,17 +775,6 @@ min-height: 400px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 #footer{
     background-color: black;
     width: 1000px;
@@ -794,6 +782,59 @@ min-height: 400px;
     color: white;
 
 }
+
+#pandemic-process-box-trang{
+    height: 1000px;
+    width: 100%;
+    
+   
+}
+
+.heading-process-trang{
+    text-decoration: none;
+}
+
+.row{
+
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+  
+
+}
+.col-half{
+    width: 50%;
+}
+
+#process-column-trang-1{
+    height: 300px;
+    width: 60px;
+    
+}
+#process-column-trang-2{
+
+}
+.image-carousel-trang{
+    background-size: 100% contain ;
+    background-clip: content-box;
+}
+#introduce-process-trang{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+
+
+
+
 
 
 
