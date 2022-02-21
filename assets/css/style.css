@@ -323,61 +323,61 @@ ul {
 
 /** Carousel **/
 
-.carousel {
+.carousel-main {
     
     background-color: black;
 }
 
-.carousel .carousel-inner img {
+.carousel-main .carousel-inner img {
     opacity: 0.7;
 }
 
-.carousel .carousel-inner .carousel-caption {
+.carousel-main .carousel-inner .carousel-caption {
     position: absolute;
     top: 40%;
 }
 
-.carousel-caption h1 {
+.carousel-main .carousel-caption h1 {
     text-shadow: 5px 5px 8px #000;
 }
 
-.carousel-caption p {
+.carousel-main .carousel-caption p {
     text-shadow: 4px 4px 8px #000;
     font-size: 17.5px;
 }
 
-.carousel .carousel-inner .btn-main a {
+.carousel-main .carousel-inner .btn-main a {
     text-decoration: none;
     color: white;
     font-weight: 600;
 }
 
-.carousel .carousel-inner .btn-outline-light {
+.carousel-main .carousel-inner .btn-outline-light {
     border: 3px solid white;
 }
 
-.carousel .carousel-inner .btn-outline-light a {
+.carousel-main .carousel-inner .btn-outline-light a {
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
 
-.carousel .carousel-inner .btn-outline-light:hover a {
+.carousel-main .carousel-inner .btn-outline-light:hover a {
     color: var(--main-color-blue);
 }
 
-.carousel .carousel-inner .btn-primary {
+.carousel-main .carousel-inner .btn-primary {
     font-weight: 500;
     padding: 9px 16px;
 }
 
 @media (max-width: 900px) {
-    .carousel .carousel-inner img {
+    .carousel-main .carousel-inner img {
         margin-top: 58px;
     }
 }
 @media (max-width: 500px) {
-    .carousel .carousel-inner {
+    .carousel-main .carousel-inner {
         display: none;
     }
 }
@@ -655,8 +655,8 @@ ul {
 
 
 
-/* Pandemic Process: Trang 
-*/
+/* Pandemic Process: Trang */
+
 #main{
 
 }
@@ -667,7 +667,6 @@ ul {
 
 /* tiêu đề, khung header*/
 #header{
-
     height: 70px;
     width: 100%;
     background-color:rgba(70, 84, 163, 0.9);
@@ -697,23 +696,18 @@ min-height: 400px;
 
 #box-nav{
     z-index: 10000;
-
 }
 
 #nav-heading-trang {
     margin-top: 100px;
     z-index: 10000;
-
 }
 /*tạo nav*/
 #nav-heading-trang li{
-
     /* display: inline-block; */
     text-align: center;
 
 }
-
-
 
 #nav-heading-trang li a{ /*chỉnh màu + căn giữa nav*/
     color: white;
@@ -721,13 +715,11 @@ min-height: 400px;
     line-height: 60px;/*cho c.cao chữ = c.cao header để căn giữa*/
     padding: 0 40px;
     display: inline-block;
-
 }
 
 #nav-heading-trang li:hover a{
     color: black;
     background-color: #ccc;
-
 }
 
 #box-nav{
@@ -737,106 +729,85 @@ min-height: 400px;
 }
 
 
-
-
-
-
-#content{
-
-}
-
 #content1.news-content-1{
     height: 800px;
     width: 800px;
     position: relative;
 }
+
 .news-content-1{
     height: 200px;
     width: 450px;
     margin-left: 200px;
     display: inline-block;
     margin-left: 50px;
-
-    }
+}
 
 .news-content-2{
         height: 100px;
         width: 200px;
-        display: inline-block;
-
-        
-    }
+        display: inline-block; 
+}
 
 #content1 h1{
     text-align: center;
     margin-bottom: 14px;
 }    
 
-
-
-
 #footer{
     background-color: black;
     width: 1000px;
     height: 60px;
     color: white;
-
 }
 
-#pandemic-process-box-trang{
-    height: 1000px;
-    width: 100%;
-    
-   
-}
-
-.heading-process-trang{
-    text-decoration: none;
-}
-
-.row{
-
-    margin-left: -8px;
-    margin-right: -8px;
-
-}
-
-.col{
-    float: left;
-    padding-left: 8px;
-    padding-right: 8px;
-  
-
-}
-.col-half{
-    width: 50%;
-}
-
-#process-column-trang-1{
-    height: 300px;
-    width: 60px;
-    
-}
-#process-column-trang-2{
-
-}
-.image-carousel-trang{
-    background-size: 100% contain ;
-    background-clip: content-box;
-}
-#introduce-process-trang{
+.pandemic-process #introduce-process-trang{
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
 }
 
+.pandemic-process #pandemic-process-box-trang {
+    margin-top: 24px;
+}
 
+.pandemic-process .accordion {
+    margin-top: 8px;
+}
 
+.pandemic-process .accordion .btn {
+    margin-top: 8px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+}
 
+.pandemic-process .accordion .btn a {
+    text-decoration: none;
+    color: white;
+}
 
+.pandemic-process .sub-carousel .carousel-inner {
+    border-radius: 15px;
+    margin-top: 8px;
+}
 
+.pandemic-process .sub-carousel .carousel-item {
+    overflow: hidden;
+}
 
+.pandemic-process .sub-carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    height: 375px;
+}
 
+@media (max-width: 575px) {
+    .pandemic-process .sub-carousel {
+        display: none;
+    }
+}
 
 
 
@@ -890,6 +861,23 @@ table{
 #pandemic-at-home .modal .modal-header {
     background-color: var(--main-color-blue);
     color: white;
+}
+
+
+
+/* Connection-pages */
+
+#connection-pages .row {
+    margin-top: 20px;
+}
+
+#connection-pages .row .connection-logo {
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+#connection-pages .row .connection-logo img {
+    height: calc(100vw/6);
 }
 
 
