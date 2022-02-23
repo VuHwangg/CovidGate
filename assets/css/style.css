@@ -22,6 +22,11 @@ body {
 	background-color: #ffffff;
 }
 
+::selection{
+    color: #fff;
+    background: #4654A3;
+}
+
 :root {
     --main-color-blue: #4654A3;
     --main-color-lightblue: #6973ad;
@@ -32,21 +37,33 @@ body {
     --main-color-lightorange: #f19e6a;
 }
 
+
 ul {
     margin: 0;
     padding: 0;
 }
 
+
+/* Button */
+
 .btn-main {
     color: white;
     background-color: var(--main-color-blue);
-    border: none;
+    border: var(--main-color-blue) 3px solid;
 }
-
 .btn-main:hover {
+    color: white;
     background-color: var(--main-color-lightblue);
 }
 
+.btn-outline-main {
+    color: var(--main-color-blue);
+    border: var(--main-color-blue) 3px solid;
+}
+.btn-outline-main:hover {
+    color: white;
+    background-color: var(--main-color-lightblue);
+}
 
 /** Navigation Bar **/
 
@@ -207,7 +224,7 @@ ul {
     float: left;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .navbar {
         top: 0;
         padding: 0;
@@ -227,9 +244,16 @@ ul {
         padding-left: 8px;
     }
     .navbar .btn-heading {
-        margin-bottom: 24px;
         margin-top: 24px;
+        margin-bottom: 24px;
         padding: 8px 24px;
+        width: 200px;
+    }
+    .navbar .btn-contact {
+        display: block !important;
+        margin-bottom: 28px;
+        padding: 8px 24px;
+        width: 200px;
     }
     .navbar .btn-navbar-menu {
         padding: 8.5px 0;
@@ -250,60 +274,124 @@ ul {
     }
 }
 
+/* Feedback Modal */
+
+.feedback-modal .modal-header {
+    background-color: var(--main-color-orange);
+    color: white;
+}
+
+.feedback-modal .modal-header .btn-close {
+    margin-right: 8px;
+}
+
+.feedback-modal .modal-body .col-form-label {
+    color: var(--main-color-orange);
+    font-weight: 700;
+}
+
+.feedback-modal .modal-body .thankyou_message {
+    display:none;
+    background-color: #a8f5b5;
+    padding: 6px 16px;
+}
+
+.feedback-modal .modal-body .thankyou_message p{
+    color: #009e00;
+    margin: 0;
+    text-align: center;
+}
+
+.feedback-modal .modal-body .modal-footer {
+    padding-bottom: 0;
+}
+
+.feedback-modal .modal-body .modal-footer .btn-submit {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--main-color-orange);
+    color: white;
+    border: 3px var(--main-color-orange) solid;
+}
+
+.feedback-modal .modal-body .modal-footer .btn-submit:hover {
+    background-color: white;
+    color: var(--main-color-orange);
+}
+
 
 /** Carousel **/
 
-.carousel {
-    max-width: 1800px;
+.carousel-main {
+    
     background-color: black;
 }
 
-.carousel .carousel-inner img {
+.carousel-main .carousel-inner img {
     opacity: 0.7;
 }
 
-.carousel .carousel-inner .carousel-caption {
+.carousel-main .carousel-inner .carousel-caption {
     position: absolute;
     top: 40%;
 }
 
-.carousel-caption h1 {
+.carousel-main .carousel-caption h1 {
     text-shadow: 5px 5px 8px #000;
 }
 
-.carousel-caption p {
+.carousel-main .carousel-caption p {
     text-shadow: 4px 4px 8px #000;
     font-size: 17.5px;
 }
 
-.carousel .carousel-inner .btn-outline-light {
-    border: 2px solid white;
+.carousel-main .carousel-inner .btn-main a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
 }
 
-.carousel .carousel-inner .btn-outline-light a {
+.carousel-main .carousel-inner .btn-outline-light {
+    border: 3px solid white;
+}
+
+.carousel-main .carousel-inner .btn-outline-light a {
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
 
-.carousel .carousel-inner .btn-outline-light:hover a {
+.carousel-main .carousel-inner .btn-outline-light:hover a {
     color: var(--main-color-blue);
 }
 
-.carousel .carousel-inner .btn-primary {
+.carousel-main .carousel-inner .btn-primary {
     font-weight: 500;
     padding: 9px 16px;
 }
 
 @media (max-width: 900px) {
-    .carousel .carousel-inner img {
+    .carousel-main .carousel-inner img {
         margin-top: 58px;
     }
 }
 @media (max-width: 500px) {
-    .carousel .carousel-inner {
+    .carousel-main .carousel-inner {
         display: none;
     }
+}
+
+/** Toast **/
+
+.toasts .toast-header {
+    background-color: var(--main-color-orange);
+    color: white;
+}
+
+.toasts .toast-body {
+    background-color: var(--main-color-lightorange);
+    color: white;
 }
 
 
@@ -337,15 +425,31 @@ ul {
 
 @media (max-width: 500px) {
     .about-us {
-        margin-top: 58px;
+        margin-top: 68px;
     }
 }
 
 /* About Project */
 
+.about-project .btn-about {
+    display: inline-block;
+}
+
+.about-project .btn-about .btn {
+    padding: 6px 16px;
+    font-weight: 500;
+}
+
+.about-project .btn-about i {
+    font-size: 21px;
+}
 
 
 /* Team members */
+
+.team-members .team-description .btn {
+    font-weight: 500;
+}
 
 .team-members #member-list .member {
     padding-top: 24px;
@@ -551,19 +655,19 @@ ul {
 
 
 
-/* Pandemic Process: Trang 
-*/
+/* Pandemic Process: Trang */
+
 #main{
 
 }
+
 #main-heading{
     
 }
 
 /* tiêu đề, khung header*/
 #header{
-
-    height: 80px;
+    height: 70px;
     width: 100%;
     background-color:rgba(70, 84, 163, 0.9);
     position: fixed;
@@ -572,10 +676,14 @@ ul {
     right: 0;
     bottom: 0;
     z-index: 1000;
+    
 }
 
 #home{
-    margin-top: 100px;
+    margin-top: 600px;
+    margin-left: 30px;
+    line-height: 70px;
+    
 }
 #main #content{
 height: 1000px;
@@ -588,37 +696,30 @@ min-height: 400px;
 
 #box-nav{
     z-index: 10000;
-
 }
 
-#nav-heading {
+#nav-heading-trang {
     margin-top: 100px;
     z-index: 10000;
-
 }
 /*tạo nav*/
-#nav-heading li{
-
+#nav-heading-trang li{
     /* display: inline-block; */
     text-align: center;
 
 }
 
-
-
-#nav-heading li a{ /*chỉnh màu + căn giữa nav*/
+#nav-heading-trang li a{ /*chỉnh màu + căn giữa nav*/
     color: white;
     text-decoration: none;
     line-height: 60px;/*cho c.cao chữ = c.cao header để căn giữa*/
     padding: 0 40px;
     display: inline-block;
-
 }
 
-#nav-heading li:hover a{
+#nav-heading-trang li:hover a{
     color: black;
     background-color: #ccc;
-
 }
 
 #box-nav{
@@ -628,60 +729,85 @@ min-height: 400px;
 }
 
 
-
-
-
-
-#content{
-
-
-
-}
 #content1.news-content-1{
     height: 800px;
     width: 800px;
     position: relative;
 }
+
 .news-content-1{
     height: 200px;
     width: 450px;
     margin-left: 200px;
     display: inline-block;
     margin-left: 50px;
-
-    }
+}
 
 .news-content-2{
         height: 100px;
         width: 200px;
-        display: inline-block;
+        display: inline-block; 
+}
 
-        
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#content1 h1{
+    text-align: center;
+    margin-bottom: 14px;
+}    
 
 #footer{
     background-color: black;
     width: 1000px;
     height: 60px;
     color: white;
-
 }
 
+.pandemic-process #introduce-process-trang{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
+.pandemic-process #pandemic-process-box-trang {
+    margin-top: 24px;
+}
+
+.pandemic-process .accordion {
+    margin-top: 8px;
+}
+
+.pandemic-process .accordion .btn {
+    margin-top: 8px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.pandemic-process .accordion .btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.pandemic-process .sub-carousel .carousel-inner {
+    border-radius: 15px;
+    margin-top: 8px;
+}
+
+.pandemic-process .sub-carousel .carousel-item {
+    overflow: hidden;
+}
+
+.pandemic-process .sub-carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    height: 375px;
+}
+
+@media (max-width: 575px) {
+    .pandemic-process .sub-carousel {
+        display: none;
+    }
+}
 
 
 
@@ -703,6 +829,7 @@ font-family: 'et-line';
 	font-style: normal;
 }
 
+<<<<<<< HEAD
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
 	font-family: 'et-line';
@@ -1035,10 +1162,66 @@ you can use the generic selector below, but it's slower:
 .icon-dribbble:before {
 	content: "\e063";
 }
+=======
+table{
+    border:1px solid black;
+  }
+  th{
+    border:1px solid black;
+  }
+  td{
+    border:1px solid black;
+  }
+  table, th, td{
+    border:1px solid #ccc;
+  }
+  table{
+    border-collapse:collapse;
+  }
+  tr:hover{
+    background-color:#ddd;
+    cursor:pointer;
+  }
+
+>>>>>>> 64a57f1c26366920e9b0207f9e55d131b10b10f5
 
 /* Pandemic At Home: Việt Anh */
-#nva-img:hover{
-    color: black;
+.nva-modal ::-webkit-scrollbar{
+    width: 20px;
+
+}
+
+.nva-modal ::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to bottom, #ddd6f3, #faaca8);
+    border-radius: 100rem;
+    
+}
+
+.nva-modal ::-webkit-scrollbar-track{
+    background-color: #ccc;
+    
+}
+
+#pandemic-at-home .modal .modal-header {
+    background-color: var(--main-color-blue);
+    color: white;
+}
+
+
+
+/* Connection-pages */
+
+#connection-pages .row {
+    margin-top: 20px;
+}
+
+#connection-pages .row .connection-logo {
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+#connection-pages .row .connection-logo img {
+    height: calc(100vw/6);
 }
 
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Covid Gate</title>
+    <title>COVID Gate</title>
     
     <!-- link favicon logo -->
     <link rel="icon" href="./assets/favicon/Logo4 (no background).png" type="image/x-icon">   
@@ -52,22 +52,18 @@
                                 <a class="nav-link" href="#pandemic-news">Tin tức dịch bệnh</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Biện pháp phòng dịch</a>
+                                <a id="liveToastBtn4" class="nav-link" role="button">Biện pháp phòng dịch</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Cách li tại nhà</a>
+                                <a class="nav-link" href="#pandemic-at-home">Cách li tại nhà</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Corona và những sự thật
                                 </a>
-<<<<<<< HEAD
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="partTrang.html">Lịch sử và quá trình hình thành</a></li>
-=======
+
                                 <ul class="dropdown-menu dropdown-list" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Lịch sử và quá trình hình thành</a></li>
->>>>>>> 2e5dcf0faa43c892d375524a815d029317eccfb4
+                                    <li><a class="dropdown-item" href="#formation-pandemic">Lịch sử và quá trình hình thành</a></li>
                                     <li><a class="dropdown-item" href="#">Các biến thể từng được ghi nhận</a></li>
                                     <li><a class="dropdown-item" href="#">Các loại vaccine hiện hành</a></li>
                                   </ul>
@@ -75,7 +71,12 @@
                             </li>
                             <li>
                                 <button class="btn-heading btn btn-outline-light me-2" type="button">
-                                    <a href="#">Test COVID Online</a>
+                                    <a href="quizzes-Vu.html">Test COVID Online</a>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-outline-light btn-contact" data-bs-toggle="modal" data-bs-target="#send-mail-modal" style="display: none;">
+                                    <a>Gửi Feedback</a>
                                 </button>
                             </li>
                         </ul>
@@ -90,9 +91,9 @@
                             <li><h6>Mọi Ý Kiến Đóng Góp Xin Liên Hệ Với Chúng Tôi</h6></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="tel:0833232520"><i class="bi bi-telephone-fill"></i> +84 833 232 520</a></li>
-                            <li><a class="dropdown-item" href="mailto:chairteam@gmail.com"><i class="bi bi-envelope-fill"></i> chairteam@gmail.com</a></li>
+                            <li><a class="dropdown-item" href="mailto:teamchairfpt@gmail.com"><i class="bi bi-envelope-fill"></i> teamchairfpt@gmail.com</a></li>
                             <li><a class="dropdown-item" href="https://www.google.com/maps/dir/22.2538228,106.4759266/fpt+university/@21.6081128,105.5910615,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x31345b465a4e65fb:0xaae6040cfabe8fe!2m2!1d105.5270643!2d21.01325" target="_blank" rel="noopener noreferrer"><i class="bi bi-geo-alt-fill"></i> FPT University</a></li>
-                            <button type="button" class="btn btn-outline-light btn-contact" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@covidgate">Đóng Góp Trực Tiếp</button>
+                            <button type="button" class="btn btn-outline-light btn-contact" data-bs-toggle="modal" data-bs-target="#send-mail-modal">Đóng Góp Trực Tiếp</button>
                             <li class="list-icon-contact">
                                 <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-facebook"></i></a>
                                 <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-twitter"></i></a>
@@ -104,43 +105,52 @@
                     </div>
                 </div>
             </nav>
-            
-            <!-- Modal gửi ý kiến đóng góp -->
-            <div class="modal-send-email">
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+            <!-- Modal gửi Feedback -->
+
+            <div class="feedback-modal">
+                <div class="modal fade" id="send-mail-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Gửi Feedback Đến Cho "Chair Team"</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                                
                             <div class="modal-body">
                                 <p>Cảm ơn bạn vì đã dành thời gian, mọi ý kiến đóng góp của các bạn sẽ đều là tài liệu giúp Chair Team chúng mình phát triển hơn trong tương lai!</p>     
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Người Nhận:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
+                                <form class="gform pure-form pure-form-stacked" method="POST" data-email="teamchairfpt@gmail.com"
+                                action="https://script.google.com/macros/s/AKfycbzOZzKt2MJraPAWq14kjECP5e_hDPCUxauhuFr2OMP3Q0pCPGfSe1XlzA77rQaq7kT8rw/exec">
+                                    <div class="form-elements">
+
                                     </div>
                                     <div class="mb-3">
-                                        <label for="message-text" class="col-form-label">Tin Nhắn:</label>
-                                        <textarea class="form-control" id="message-text"></textarea>
+                                        <label for="recipient-name" class="col-form-label">Tên Của Bạn:</label>
+                                        <input type="text" name="name" class="form-control" required placeholder="Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Địa Chỉ Email Của Bạn:</label>
+                                        <input type="email" name="email" class="form-control" required placeholder="Email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Những Đóng Góp Của Bạn:</label>
+                                        <textarea  name="message" rows="5" cols="22" class="form-control" required placeholder="Nội dung tin nhắn"></textarea>
+                                    </div>
+                                    <div class="thankyou_message">
+                                        <p><i class="bi bi-check-circle-fill"></i> Cảm ơn bạn vì những đóng góp hữu ích !!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-submit" id="liveAlertBtn">Gửi Feedback</button>
                                     </div>
                                 </form>
                             </div>
-                            <div id="liveAlertPlaceholder"></div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                            <button type="button" class="btn btn-primary" id="liveAlertBtn">Gửi Đóng Góp</button>
                         </div>
-                      </div>
                     </div>
                 </div>
             </div>
         </header>
 
         <!-- Carousel - Băng Chuyền Ảnh -->
-        <div class="carousel slide" id="carousel-main" data-bs-ride="carousel">
+        <div class="carousel slide carousel-main" id="carousel-main" data-bs-ride="carousel">
             
             <!--             
             Carousel Indicators
@@ -159,9 +169,11 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Kiểm Tra COVID-19 Trực Tuyến</h1>
                         <p>Tính năng duy nhất chỉ có ở COVID Gate cho phép bạn kiểm tra trực tuyến tỉ lệ dương tính với COVID-19 ngay trên website</p>
-                        <button type="button" class="btn btn-main btn-primary btn-lg" id="liveToastBtn">Kiểm Tra Nâng Cao</button>
-                        <button class="btn btn-outline-light btn-lg me-1" type="button">
-                            <a href="#">Khám Phá Ngay</a>
+                        <button type="button" class="btn btn-main btn-lg">
+                            <a href="quizzes.html">Kiểm Tra Ngay</a>
+                        </button>
+                        <button id="liveToastBtn1" class="btn btn-outline-light btn-lg me-1" type="button">
+                            <a href="#">Tìm Hiểu Thêm</a>
                         </button>
                     </div>
                 </div>
@@ -170,7 +182,7 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Các Loại Vaccine COVID-19</h1>
                         <p>Thống kê đầy đủ mọi loại vaccine cho COVID-19 một cách chi tiết và trực quan nhất</p>
-                        <button class="btn btn-outline-light btn-lg" type="button">
+                        <button id="liveToastBtn2" class="btn btn-outline-light btn-lg" type="button">
                             <a href="#">Khám Phá Ngay</a>
                         </button>
                     </div>
@@ -180,7 +192,7 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Các Biến Thể Mới Của Corona Virus</h1>
                         <p>Các chủng biến thể mới từ Corona Virus đã được ghi nhận, tính chất cũng như mức độ nguy hiểm của từng loại biến thể đối với nhân loại</p>
-                        <button class="btn btn-outline-light btn-lg" type="button">
+                        <button id="liveToastBtn3" class="btn btn-outline-light btn-lg" type="button">
                             <a href="#">Khám Phá Ngay</a>
                         </button>
                     </div>
@@ -222,7 +234,7 @@
             <div class="about-project content-section">
                 <div class="jumbotron">
                     <h1 class="display-4">Xin chào, chào mừng bạn đã đến với COVID Gate!</h1>
-                    <p class="lead">
+                    <p class="lead" style="font-weight: 350;">
                         Đây là một dự án phi lợi nhuận với mục đích là mang đến những 
                         giá trị thông qua kiến thức, thông tin, số liệu về dịch bệnh 
                         một cách đầy đủ và chính xác nhất. Tại đây chúng mình sẽ tổng hợp 
@@ -231,8 +243,13 @@
                         cái nhìn rõ nhất về một kẻ thù chung mà chúng ta đã và đang phải đối mặt.</p>
                     <hr class="my-2" style="text-align: left; max-width: 646px;">
                     <p>COVID Gate là một dự án được phát triển bởi Chair Team thuộc trường Đại Học FPT Hà Nội</p>
-                    <p class="lead">
-                      <a class="btn btn-main btn-primary btn-lg" href="#" role="button">Tìm Hiểu Thêm</a>
+                    <p class="lead btn-about">
+                        <a class="btn btn-main btn-lg" href="./assets/download/COVID_Gate PROPOSAL.pdf" target="_blank" rel="noopener noreferrer" role="button">Tìm Hiểu Thêm</a>
+                    </p>
+                    <p class="lead btn-about">
+                        <a class="btn btn-outline-main btn-lg" href="./assets/download/COVID_Gate PROPOSAL.pdf" download role="button">
+                            <i class="bi bi-cloud-arrow-down-fill"></i></i>&nbsp;Tải Xuống Bản Đề Xuất Dự Án
+                        </a>
                     </p>
                   </div>
             </div>
@@ -243,13 +260,13 @@
                 <div class="container-fluid padding">
                     
                     <!-- Team description -->
-                    <div class="row padding">
+                    <div class="row padding team-description">
                         <div class="team-logo col-lg-12 col-xl-6">
                             <img src="./assets/img/about-us/Logo1 (no background) .png" alt="Chair Team" class="img-fluid">
                         </div>
                         <div class="jumbotron col-lg-12 col-xl-6">
                             <h1 class="display-4">Chúng mình là ai?</h1>
-                            <p class="lead">
+                            <p class="lead" style="font-weight: 350;">
                                 Chúng mình là Chair Team, một nhóm sinh viên năm 2 Chuyên ngành 
                                 Kỹ Thuật Phần Mềm thuộc trường Đại Học FPT Hà Nội. Với cùng chung 
                                 một niềm đam mê trong việc học cách phát triển và xây dựng website. 
@@ -262,7 +279,7 @@
                             <hr class="my-2">
                             <p>COVID Gate là một dự án được phát triển bởi Chair Team thuộc trường Đại Học FPT Hà Nội</p>
                             <p class="lead">
-                                <a class="btn btn-main btn-primary btn-lg" role="button" data-bs-toggle="collapse" data-bs-target="#member-list">
+                                <a class="btn btn-main btn-lg" role="button" data-bs-toggle="collapse" data-bs-target="#member-list">
                                     Các Thành Viên Trong Nhóm
                                     <i class="bi bi-caret-down-fill"></i>
                                 </a>
@@ -273,12 +290,12 @@
                     <!-- Member list -->
                     <div class="row padding collapse" id="member-list">
                         <!-- Trang -->
-                        <div class="member col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="member col-sm-12 col-md-12 col-lg-6 col-xl-6">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4 member-avatar">
+                                    <div class="col-sm-4 member-avatar">
                                         <a href="https://www.facebook.com/profile.php?id=100008414370908" target="_blank" rel="noopener noreferrer">
-                                            <img src="./assets/img/team-member/member0.png" class="img-fluid rounded-start" alt="Thùy Trang">
+                                            <img src="./assets/img/team-member/DangThuyTrang.jpg" class="img-fluid rounded-start" alt="Thùy Trang">
                                             <div class="contact-hover">
                                                 <div class="contact-caption">
                                                     <h5>Liên Hệ</h5>
@@ -286,7 +303,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-sm-8">
                                         <div class="card-body">
                                             <h5 class="card-title member-name">Đặng Thùy Trang</h5>
                                             <p class="card-text member-role">Trưởng Nhóm</p>
@@ -304,12 +321,12 @@
                             </div>
                         </div>
                         <!-- Vũ -->
-                        <div class="member col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="member col-sm-12 col-md-12 col-lg-6 col-xl-6">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4 member-avatar">
+                                    <div class="col-sm-4 member-avatar">
                                         <a href="https://www.facebook.com/vu.hwang.308/" target="_blank" rel="noopener noreferrer">
-                                            <img src="./assets/img/team-member/member0.png" class="img-fluid rounded-start" alt="Anh Vũ">
+                                            <img src="./assets/img/team-member/HoangChuAnhVu.jpg" class="img-fluid rounded-start" alt="Anh Vũ">
                                             <div class="contact-hover">
                                                 <div class="contact-caption">
                                                     <h5>Liên Hệ</h5>
@@ -317,7 +334,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-sm-8">
                                         <div class="card-body">
                                             <h5 class="card-title member-name">Hoàng Chu Anh Vũ</h5>
                                             <p class="card-text member-role">Trưởng Ban Chuyên Môn</p>
@@ -335,12 +352,12 @@
                             </div>
                         </div>
                         <!-- Việt Anh -->
-                        <div class="member col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="member col-sm-12 col-md-12 col-lg-6 col-xl-6">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4 member-avatar">
+                                    <div class="col-sm-4 member-avatar">
                                         <a href="https://www.facebook.com/Vanh2203" target="_blank" rel="noopener noreferrer">
-                                            <img src="./assets/img/team-member/member0.png" class="img-fluid rounded-start" alt="Việt Anh">
+                                            <img src="./assets/img/team-member/NguyenVietAnh.jpg" class="img-fluid rounded-start" alt="Việt Anh">
                                             <div class="contact-hover">
                                                 <div class="contact-caption">
                                                     <h5>Liên Hệ</h5>
@@ -348,12 +365,12 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-sm-8">
                                         <div class="card-body">
                                             <h5 class="card-title member-name">Nguyễn Việt Anh</h5>
                                             <p class="card-text member-role">Ban Chuyên Môn</p>
                                             <p class="card-text"><small class="text-muted">
-                                                Lập trình viên chuyên mảng back-end<br/>
+                                                Lập trình viên full-stack<br/>
                                                 Tham gia lập trình, xây dựng website.<br/>
                                                 Hỗ trợ tìm kiếm và đóng góp ý tưởng, nội dung, thông tin, dữ liệu 
                                                 lên trên website.
@@ -364,12 +381,12 @@
                             </div>
                         </div>
                         <!-- Văn Nghĩa -->
-                        <div class="member col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="member col-sm-12 col-md-12 col-lg-6 col-xl-6">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4 member-avatar">
+                                    <div class="col-sm-4 member-avatar">
                                         <a href="https://www.facebook.com/profile.php?id=100023099255555" target="_blank" rel="noopener noreferrer">
-                                            <img src="./assets/img/team-member/member0.png" class="img-fluid rounded-start" alt="Văn Nghĩa">
+                                            <img src="./assets/img/team-member/NguyenVanNghia.jpg" class="img-fluid rounded-start" alt="Văn Nghĩa">
                                             <div class="contact-hover">
                                                 <div class="contact-caption">
                                                     <h5>Liên Hệ</h5>
@@ -377,7 +394,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-sm-8">
                                         <div class="card-body">
                                             <h5 class="card-title member-name">Nguyễn Văn Nghĩa</h5>
                                             <p class="card-text member-role">Ban Chuyên Môn</p>
@@ -393,12 +410,12 @@
                             </div>
                         </div>
                         <!-- Nguyên -->
-                        <div class="member col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="member col-sm-12 col-md-12 col-lg-6 col-xl-6">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4 member-avatar">
+                                    <div class="col-sm-4 member-avatar">
                                         <a href="https://www.facebook.com/profile.php?id=100010555908396" target="_blank" rel="noopener noreferrer">
-                                            <img src="./assets/img/team-member/member0.png" class="img-fluid rounded-start" alt="Thanh Nguyên">
+                                            <img src="./assets/img/team-member/LeThanhNguye.jpg" class="img-fluid rounded-start" alt="Thanh Nguyên">
                                             <div class="contact-hover">
                                                 <div class="contact-caption">
                                                     <h5>Liên Hệ</h5>
@@ -406,7 +423,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-sm-8">
                                         <div class="card-body">
                                             <h5 class="card-title member-name">Lê Thanh Nguyên</h5>
                                             <p class="card-text member-role">Ban Nội Dung</p>
@@ -420,12 +437,12 @@
                             </div>
                         </div>
                         <!-- Trọng Nghĩa -->
-                        <div class="member col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="member col-sm-12 col-md-12 col-lg-6 col-xl-6">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4 member-avatar">
+                                    <div class="col-sm-4 member-avatar">
                                         <a href="https://www.facebook.com/nghiabin.2001" target="_blank" rel="noopener noreferrer">
-                                            <img src="./assets/img/team-member/member0.png" class="img-fluid rounded-start" alt="Trọng Nghĩa">
+                                            <img src="./assets/img/team-member/LuuTrongNghia.jpg" class="img-fluid rounded-start" alt="Trọng Nghĩa">
                                             <div class="contact-hover">
                                                 <div class="contact-caption">
                                                     <h5>Liên Hệ</h5>
@@ -433,12 +450,12 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-sm-8">
                                         <div class="card-body">
                                             <h5 class="card-title member-name">Lưu Trọng Nghĩa</h5>
-                                            <p class="card-text member-role">Ban Truyền Thông</p>
+                                            <p class="card-text member-role">Ban Nội Dung</p>
                                             <p class="card-text"><small class="text-muted">
-
+                                                Tham gia sưu tầm, tìm kiếm, tổng hợp thông tin, viết nội dung để đưa lên website.
                                             </small></p>
                                         </div>
                                     </div>
@@ -466,7 +483,7 @@
                         <div class="col-12">
                             <p>
                                 Dữ liệu được cập nhật lần cuối cùng vào ngày 
-                                <span class="day-update">15/1/2022</span>
+                                <span class="day-update">14/2/2022</span>
                             </p>
                         </div>
                     </div>
@@ -474,24 +491,24 @@
                         <div class="col-sm-12 col-md-4">
                             <div class="case-data case-infection">
                                 <p class="text">Số Ca Nhiễm Bệnh</p>
-                                <p class="value">1.991.484</p>
+                                <p class="value">2.510.860</p>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4">
                             <div class="case-data case-cured">
                                 <p class="text">Số Ca Khỏi Bệnh</p>
-                                <p class="value">1.666.220</p>
+                                <p class="value">2.226.754</p>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4">
                             <div class="case-data case-death">
                                 <p class="text">Số Ca Tử Vong</p>
-                                <p class="value">35.341</p>
+                                <p class="value">38.946</p>
                             </div>
                         </div>
                     </div>
                     <div class="detail-data-button row text-center padding">
-                        <a class="btn btn-main btn-primary btn-lg" href="#" role="button">Cập Nhật Số Liệu Chính Xác Và Chi Tiết Nhất Tại COVID Gate Tracker</a>
+                        <a id="liveToastBtn6" class="btn btn-main btn-primary btn-lg" role="button">Cập Nhật Số Liệu Chính Xác Và Chi Tiết Nhất Tại COVID Gate Tracker</a>
                     </div>
                 </div>
             </div>
@@ -534,10 +551,10 @@
                         <div class="news-content card mb-3">
                             <a href="https://covid19.gov.vn/benh-vien-da-nang-trien-khai-dieu-tri-benh-nhan-sau-mac-covid-19-171220124174730342.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
-                                    <div class="news-image col-md-4">
+                                    <div class="news-image col-sm-4">
                                         <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/ttxvn20220124benhviendanang-1643021221194-16430212217021657099884.jpg" class="img-fluid rounded-start" alt="image_2">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-sm-8">
                                         <div class="card-body">
                                           <h5 class="card-title">Bệnh viện Đà Nẵng triển khai điều trị bệnh nhân sau mắc COVID-19</h5>
                                           <p class="card-text">Hơn 2/3 bệnh nhân COVID-19 sau khi đã xác định hồi phục vẫn còn để lại những rối loạn về chức năng và triệu chứng, bệnh lý kéo dài có thể vài tháng thậm chí lâu hơn,..</p>
@@ -552,10 +569,10 @@
                         <div class="news-content card mb-3">
                             <a href="https://covid19.gov.vn/don-tet-an-toan-than-toc-phu-vaccine-mui-3-171220124090049389.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
-                                    <div class="news-image col-md-4">
+                                    <div class="news-image col-sm-4">
                                         <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/20220122085234-16429059321211225805315-1642907066420858377375-1642989623103-1642989623346493868348.jpeg" class="img-fluid rounded-start" alt="image_3">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-sm-8">
                                         <div class="card-body">
                                           <h5 class="card-title">Đón Tết an toàn, 'thần tốc' trong việc tiêm vaccine mũi 3</h5>
                                           <p class="card-text">Ghi nhận của PV Báo Sức khỏe&Đời sống trên địa bàn Quận Thanh Xuân (Hà Nội), trong chiến dịch "thần tốc" phủ vaccine cho người dân.</p>
@@ -570,10 +587,10 @@
                         <div class="news-content card mb-3">
                             <a href="https://suckhoedoisong.vn/sang-25-1-gan-800-ca-covid-19-nang-dang-tho-may-ecmo-13-tinh-thanh-nao-ghi-nhan-f0-nhiem-omicron-169220125074057345.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
-                                    <div class="news-image col-md-4">
+                                    <div class="news-image col-sm-4">
                                         <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2021/10/16/cach-ly-dieu-tri-benh-nhan-16343823775761139659239.jpeg" class="img-fluid rounded-start" alt="image_4">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-sm-8">
                                         <div class="card-body">
                                           <h5 class="card-title">Sáng 25/1: Gần 800 ca COVID-19 nặng đang thở máy, ECMO; 13 tỉnh, thành nào ghi nhận F0 nhiễm Omicron?</h5>
                                           <p class="card-text">SKĐS - Bộ Y tế cho biết, đến nay cả nước đã có hơn 1,84 triệu bệnh nhân COVID-19 khỏi, trong số các ca đang điều trị có gần 800 trường hợp nặng phải thở máy, ECMO;..</p>
@@ -605,10 +622,10 @@
                         <div class="news-content card mb-3">
                             <a href="https://covid19.gov.vn/so-ca-mac-covid-19-o-han-quoc-tang-len-muc-cao-nhat-171220125091744733.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
-                                    <div class="news-image col-md-4">
+                                    <div class="news-image col-sm-4">
                                         <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/25/han-quoc-250122-1643077044001-164307704416749382366.jpg" class="img-fluid rounded-start" alt="image_5">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-sm-8">
                                         <div class="card-body">
                                           <h5 class="card-title">Số ca mắc COVID-19 ở Hàn Quốc tăng lên mức cao nhất</h5>
                                           <p class="card-text">Phóng viên TTXVN tại Seoul đưa tin số ca mắc mới COVID-19 ở Hàn Quốc ngày 25/1 dự kiến được ghi nhận ở mức 9.000. Đây là con số cao nhất kể từ khi ...</p>
@@ -625,10 +642,10 @@
                         <div class="news-content card mb-3">
                             <a href="https://covid19.gov.vn/my-han-che-su-dung-2-lieu-phap-dieu-tri-khang-the-don-dong-cho-benh-nhan-covid-19-171220125091706217.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
-                                    <div class="news-image col-md-4">
+                                    <div class="news-image col-sm-4">
                                         <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/25/thuoc-250122-1643077004428-1643077004835449093125.jpg" class="img-fluid rounded-start" alt="image_6">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-sm-8">
                                         <div class="card-body">
                                           <h5 class="card-title">Mỹ hạn chế sử dụng 2 liệu pháp điều trị kháng thể đơn dòng cho bệnh nhân</h5>
                                           <p class="card-text">Cơ quan Quản lý thực phẩm và dược phẩm (FDA) Mỹ ngày 24/1 đã hạn chế đáng kể việc sử dụng 2 liệu pháp điều trị kháng thể đơn dòng do 2 hãng ...</p>
@@ -645,10 +662,10 @@
                         <div class="news-content card mb-3">
                             <a href="https://covid19.gov.vn/han-quoc-chuyen-sang-phuong-thuc-ung-pho-voi-bien-the-omicron-171220124174247186.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
-                                    <div class="news-image col-md-4">
+                                    <div class="news-image col-sm-4">
                                         <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/han-quoc-24122-1643020947034-1643020947198662170981.jpg" class="img-fluid rounded-start" alt="image_7">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-sm-8">
                                         <div class="card-body">
                                           <h5 class="card-title">Hàn Quốc chuyển sang phương thức ứng phó với biến thể Omicron</h5>
                                           <p class="card-text">Ngày 24/1, Tổng thống Hàn Quốc Moon Jae-in đã chỉ thị chính phủ nước này nhanh chóng chuyển sang các biện pháp ứng phó mới nhằm ngăn chặn ...</p>
@@ -665,10 +682,10 @@
                         <div class="news-content card mb-3">
                             <a href="https://covid19.gov.vn/cac-truong-dai-hoc-my-no-luc-doi-pho-voi-so-ca-mac-covid-19-tang-cao-171220124174151226.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
-                                    <div class="news-image col-md-4">
+                                    <div class="news-image col-sm-4">
                                         <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/my-ca-mac-24012022-1643020846042-1643020846576360070090.jpg" class="img-fluid rounded-start" alt="image_8">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-sm-8">
                                         <div class="card-body">
                                           <h5 class="card-title">Các trường đại học Mỹ nỗ lực đối phó với số ca mắc COVID-19 tăng cao</h5>
                                           <p class="card-text">Số ca mắc COVID-19 trong các trường đại học đang gia tăng trên toàn nước Mỹ. Đây cũng là tuần có số ca mắc cao nhất mà đại học này ghi nhận ...</p>
@@ -696,7 +713,7 @@
                     </div>
 
                     <!-- Video news 1 -->
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="news-video-content card h-100">
                             <a href="https://covid19.gov.vn/6-bien-phap-dam-bao-thich-ung-an-toan-linh-hoat-kiem-soat-hieu-qua-dich-covid-19-171211019073253778.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="news-video">
@@ -711,7 +728,7 @@
                     </div>
 
                     <!-- Video news 2 -->
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="news-video-content card h-100">
                             <a href="https://covid19.gov.vn/bo-y-te-huong-dan-phan-loai-va-pham-vi-danh-gia-cap-do-dich-171211015182641182.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="news-video">
@@ -726,7 +743,7 @@
                     </div>
 
                     <!-- Video news 3 -->
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="news-video-content card h-100">
                             <a href="https://covid19.gov.vn/huong-dan-tu-lay-mau-xet-nghiem-covid-19-tai-nha-171211009143132481.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="news-video">
@@ -741,7 +758,7 @@
                     </div>
 
                     <!-- Video news 4 -->
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div class="news-video-content card h-100">
                             <a href="https://covid19.gov.vn/huong-dan-su-dung-thuoc-dieu-tri-covid-19-tai-nha-17121100515443193.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="news-video">
@@ -759,26 +776,169 @@
 
             <!-- Các biện pháp phòng chống dịch, thông tin, thói quen sai lệch phổ biến cần tránh -->
             <div class="pandemic-prevention content-section">
-                Pandemic Prevention: Nguyên
+                
             </div>
 
-            <!-- Lịch sử và quá trình hình thành đại dịch -->
-            <div class="pandemic-process content-section">
-                Pandemic Process: Trang
-               
-                
 
+            <!-- Lịch sử và quá trình hình thành đại dịch -->
+            <div class="pandemic-process content-section" id="formation-pandemic">
+
+                <div id="the-line"></div>
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Quá Trình Hình Thành Và Phát Triển Của Đại Dịch</h1>
+                </div>
+                <div id="introduce-process-trang">
+                    <i>Đại dịch Covid-19 đã tạo ra 4 làn sóng lớn tấn công sâu rộng trên toàn quốc với gần 1,7 triệu người nhiễm SARS-CoV-2 và hơn 31 nghìn người tử vong. Nhìn lại 2 năm qua, Việt Nam trải qua nhiều tổn thương, mất mát nhưng chúng ta cũng đã vững vàng vượt qua những đợt dịch tàn khốc bằng sự chỉ đạo sát sao, kịp thời của Đảng, Nhà nước, Chính phủ và sự đồng lòng của người dân.</i>
+                </div>
                 
-                
+                <div id="pandemic-process-box-trang" class="row">
+
+                    <!-- button list content -->
+                    <div class="accordion col-sm-6" id="accordionExample">
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Làn sóng dịch thứ nhất
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong><i class="ti-arrow-circle-right"></i> 16 ca bệnh đầu tiên</strong></br>
+                                    <strong><i class="ti-arrow-circle-right"></i> Các ca bệnh xâm nhập từ nước ngoài</strong></br>
+                                    <strong><i class="ti-arrow-circle-right"></i> Nguy cơ lây lan trong cộng đồng</strong> </br>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Làn sóng dịch thứ hai
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong><i class="ti-arrow-circle-right"></i> Tái phát hiện ca nhiễm lây lan trong cộng đồng</strong></br>
+                                    <strong><i class="ti-arrow-circle-right"></i> Chống dịch "dài hơi"</strong></br>    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Làn sóng dịch thứ ba
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong><i class="ti-arrow-circle-right"></i> Hải Dương giãn cách xã hội và cách ly xã hội toàn tỉnh.</strong></br>
+                                    <strong><i class="ti-arrow-circle-right"></i> Việc tiêm vaccine COVID-19 ở Việt Nam được bắt đầu</strong></br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Làn sóng dịch thứ tư
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong><i class="ti-arrow-circle-right"> </i> Xuất hiện các chuỗi lây nhiễm COVID-19 từ người cách ly khiến Việt Nam tăng cường trở lại mức độ phòng chống dịch bệnh</strong></br>
+                                    <strong><i class="ti-arrow-circle-right"> </i>  TP. HCM ra lệnh giãn cách xã hội toàn thành phố ...</strong></br>
+                                    <strong><i class="ti-arrow-circle-right"> </i>  Sau gần 3 tháng áp dụng chỉ thị 16, TP. HCM mở cửa các hoạt động trở lại.</strong></br>
+                                    <strong><i class="ti-arrow-circle-right"> </i>  Chính phủ ban hành Nghị quyết 128/NQ-CP nhằm "Thích ứng an toàn, linh hoạt, kiểm soát hiệu quả dịch COVID-19"</strong></br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-main">
+                            <a href="formation-Trang.html" target="_blank" rel="noopener noreferrer">
+                                Tìm Hiểu Thêm
+                            </a>
+                        </button>
+                    </div>
+                    
+                    <!-- carousel_slide -->
+                    <div id="carouselExampleControls" class="sub-carousel carousel slide col-sm-6" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://special.nhandan.vn/daumoc-Covid-19/assets/Y92OrKReMq/cv1-1920x1080.jpeg" class="d-block w-100 image-carousel-trang" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://special.nhandan.vn/daumoc-Covid-19/assets/Y92OrKReMq/cv1-1920x1080.jpeg" class="d-block w-100 image-carousel-trang" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2022/2/15/f0-tai-nha-1644941146612196937686.jpeg" class="d-block w-100 image-carousel-trang" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2022/2/15/f0-tai-nha-1644941146612196937686.jpeg" class="d-block w-100 image-carousel-trang" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    
+
+  
+
+<!-- 
+                      <div id="list-group-trang">
+                        <div id="list-example" class="list-group">
+                            <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                          </div>
+                          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                            <h4 id="list-item-1">Item 1</h4>
+                            <p>...</p>
+                            <h4 id="list-item-2">Item 2</h4>
+                            <p>...</p>
+                            <h4 id="list-item-3">Item 3</h4>
+                            <p>...</p>
+                            <h4 id="list-item-4">Item 4</h4>
+                            <p>...</p>
+                          </div> -->
+<!--     
+                          <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                            <nav class="nav nav-pills flex-column">
+                              <a class="nav-link" href="#item-1">Item 1</a>
+                              <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                              </nav>
+                              <a class="nav-link" href="#item-2">Item 2</a>
+                              <a class="nav-link" href="#item-3">Item 3</a>
+                              <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                              </nav>
+                            </nav>
+                          </nav> -->
+                      <!-- </div> -->
+
+                </div>      
             </div>
 
             <!-- Thông tin về các biến thể của Corona virus từng đc ghi nhận -->
+            
             <div class="pandemic-variations content-section">
-                Pandemic Variations: Trọng Nghĩa
+                
             </div>
 
             <!-- Thông tin về các loại vaccine hiện hành (số lượng, nước sx, ..) -->
-            <div class="pandemic-vaccines content-section">
+             <div class="pandemic-vaccines content-section">
                 Pandemic Vaccines
                 <p>Vaccine covid 19 trên thế giới hiện nay được rất nhiều các nước trên thế giới sản xuất chủ yếu dựa vào các
                      cơ chế sinh học sau:
@@ -974,88 +1134,293 @@
                              <th>Ngày 7/8, Hội đồng Đạo đức trong nghiên cứu y sinh học Quốc gia đã 
                                  họp thông qua đề cương nghiên cứu giai đoạn 2 vaccine COVIVAC.</th>
                              <th> Viện Vaccine và Sinh phẩm Y tế trực thuộc Bộ Y tế (IVAC)</th>
-                         </tr>
-                         <tr>
-                             <th>    3</th>
-                             <th>Vaccine Sputnik V</th>
-                             <th>Ngày 21/7, Quỹ Đầu tư Trực tiếp Nga (RDIF) thông báo Việt Nam đã sản 
+                        </tr>
+                        <tr>
+                            <th>    3</th>
+                            <th>Vaccine Sputnik V</th>
+                            <th>Ngày 21/7, Quỹ Đầu tư Trực tiếp Nga (RDIF) thông báo Việt Nam đã sản 
                                  xuất lô vaccine COVID-19 Sputnik-V thử nghiệm đầu tiên do Nga nghiên 
                                  cứu phát triển. </th>
-                             <th>công ty Công ty đối tác VABIOTECH bên phía Việt Nam</th>
-                         </tr>
-                         <tr>    
-                             <th>    4</th>
-                             <th>Vaccine VBC-COV19-154</th>
-                             <th>Tháng 12/2021, VinBioCare dự kiến sẽ hoàn thiện hồ sơ và gửi Bộ Y tế
+                            <th>công ty Công ty đối tác VABIOTECH bên phía Việt Nam</th>
+                        </tr>
+                        <tr>    
+                            <th>    4</th>
+                            <th>Vaccine VBC-COV19-154</th>
+                            <th>Tháng 12/2021, VinBioCare dự kiến sẽ hoàn thiện hồ sơ và gửi Bộ Y tế
                                   xin cấp phép khẩn cấp có điều kiện để sử dụng VCB-COV19-154 tại Việt Nam. 
                                   Dự kiến, lô vaccine đầu tiên sẽ được xuất xưởng vào đầu năm 2022.</th>
-                             <th>Arcturus Therapeutics (Mỹ) </th>
-                         </tr>
-                         <tr>
-                             <th>    5</th>
-                             <th> Vaccine tái tổ hợp Recombinant SARS-CoV-2 Spike Protein</th>
-                             <th>Ngày 27/07/2021, phó cục trưởng Cục Khoa học Công nghệ và đào tạo (bộ Y Tế)
+                            <th>Arcturus Therapeutics (Mỹ) </th>
+                        </tr>
+                        <tr>
+                            <th>    5</th>
+                            <th> Vaccine tái tổ hợp Recombinant SARS-CoV-2 Spike Protein</th>
+                            <th>Ngày 27/07/2021, phó cục trưởng Cục Khoa học Công nghệ và đào tạo (bộ Y Tế)
                                   Nguyễn Ngô Quang cho biết công nghệ được công ty Shionogi chuyển giao là công
                                    nghệ sản xuất vaccine tái tổ hợp (Recombinant SARS-CoV-2 Spike Protein). </th>
-                             <th>Công ty Nhật Bản Shionogi </th>
-                         </tr>
-                     </table>
+                            <th>Công ty Nhật Bản Shionogi </th>
+                        </tr>
+                    </table>
                 </p>
-            </div>
+            </div> 
+             -->
 
             <!-- Cách li tại nhà NVA -->
-            <div class="pandemic-at-home content-section">
-                <h1 class="col-12 mt-3 text-center">Cách li tại nhà</h1>
-                <section class="container-fluid  d-flex justify-content-center pt-5 h-100 min-vh-100">
-                    <div class="container-fluid">
-                      <div class="row gy-2">
-              
-                        <!-- Card 1 Hãy ở nhà -->
-                        <div class="col-lg-3 col-md-4">
-                          <div class="box bg-light border h-100 d-flex p-4 flex-column text-dark">
-                              <img class="img-fluid" src="https://images.unsplash.com/photo-1610814651936-61f4b9e31679?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHN0YXklMjBhdCUyMGhvbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="New York">
-                              <h1>Hãy ở nhà</h1>
-                              <p>Ở nhà Hầu hết mọi người mắc COVID-19 bị bệnh nhẹ và có thể hồi phục tại nhà mà không cần chăm sóc y tế. Đừng rời khỏi nhà của quý vị, ngoại trừ khi cần sự chăm sóc y tế. Đừng đến các khu vực công cộng.</p>
-                              <p>Chăm sóc bản thân. Nghỉ ngơi và uống nước thường xuyên. Dùng các loại thuốc không cần kê toa, chẳng hạn như acetaminophen, để giúp quý vị cảm thấy tốt hơn.</p>
-                              <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" id="nva-img" target="_blank" rel="noopener noreferrer" class="btn mt-auto btn-primary">Read more</a>
-                          </div>
+            <div id="pandemic-at-home" class="content-section">
+                <div id="the-line"></div>
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Để Cách Ly Tại Nhà Một Cách Hiệu Quả</h1>
+                </div>
+                
+                <section id="nva" class="nva">
+                    <div class=" container">
+                        <div class="row">
+                            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+                                <img src="https://images.unsplash.com/photo-1618498082410-b4aa22193b38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGRvY3RvcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class=" float-end pt-2 rounded" alt="">
+                            </div>
+                            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+                                <h1>Cách ly tại nhà</h1>
+                                <p class="fst-italic">
+                                    Để bảo vệ chính mình và cộng đồng nếu cần cách ly y tế hãy tuân thủ những điều sau
+                                </p>
+                                <ul>
+                                    <ul><i class="bi bi-check-circle"></i> Ở nhà trừ khi cần được chăm sóc y tế</ul>
+                                    <ul><i class="bi bi-check-circle"></i> Xét nghiệm Covid-19</ul>
+                                    <ul><i class="bi bi-check-circle"></i> Tách bản thân khỏi những người khác</ul>
+                                    <ul><i class="bi bi-check-circle"></i> Theo dõi các triệu chứng của bản thân</ul>
+                                    <ul><i class="bi bi-check-circle"></i> Che miệng khi ho hoặc hắt hơi</ul>
+                                    <ul><i class="bi bi-check-circle"></i> Vệ sinh tay chân và các đồ vật</ul>
+                                </ul>
+                                <h3>Để tìm hiểu chi tiết</h3>
+                                <button type="button" class="btn btn-main" data-bs-toggle="modal" data-bs-target="#myModal" >
+                                    Tìm Hiểu Thêm
+                                </button>
+                            </div>
                         </div>
-              
-                        <!-- Chủ động cách ly -->
-                        <div class="col-lg-3 col-md-4">
-                          <div class="box bg-light border h-100 d-flex p-4 flex-column text-dark">
-                              <img class="img-fluid" src="https://images.unsplash.com/photo-1610814651936-61f4b9e31679?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHN0YXklMjBhdCUyMGhvbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="New York">
-                              <h1>Chủ động cách ly</h1>
-                              <p>Cố gắng ở trong phòng riêng và tránh xa người khác và thú cưng trong nhà quý vị càng nhiều càng tốt. Nếu có thể, quý vị nên sử dụng phòng vệ sinh riêng. Nếu quý vị cần ở gần người khác hoặc động vật trong hoặc ngoài nhà, hãy đeo khẩu trang.</p>
-                              <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" id="nva-img" target="_blank" rel="noopener noreferrer" class="btn mt-auto btn-primary">Read more</a>
-                          </div>
+                          
+                          <!-- The Modal -->
+                        <div class="modal nva-modal" id="myModal">
+                            <div class="modal-dialog modal-fullscreen">
+                                <div class="modal-content">
+                          
+                                <!-- Modal Header -->
+                                    <div class="modal-header ">
+                                        <h1 class="modal-title ">Để Cách Ly Tại Nhà Một Cách Hiệu Quả</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                          
+                                <!-- Modal body -->
+                                <div class="modal-body ">
+                                    <!-- Thẻ 1 -->
+                                    <div class="container-fluid mt-5">
+                                        <div class="row border border-1">
+                                            <div class="col-lg-8">
+                                                <h2 class="h1 mt-5 mx-5">Ở nhà trừ khi cần được chăm sóc y tế</h2>
+                                                <p class="lead mt-3 mx-5 ">Ở nhà Hầu hết mọi người mắc COVID-19 bị bệnh nhẹ và có thể hồi phục tại nhà mà không cần chăm sóc y tế. Đừng rời khỏi nhà của bạn, ngoại trừ khi cần sự chăm sóc y tế. Không đến các khu vực công cộng và không đến những nơi mà bạn không thể đeo khẩu trang.</p>
+                                                <p class="lead mt-3 mx-5 ">Chăm sóc bản thân. Nghỉ ngơi và uống nước thường xuyên. Dùng các loại thuốc không cần kê toa, chẳng hạn như acetaminophen, để giúp bạn cảm thấy tốt hơn.</p>
+                                                <p class="lead mt-3 mx-5 ">Giữ liên lạc với bác sĩ của bạn. Gọi điện trước khi đến khám bệnh. Phải tìm sự chăm sóc y tế nếu bạn bị khó thở, hoặc có các dấu hiệu cảnh báo cấp cứu, hoặc nếu bạn nghĩ đó là một trường hợp cần cấp cứu.</p>
+                                            </div>
+                                            
+                                            <div class="col-lg-4">
+                                                <img src="https://images.unsplash.com/photo-1510563800743-aed236490d08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3RheSUyMGF0JTIwaG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="  float-end mx-5 d-block my-5" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <!-- Thẻ 2 -->
+                                    <div class="container-fluid mt-5">
+                                        <div class="row border border-1">
+                                            <div class="col-lg-8">
+                                                <h2 class="h1 mt-5 mx-5">Đi xét nghiệm</h2>
+                                                <p class="lead mt-3 mx-5 ">Nếu bạn cảm thấy mình có những triệu chứng của Covid-19 hoặc nghi ngờ bản thân mắc Covid-19 hãy chủ động tiến hành xét nghiệm. Bạn có thể tham khảo Test Covid Online của Covid Gate chúng tôi để chủ động hơn.</p>
+                                                <p class="lead mt-3 mx-5 ">Xét nghiệm càng sớm càng tốt sau khi bạn bắt đầu có các triệu chứng bệnh. Có thể có các phương pháp điều trị cho người mắc COVID-19 và thuộc đối tượng có nguy cơ mắc bệnh nặng. Đừng trì hoãn: Việc điều trị phải được bắt đầu sớm để có hiệu quả - một số phương pháp điều trị phải bắt đầu trong vòng 5 ngày kể từ khi bạn có các triệu chứng đầu tiên.</p>
+                                                <p class="lead mt-3 mx-5 ">Bộ kit tự xét nghiệm là một trong số vài tùy chọn để xét nghiệm vi-rút gây bệnh COVID-19 và có thể thuận tiện hơn xét nghiệm tại phòng thí nghiệm và xét nghiệm được tiến hành tại điểm chăm sóc. Hỏi nhà cung cấp dịch vụ chăm sóc sức khỏe hoặc sở y tế địa phương nếu bạn cần trợ giúp diễn giải kết quả xét nghiệm.</p>
+                                            </div>
+                                            
+                                            <div class="col-lg-4">
+                                                <img src="https://images.unsplash.com/photo-1605549188315-8aa899c3d35f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvdmlkJTIwMTklMjB0ZXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="  float-end mx-5 d-block my-5" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <!-- Thẻ 3 -->
+                                    <div class="container-fluid mt-5">
+                                        <div class="row border border-1">
+                                            <div class="col-lg-8">
+                                                <h2 class="h1 mt-5 mx-5">Tách bản thân khỏi những người khác</h2>
+                                                <p class="lead mt-3 mx-5 ">Cố gắng ở trong phòng riêng và tránh xa người khác và thú cưng trong nhà bạn càng nhiều càng tốt. Nếu có thể, bạn nên sử dụng phòng vệ sinh riêng. Nếu bạn cần ở gần người khác hoặc động vật trong hoặc ngoài nhà, hãy đeo khẩu trang vừa khớp.</p>
+                                                <p class="lead mt-3 mx-5 ">Thông báo cho những người tiếp xúc gần biết rằng họ có thể đã phơi nhiễm với COVID-19. Người nhiễm bệnh có thể lây lan COVID-19 bắt đầu 48 giờ (hoặc 2 ngày) trước khi người đó có bất kỳ triệu chứng nào hoặc có xét nghiệm dương tính. Bằng việc thông báo cho những người tiếp xúc gần với bạn biết rằng họ có thể đã phơi nhiễm với COVID-19, bạn đang giúp bảo vệ mọi người.</p>
+                                                <p class="lead mt-3 mx-5 "></p>
+                                            </div>
+                                            
+                                            <div class="col-lg-4">
+                                                <img src="https://images.unsplash.com/photo-1599493347474-7e864c18489e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y292aWQlMjBzYWZlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="  float-end mx-5 d-block my-5" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Thẻ 4 -->
+                                    <div class="container-fluid mt-5">
+                                        <div class="row border border-1">
+                                            <div class="col-lg-8">
+                                                <h2 class="h1 mt-5 mx-5">Theo dõi các triệu chứng của bạn</h2>
+                                                <p class="lead mt-3 mx-5 ">Các triệu chứng của Covid-19 bao gồm sốt, ho, mệt mỏi, mất vị giác, khứu giác, hoặc ít gặp hơn như đau họng, đau đầu, tiêu chảy, da nổi mẩn hay ngón tay hoặc ngón chân bị tấy đỏ hoặc tím tái, mắt đỏ hoặc ngứa.  Nghiêm trọng hơn có thể kể đến như khó thở, mất khả năng nói hay cử động hoặc thấy lú lẫn, đau ngực.</p>
+                                                <p class="lead mt-3 mx-5 ">Thực hiện theo các hướng dẫn chăm sóc từ nhà cung cấp dịch vụ chăm sóc sức khỏe và sở y tế địa phương. Cơ quan y tế địa phương sẽ đưa ra hướng dẫn cách kiểm tra các triệu chứng của bạn và báo cáo thông tin.</p>
+                                                <p class="lead mt-3 mx-5 "></p>
+                                            </div>
+                                            
+                                            <div class="col-lg-4">
+                                                <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHRha2UlMjBjYXJlJTIweW91ciUyMHNlbGZ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="  float-end mx-5 d-block my-5" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Thẻ 5 -->
+                                    <div class="container-fluid mt-5">
+                                        <div class="row border border-1">
+                                            <div class="col-lg-8">
+                                                <h2 class="h1 mt-5 mx-5">Gọi điện trước khi đến gặp bác sĩ của bạn</h2>
+                                                <p class="lead mt-3 mx-5 ">Hãy gọi điện trước. Có thể hoãn hoặc thực hiện buổi khám định kỳ qua điện thoại hoặc dịch vụ y tế từ xa.</p>
+                                                <p class="lead mt-3 mx-5 ">Nếu bạn có một cuộc hẹn khám bệnh không thể hoãn lại, hãy gọi đến văn phòng bác sĩ của bạn để thông báo cho họ bạn đã mắc hoặc có thể mắc COVID-19. Việc này sẽ giúp phòng khám bảo vệ bản thân họ và các bệnh nhân khác.</p>
+                                                <p class="lead mt-3 mx-5 "></p>
+                                            </div>
+                                            
+                                            <div class="col-lg-4">
+                                                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9jdG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="  float-end mx-5 d-block my-5" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Thẻ 6 -->
+                                    <div class="container-fluid mt-5">
+                                        <div class="row border border-1">
+                                            <div class="col-lg-8">
+                                                <h2 class="h1 mt-5 mx-5">Nếu bạn bị bệnh, hãy đeo khẩu trang vừa khớp</h2>
+                                                <p class="lead mt-3 mx-5 ">Bạn nên đeo khẩu trang nếu bạn phải ở gần bên người khác hoặc động vật, kể cả vật nuôi trong nhà (dù là tại nhà).</p>
+                                                <p class="lead mt-3 mx-5 ">Đeo khẩu trang vừa khớp nhất, có khả năng bảo vệ và tạo giảm giác thoải mái cho bạn.</p>
+                                                <p class="lead mt-3 mx-5 ">Bạn không cần đeo khẩu trang nếu bạn ở một mình. Nếu bạn không thể đeo khẩu trang (ví dụ vì gặp vấn đề khi thở), hãy che miệng khi ho và hắt hơi theo một số cách khác. Cố gắng đứng cách xa người khác ít nhất là 6 feet, tương đương 2 mét. Điều này sẽ giúp bảo vệ những người xung quanh bạn.</p>
+                                                <p class="lead mt-3 mx-5 ">Không nên đeo khẩu trang cho trẻ em dưới 2 tuổi, bất kỳ ai bị khó thở, hoặc bất kỳ ai không thể tự tháo khẩu trang mà không có sự trợ giúp.</p>
+                                            </div>
+                                        
+                                            <div class="col-lg-4">
+                                                <img src="https://images.unsplash.com/photo-1610703415552-d7fca41a8857?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y292aWQlMjBtYXNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="  float-end mx-5 d-block my-5" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Thẻ 7 -->
+                                    <div class="container-fluid mt-5">
+                                        <div class="row border border-1">
+                                            <div class="col-lg-8">
+                                                <h2 class="h1 mt-5 mx-5">Che miệng khi ho hoặc hắt hơi</h2>
+                                                <p class="lead mt-3 mx-5 ">Che miệng và mũi bằng khăn giấy khi bạn ho hoặc hắt hơi.</p>
+                                                <p class="lead mt-3 mx-5 ">Vất khăn giấy đã sử dụng vào thùng rác có lót bao rác.</p>
+                                                <p class="lead mt-3 mx-5 ">Rửa tay ngay lập tức bằng xà phòng và nước trong ít nhất 20 giây. Nếu không có xà phòng và nước, hãy làm sạch tay bằng dung dịch sát trùng tay có chứa ít nhất 60% cồn.</p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <img src="https://images.unsplash.com/photo-1626697556342-2310dbc55428?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c25lZXppbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="  float-end mx-5 d-block my-5" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Thẻ 8 -->
+                                    <div class="container-fluid mt-5">
+                                        <div class="row border border-1">
+                                            <div class="col-lg-8">
+                                                <h2 class="h1 mt-5 mx-5">Rửa tay thường xuyên</h2>
+                                                <p class="lead mt-3 mx-5 ">Rửa tay thường xuyên bằng xà phòng và nước trong ít nhất 20 giây. Điều này đặc biệt quan trọng sau khi xì mũi, ho hoặc hắt hơi; đi vào phòng vệ sinh; và trước khi ăn hoặc chuẩn bị thức ăn.</p>
+                                                <p class="lead mt-3 mx-5 ">Sử dụng dung dịch sát trùng tay nếu không có sẵn nước và xà phòng. Sử dụng dung dịch sát trùng tay có nồng độ cồn ít nhất 60%, phủ kín tất cả các bề mặt của bàn tay và chà xát tay với nhau cho đến khi cảm thấy khô.</p>
+                                                <p class="lead mt-3 mx-5 ">Xà phòng và nước là lựa chọn tốt nhất, đặc biệt là khi tay bẩn rõ ràng.</p>
+                                                <p class="lead mt-3 mx-5 ">Tránh chạm vào mắt, mũi và miệng bằng tay chưa rửa sạch</p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <img src="https://images.unsplash.com/photo-1584744646898-40ff0404e767?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2FzaCUyMGhhbmRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="  float-end mx-5 d-block my-5" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Thẻ 9 -->
+                                    <div class="container-fluid mt-5">
+                                        <div class="row border border-1">
+                                            <div class="col-lg-8">
+                                                <h2 class="h1 mt-5 mx-5">Tránh dùng chung đồ dùng cá nhân</h2>
+                                                <p class="lead mt-3 mx-5 ">Không dùng chung bát đĩa, ly uống nước, cốc, dụng cụ ăn uống, khăn hoặc bộ trải giường với người khác trong nhà bạn.</p>
+                                                <p class="lead mt-3 mx-5 ">Rửa kỹ các đồ dùng này sau khi sử dụng bằng xà phòng và nước hoặc cho vào máy rửa chén.</p>
+                                                <p class="lead mt-3 mx-5 "></p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <img src="https://images.unsplash.com/photo-1580847097346-72d80f164702?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cHJpdmFjeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="  float-end mx-5 d-block my-5" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Thẻ 10 -->
+                                    <div class="container-fluid mt-5">
+                                        <div class="row border border-1">
+                                            <div class="col-lg-8">
+                                                <h2 class="h1 mt-5 mx-5">Thường xuyên vệ sinh các bề mặt tại nhà của bạn</h2>
+                                                <p class="lead mt-3 mx-5 ">Vệ sinh và khử trùng các bề mặt thường xuyên chạm vào (ví dụ: tay nắm cửa, bàn, tay cầm, công tắc đèn và mặt bàn) trong "phòng bệnh" và phòng vệ sinh của bạn. Trong không gian chung, bạn nên vệ sinh và khử trùng các bề mặt và vật dụng sau mỗi lần người bị bệnh sử dụng.</p>
+                                                <p class="lead mt-3 mx-5 ">Nếu bạn bị bệnh và không thể dọn dẹp, người chăm sóc hoặc người khác chỉ nên làm sạch và khử trùng khu vực xung quanh bạn (chẳng hạn như phòng ngủ và phòng tắm của bạn) khi cần thiết. Người chăm sóc của bạn / người khác nên đợi càng lâu càng tốt (ít nhất vài giờ) và đeo khẩu trang trước khi bước vào, làm sạch và khử trùng không gian chung mà bạn sử dụng.</p>
+                                                <p class="lead mt-3 mx-5 ">Làm sạch và khử trùng các khu vực có thể có máu, phân hoặc chất dịch cơ thể trên đó.</p>
+                                            </div>
+                                            
+                                            <div class="col-lg-4">
+                                                <img src="https://images.unsplash.com/photo-1627905646269-7f034dcc5738?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2xlYW5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="  float-end mx-5 d-block my-5" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Thẻ 11 -->
+                                    <div class="container-fluid mt-5">
+                                        <div class="row border border-1">
+                                            <div class="col-lg-8">
+                                                <h2 class="h1 mt-5 mx-5">Thực hiện các biện pháp để cải thiện thông gió tại nhà</h2>
+                                                <p class="lead mt-3 mx-5 ">Cải thiện thông gió (luồng không khí) tại nhà giúp ngăn chặn lây lan COVID-19 cho người khác tại hộ gia đình bạn.</p>
+                                                <p class="lead mt-3 mx-5 ">Loại bỏ hạt vi-rút COVID-19 trong không khí bằng cách mở cửa sổ, sử dụng bộ lọc không khí và bật quạt trong nhà của bạn.</p>
+                                                <p class="lead mt-3 mx-5 "></p>
+                                            </div>
+                                    
+                                            <div class="col-lg-4">
+                                                <img src="https://images.unsplash.com/photo-1541504657352-a55ff3844249?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3BlbiUyMHdpbmRvd3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="  float-end mx-5 d-block my-5" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                          
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
                         </div>
-              
-                        <!-- Theo dõi triệu chứng -->
-                        <div class="col-lg-3 col-md-4">
-                          <div class="box bg-light border h-100 d-flex p-4 flex-column text-dark">
-                              <img src="https://images.unsplash.com/photo-1610814651936-61f4b9e31679?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHN0YXklMjBhdCUyMGhvbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                              <h1>Theo dõi bản thân</h1>
-                              <p>Các triệu chứng của COVID-19 bao gồm sốt, ho hoặc các triệu chứng khác.</p>
-                              <p>Thực hiện theo các hướng dẫn chăm sóc từ nhà cung cấp dịch vụ chăm sóc sức khỏe và sở y tế địa phương. Cơ quan y tế địa phương sẽ đưa ra hướng dẫn cách kiểm tra các triệu chứng của quý vị và báo cáo thông tin.</p>
-                              <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" id="nva-img" target="_blank" rel="noopener noreferrer" class="btn mt-auto btn-primary">Read more</a>
-                          </div>
-                        </div>
-                        <!-- Rửa tay thường xuyên -->
-                        <div class="col-lg-3 col-md-4">
-                          <div class="box bg-light border h-100 d-flex p-4 flex-column text-dark">
-                              <img src="https://images.unsplash.com/photo-1610814651936-61f4b9e31679?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHN0YXklMjBhdCUyMGhvbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                              <h1>Hãy rửa tay</h1>
-                              <p>Rửa tay thường xuyên bằng xà phòng và nước trong ít nhất 20 giây. Điều này đặc biệt quan trọng sau khi xì mũi, ho hoặc hắt hơi; đi vào phòng vệ sinh; và trước khi ăn hoặc chuẩn bị thức ăn.</p>
-                              <p>Rửa kỹ các đồ dùng này sau khi sử dụng bằng xà phòng và nước hoặc cho vào máy rửa chén.</p>
-                              <a href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" id="nva-img" target="_blank" rel="noopener noreferrer" class="btn mt-auto btn-primary">Read more</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                    
+                    </div>          
+                </section>
             </div>
+
+            <div id="connection-pages" class="content-section">
+                <div id="the-line"></div>
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Đối Tác & Liên Kết</h1>
+                </div>
+                <div class="row">
+                    <div class="connection-logo col-4">
+                        <a href="https://daihoc.fpt.edu.vn/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/connection/FPT_Uni.png" alt="FPT University">
+                        </a>
+                    </div>
+                    <div class="connection-logo col-4">
+                        <a href="https://covid19.gov.vn/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/connection/Bo_Y_Te.jpg" alt="Bộ Y Tế">
+                        </a>
+                    </div>
+                    <div class="connection-logo col-4">
+                        <a href="https://suckhoedoisong.vn/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/connection/Suc_Khoe_Doi_Song.png" alt="Sức Khỏe Đời Sống">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- Footer -->
@@ -1069,7 +1434,7 @@
                     <div class="description">
                         <p>
                             Một dự án phi lợi nhuận với mục đích là mang đến những giá trị thông qua kiến thức, 
-                            thông tin, số liệu về dịch bệnh một cách đầy đủ và chính xác.Tại đây chúng mình sẽ 
+                            thông tin, số liệu về dịch bệnh một cách đầy đủ và chính xác. Tại đây chúng mình sẽ 
                             tổng hợp và đưa ra mọi thông tin cần thiết liên quan đến đại dịch COVID-19 tại Việt 
                             Nam cũng như trên toàn thế giới.
                         </p>
@@ -1086,14 +1451,14 @@
                 <div class="footer-section footer-links">
                     <h2>Truy Cập</h2>
                     <ul>
-                        <li><a href="#">Tin tức dịch bệnh</a></li>
-                        <li><a href="#">Số liệu chi tiết</a></li>
-                        <li><a href="#">Cách li tại nhà</a></li>
-                        <li><a href="#">Quá trình hình thành</a></li>
+                        <li><a href="#pandemic-news">Tin tức dịch bệnh</a></li>
+                        <li><a href="./quizzes-Vu.html">Test COVID-19 trực tuyến</a></li>
+                        <li><a href="#pandemic-at-home">Cách li tại nhà</a></li>
+                        <li><a href="#formation-pandemic">Quá trình hình thành</a></li>
                         <li><a href="#">Các loại biến thể</a></li>
                         <li><a href="#">Các loại vaccine</a></li>
                     </ul>
-                </div>
+                </div> 
 
                 <div class="footer-section footer-contact">
                     <h2>Liện Hệ</h2>
@@ -1114,7 +1479,7 @@
                         </li>
                         <li>
                             <span><i class="bi bi-envelope-fill" aria-hidden="true"></i>&nbsp;</span>
-                            <span><a href="mailto:chairteam@gmail.com">chairteam@gmail.com</a></span>
+                            <span><a href="mailto:teamchairfpt@gmail.com">teamchairfpt@gmail.com</a></span>
                         </li>
                     </div>
                 </div>
@@ -1123,17 +1488,17 @@
             <div class="footer-copyright">
                 <p>Copyright &copy;2022 All right reserved | Website is a product of Chair Team</p>
             </div>
-        </div>
-    </div>
-
-
+        </footer>
 
 
     <!-- src js của bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
-    <!-- src js trong thư mục js -->
+    <!-- src js của chung website -->
     <script src="./js/script.js"></script>
+
+    <!-- src js của Feedback -->
+    <script src="./js/send-feedback.js" data-cfasync="false" type="text/javascript"></script>
     
 
 </body>
