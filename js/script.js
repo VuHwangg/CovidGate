@@ -8,6 +8,11 @@ window.addEventListener("scroll", ()=>{
     nav.classList.remove("nav-sticky")
   }
 });
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 64a57f1c26366920e9b0207f9e55d131b10b10f5
 
 // Toasts - Cửa sổ pop up
 var toastTrigger1 = document.getElementById('liveToastBtn1')

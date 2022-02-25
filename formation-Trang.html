@@ -9,62 +9,66 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-
-   <caption><h1 id="main-heading"></h1></caption> 
     
-
-    <div id="main">
-        <div  id="header">
+    
+    <div id="main-trang">
+        <div  id="header-trang">
             <!--tạo khung header-->
-            <a id="home" href="index.html">Home</a>
-            <div id="box-nav">
-                <ul id="nav-heading-trang">
-                    <li >
-                        <li class="nav nav1" ><a href="">GIAI ĐOẠN 1</a></li>
-                        <li class="nav nav2"><a href="">GIAI ĐOẠN 2</a></li>
-                        <li class="nav nav3"><a href="">GIAI ĐOẠN 3</a></li>
-                        <li class="nav nav4"><a href="">GIAI ĐOẠN 4</a></li>
-                        <li class="nav nav5"><a href="">TỔNG QUAN 4 GIAI ĐOẠN</a></li>
 
-                    </li>
-                </ul>
+            <a id="home" href="index.html">
+                <button type="button" class="btn-close" aria-label="Close" id="home"></button>
+            </a>
+            <div class="heading-name-trang" style="color: rgb(10, 52, 87);"><h2>QUÁ TRÌNH HÌNH THÀNH ĐẠI DỊCH</h2></div>
+            
+            <br>
+
+            <div class="nav-process-trang">
+                <button type="button" class="btn btn-outline-primary">Làn sóng dịch thứ 1</button>
+<button type="button" class="btn btn-outline-secondary">Làn sóng dịch thứ 2</button>
+<button type="button" class="btn btn-outline-success">Làn sóng dịch thứ 3</button>
+<button type="button" class="btn btn-outline-danger">Làn sóng dịch thứ 4</button>
+<button type="button" class="btn btn-outline-warning">Tổng kết 4 giai đoạn</button>
+
             </div>
-            
-            
+
         </div>
+  
+        
 
     <!--                 CONTENT                       --> 
 
-        <div id="content">
-
+   <div id="content">
+        <br><br><br><br><br><br>
         <div class="content-section">
 
-<!--đợt dịch thứ 1-->
-    <div id="content1">
-    <h1 ><br>Quá trình hình thành đại dịch ở Việt Nam</h1>
+          <!--đợt dịch thứ 1-->
+         <div id="content1">
+       <!--bài báo 1-->
 
-    <!--bài báo 1-->
+       <h2>
+        <i class="bi bi-caret-right-fill">Làn sóng dịch thứ 1</i>
+        </h2>
+        <hr class="my-2" style="max-width: 560px;">
+    <div class="row">
 
+      <div class="col-lg-6">
+          <div class="news-content card h-100">
+              <a href="http://t5g.org.vn/viet-nam-da-ghi-nhan-tren-20000-ca-mac-covid-19" target="_blank" rel="noopener noreferrer">
+                  <div class="news-image">
+                      <img src="http://t5g.org.vn/uploads/news/2021/05072021Hung.jpg" alt="image_1">
+                  </div>
+                  <div class="card-body">
+                      <h2 class="card-title">Việt Nam đã ghi nhận trên 20.000 ca mắc COVID-19</h2>
+                      <p class="card-text">T5g.org.vn - Bộ Y tế sáng 05/7/2021 ghi nhận 328 ca dương tính nCoV được đánh số từ số 19934-20261, như vậy tính từ ngày 23/1/2020 khi phát hiện ca COVID-19 đầu tiên ở nước ta, số ca mắc COVID-19 đã đạt và vượt mốc 20.000 ca...</p>
+                      <p class="card-text"><small class="text-muted">05/07/2021 08:26 AM</small></p>
+                  </div>
+              </a>
+          </div>
+      </div>
 
-      <div class="row">
-
+    
         <div class="col-lg-6">
-            <div class="news-content card h-100">
-                <a href="http://t5g.org.vn/viet-nam-da-ghi-nhan-tren-20000-ca-mac-covid-19" target="_blank" rel="noopener noreferrer">
-                    <div class="news-image">
-                        <img src="http://t5g.org.vn/uploads/news/2021/05072021Hung.jpg" alt="image_1">
-                    </div>
-                    <div class="card-body">
-                        <h2 class="card-title">Việt Nam đã ghi nhận trên 20.000 ca mắc COVID-19</h2>
-                        <p class="card-text">T5g.org.vn - Bộ Y tế sáng 05/7/2021 ghi nhận 328 ca dương tính nCoV được đánh số từ số 19934-20261, như vậy tính từ ngày 23/1/2020 khi phát hiện ca COVID-19 đầu tiên ở nước ta, số ca mắc COVID-19 đã đạt và vượt mốc 20.000 ca...</p>
-                        <p class="card-text"><small class="text-muted">05/07/2021 08:26 AM</small></p>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-lg-6">
-            <!-- Việt Nam news 2 -->
+            <!--bài báo 2-->
             <div class="news-content card mb-3">
                 <a href="https://thanhnien.vn/viet-nam-doi-mat-dot-dich-nguy-hiem-nhat-tu-truoc-toi-nay-post1065707.html" target="_blank" rel="noopener noreferrer">
                     <div class="row g-0">
@@ -82,7 +86,7 @@
                 </a>
             </div>
 
-            <!--news 3-->
+            <!--bài báo 3-->
             <div class="news-content card mb-3">
                 <a href="https://dantri.com.vn/suc-khoe/mot-nam-chong-giac-covid-19-va-nhung-ky-tich-made-in-viet-nam-20210122081453483.htm" target="_blank" rel="noopener noreferrer">
                     <div class="row g-0">
@@ -99,8 +103,122 @@
                     </div>
                 </a>
             </div>
+        </div>
+
+    </div>
+    </div>
+    <br><br><br><br>
+
+
+
+    <div id="content2"> 
+        
+
+        <div class="world-news row">
+
+            <!-- News classify: Quốc Tế -->
+            <div class="news-classify" style="padding-top: 24px;">
+                <h2>
+                    <i class="bi bi-caret-right-fill">Làn sóng dịch thứ 2</i>
+                </h2>
+                <hr class="my-2" style="max-width: 560px;">
+            </div>
             
-            <!--news 1 giai đoạn 2-->
+            <!-- news 2 bài báo 1 -->
+            
+            <div class="col-lg-6">
+                <div class="news-content card mb-3">
+                    <a href="https://covid19.gov.vn/so-ca-mac-covid-19-o-han-quoc-tang-len-muc-cao-nhat-171220125091744733.htm" target="_blank" rel="noopener noreferrer">
+                        <div class="row g-0">
+                            <div class="news-image col-sm-4">
+                                <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/25/han-quoc-250122-1643077044001-164307704416749382366.jpg" class="img-fluid rounded-start" alt="image_5">
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Số ca mắc COVID-19 ở Hàn Quốc tăng lên mức cao nhất</h5>
+                                  <p class="card-text">Phóng viên TTXVN tại Seoul đưa tin số ca mắc mới COVID-19 ở Hàn Quốc ngày 25/1 dự kiến được ghi nhận ở mức 9.000. Đây là con số cao nhất kể từ khi ...</p>
+                                  <p class="card-text"><small class="text-muted">25/01/2022 09:17 (GMT+7)</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- news 2 bài báo 2 -->
+            <div class="col-lg-6">
+                <div class="news-content card mb-3">
+                    <a href="https://covid19.gov.vn/my-han-che-su-dung-2-lieu-phap-dieu-tri-khang-the-don-dong-cho-benh-nhan-covid-19-171220125091706217.htm" target="_blank" rel="noopener noreferrer">
+                        <div class="row g-0">
+                            <div class="news-image col-sm-4">
+                                <img src="https://moh.gov.vn/documents/176127/0/08-3-2020+PTTg+1.jpg/02730d1e-768d-4005-b164-e0add964be6b?t=1583683137680" class="img-fluid rounded-start" alt="image_6">
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Đà Nẵng trong tâm dịch</h5>
+                                  <p class="card-text">Cơ quan Quản lý thực phẩm và dược phẩm (FDA) Mỹ ngày 24/1 đã hạn chế đáng kể việc sử dụng 2 liệu pháp điều trị kháng thể đơn dòng do 2 hãng ...</p>
+                                  <p class="card-text"><small class="text-muted">25/01/2022 17:47 (GMT+7)</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- news 2 bài báo 3 -->
+            <div class="col-lg-6">
+                <div class="news-content card mb-3">
+                    <a href="https://covid19.gov.vn/han-quoc-chuyen-sang-phuong-thuc-ung-pho-voi-bien-the-omicron-171220124174247186.htm" target="_blank" rel="noopener noreferrer">
+                        <div class="row g-0">
+                            <div class="news-image col-sm-4">
+                                <img src="https://moh.gov.vn/documents/176127/0/08-3-2020+PTTg+1.jpg/02730d1e-768d-4005-b164-e0add964be6b?t=1583683137680" class="img-fluid rounded-start" alt="image_7">
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Đà Nẵng trong tâm dịch</h5>
+                                  <p class="card-text">Ngày 24/1, Tổng thống Hàn Quốc Moon Jae-in đã chỉ thị chính phủ nước này nhanh chóng chuyển sang các biện pháp ứng phó mới nhằm ngăn chặn ...</p>
+                                  <p class="card-text"><small class="text-muted">24/01/2022 17:47 (GMT+7)</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+                
+            <!-- news 2 bài báo 4 -->
+            <div class="col-lg-6">
+                <div class="news-content card mb-3">
+                    <a href="https://covid19.gov.vn/cac-truong-dai-hoc-my-no-luc-doi-pho-voi-so-ca-mac-covid-19-tang-cao-171220124174151226.htm" target="_blank" rel="noopener noreferrer">
+                        <div class="row g-0">
+                            <div class="news-image col-sm-4">
+                                <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/my-ca-mac-24012022-1643020846042-1643020846576360070090.jpg" class="img-fluid rounded-start" alt="image_8">
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Các trường đại học Mỹ nỗ lực đối phó với số ca mắc COVID-19 tăng cao</h5>
+                                  <p class="card-text">Số ca mắc COVID-19 trong các trường đại học đang gia tăng trên toàn nước Mỹ. Đây cũng là tuần có số ca mắc cao nhất mà đại học này ghi nhận ...</p>
+                                  <p class="card-text"><small class="text-muted">24/01/2022 17:47 (GMT+7)</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+ </div>
+        <br><br>
+        
+
+
+        <div id="content3">
+            <!--bài báo 1-->
+     
+            <h2>
+             <i class="bi bi-caret-right-fill">Làn sóng dịch thứ 3</i>
+            </h2>
+             <hr class="my-2" style="max-width: 560px;">
+        
+            <!-- news 1 giai đoạn 3
             <div class="news-content card mb-3">
                 <a href="https://moh.gov.vn/tin-tong-hop/-/asset_publisher/k206Q9qkZOqn/content/-cuoc-chien-chong-covid-19-bat-au-chien-dich-moi" target="_blank" rel="noopener noreferrer">
                     <div class="row g-0">
@@ -117,17 +235,10 @@
                     </div>
                 </a>
             </div>
-        </div>
-
-      </div>
+ -->
 
 
-
-
-
-      <br/><br/><br/>
-
-      <!--news2 giai đoạn 2-->
+      <!--news2 giai đoạn 3-->
       <div class="row">
         <div class="col-lg-6">
             <div class="news-content-1 card mb-3">
@@ -148,8 +259,8 @@
             </div>
         </div>
 
-<!--news3 giai đoạn 2 -->
-        <div class="col-lg-6">
+<!--news3 giai đoạn 3 -->
+        <div class="col-lg-12">
             <div class="news-content-1 card mb-3">
                 <a href="https://covid19.gov.vn/so-ca-mac-covid-19-o-han-quoc-tang-len-muc-cao-nhat-171220125091744733.htm" target="_blank" rel="noopener noreferrer">
                     <div class="row g-0">
@@ -168,151 +279,20 @@
             </div>
         </div>
 
-        <!--news 1 giai đoạn 3-->
-        <div class="col-lg-6">
-            <div class="news-content-1 card mb-3">
-                <a href="https://covid19.gov.vn/bo-y-te-thong-tin-dieu-dac-biet-lan-dau-co-tu-khi-bung-phat-dot-dich-thu-3-1717266612.htm" target="_blank" rel="noopener noreferrer">
-                    <div class="row g-0">
-                        <div class="news-image col-md-4">
-                            <img src="https://covid19.qltns.mediacdn.vn/thumb_w/640/2021/3/21/16319526043999421566872303573642420878145622n-16163231199181433396035.jpg" class="img-fluid rounded-start" alt="image_5">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Bộ Y tế thông tin điều đặc biệt lần đầu có từ khi bùng phát đợt dịch thứ 3</h5>
-                              <p class="card-text">Trong bản tin về tình hình dịch COVID-19 phát đi lúc 18h tối 21/3, Bộ Y tế cho biết 24 giờ qua...</p>
-                              <p class="card-text"><small class="text-muted">25/01/2022 09:17 (GMT+7)</small>21/03/2021 18:14 (GMT+7)</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div> 
-        <!--news 2 giai đoạn 3-->
+    </div>
 
-        <div class="col-lg-6">
-            <div class="news-content-1 card mb-3">
-                <a href="https://ksbtdanang.vn/phong-chong-dich-benh/benh-nhan-covid-19-dau-tien-trong-dot-dich-thu-3-o-da-nang-xuat-vien-440.html" target="_blank" rel="noopener noreferrer">
-                    <div class="row g-0">
-                        <div class="news-image col-md-4">
-                            <img src="https://ksbtdanang.vn/uploads/news/2021_05/2105214.jpg" class="img-fluid rounded-start" alt="image_5">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">BỆNH NHÂN COVID-19 ĐẦU TIÊN TRONG ĐỢT DỊCH THỨ 3 Ở ĐÀ NẴNG XUẤT VIỆN</h5>
-                              <p class="card-text">Sau 18 ngày nhập viện cách ly để điều trị do nhiễm COVID-19, sáng nay (21-5), bệnh nhân 2982 được Bệnh viện Phổi chữa khỏi bệnh ...</p>
-                              <p class="card-text"><small class="text-muted">Thứ sáu - 21/05/2021 15:23</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+    </div>
+    </div>
 
-
-                <!--news 3 giai đoạn 3-->
-
-                <div class="col-lg-6">
-                    <div class="news-content-1 card mb-3">
-                        <a href="https://covid19.gov.vn/hai-duong-cach-ly-xa-hoi-toan-tinh-tu-0h-ngay-16-2-1717239296.htm" target="_blank" rel="noopener noreferrer">
-                            <div class="row g-0">
-                                <div class="news-image col-md-4">
-                                    <img src="https://covid19.qltns.mediacdn.vn/Uploaded/hatheluc/2021_02_15/hai-duong-cach-ly-xa-hoi-toan-tinh-tu-0-gio-ngay-162-1-121856.jpg" class="img-fluid rounded-start" alt="image_5">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Hải Dương cách ly xã hội toàn tỉnh từ 0h ngày 16/2</h5>
-                                      <p class="card-text">Hải Dương sẽ tiến hành cách ly xã hội toàn tỉnh theo Chỉ thị 16 của Thủ tướng Chính phủ từ 0 giờ ngày 16/2 ...</p>
-                                      <p class="card-text"><small class="text-muted">15/02/2021 15:31 (GMT+7)</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-                               <!--news 4 giai đoạn 3-->
-
-                               <div class="col-lg-6">
-                                <div class="news-content-1 card mb-3">
-                                    <a href="https://trungtamytebache.vn/khac-biet-trong-dot-dich-da-nang-va-hai-duong-quang-ninh.html" target="_blank" rel="noopener noreferrer">
-                                        <div class="row g-0">
-                                            <div class="news-image col-md-4">
-                                                <img src="https://covid19.qltns.mediacdn.vn/Uploaded/hatheluc/2021_02_15/hai-duong-cach-ly-xa-hoi-toan-tinh-tu-0-gio-ngay-162-1-121856.jpg" class="img-fluid rounded-start" alt="image_5">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <div class="card-body">
-                                                  <h5 class="card-title">Hải Dương cách ly xã hội toàn tỉnh từ 0h ngày 16/2</h5>
-                                                  <p class="card-text">Hải Dương sẽ tiến hành cách ly xã hội toàn tỉnh theo Chỉ thị 16 của Thủ tướng Chính phủ từ 0 giờ ngày 16/2 ...</p>
-                                                  <p class="card-text"><small class="text-muted">15/02/2021 15:31 (GMT+7)</small></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-
-                                           <!--news 3 giai đoạn 3-->
-
-                <div class="col-lg-6">
-                    <div class="news-content-1 card mb-3">
-                        <a href="https://covid19.gov.vn/hai-duong-cach-ly-xa-hoi-toan-tinh-tu-0h-ngay-16-2-1717239296.htm" target="_blank" rel="noopener noreferrer">
-                            <div class="row g-0">
-                                <div class="news-image col-md-4">
-                                    <img src="https://covid19.qltns.mediacdn.vn/Uploaded/hatheluc/2021_02_15/hai-duong-cach-ly-xa-hoi-toan-tinh-tu-0-gio-ngay-162-1-121856.jpg" class="img-fluid rounded-start" alt="image_5">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Hải Dương cách ly xã hội toàn tỉnh từ 0h ngày 16/2</h5>
-                                      <p class="card-text">Hải Dương sẽ tiến hành cách ly xã hội toàn tỉnh theo Chỉ thị 16 của Thủ tướng Chính phủ từ 0 giờ ngày 16/2 ...</p>
-                                      <p class="card-text"><small class="text-muted">15/02/2021 15:31 (GMT+7)</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                
-
- 
-
-
-
+    <br><br><br><br>
 
       </div>
+      </div>
+      </div>
+    
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-        <div id="footer">
+        <div id="footer-trang">
 
         </div>
 
