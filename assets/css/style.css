@@ -657,40 +657,52 @@ ul {
 
 /* Pandemic Process: Trang */
 
-#main{
+#main-trang{
 
-}
-
-#main-heading{
-    
 }
 
 /* tiêu đề, khung header*/
-#header{
-    height: 70px;
+#header-trang{
+    height: 90px;
     width: 100%;
-    background-color:rgba(70, 84, 163, 0.9);
+    background-color:#78abd3;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 1000;
+
     
+}
+/*home- quay về trang chủ*/
+ #header-trang #home{
+
+    
+}
+ #header-trang #heading-name-trang {
+    text-align: center;
+    color: #fff;
+    
+}
+ #header-trang #heading-name-trang #nav-process-trang{
+   
 }
 
-#home{
-    margin-top: 600px;
-    margin-left: 30px;
-    line-height: 70px;
-    
-}
+
+
+
 #main #content{
-height: 1000px;
+height: 1500px;
 width: 1080px;
-/* background-color: #ff914d; */
 float: right;
-min-height: 400px;
+
+}
+#main #content #content-section #content1{
+    height: 400px;
+    width: 1080px;
+    float:right
+
 }
 
 
@@ -754,11 +766,13 @@ min-height: 400px;
     margin-bottom: 14px;
 }    
 
-#footer{
-    background-color: black;
-    width: 1000px;
-    height: 60px;
-    color: white;
+#footer-trang{
+    /* background-image:url(https://special.nhandan.vn/daumoc-Covid-19/assets/Y92OrKReMq/cv1-1920x1080.jpeg) linear-gradient(0, #fff, rgb(70, 70, 121) ) ;
+    background-clip: content-box;
+    background-size: contain; */
+    width: 100%;
+    height: 100px;
+    background-color: var(--main-color-lightblue);
 }
 
 .pandemic-process #introduce-process-trang{
@@ -1160,6 +1174,7 @@ you can use the generic selector below, but it's slower:
 }
 .icon-dribbble:before {
 	content: "\e063";
+<<<<<<< HEAD
 } */
 
 table{
