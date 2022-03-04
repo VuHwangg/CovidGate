@@ -45,13 +45,6 @@ if (toastTrigger4) {
     toast.show()
   })
 }
-if (toastTrigger6) {
-  toastTrigger6.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveExample)
-
-    toast.show()
-  })
-}
 
 // Modal Send Email - Cửa sổ send email
 var sendMailModal = document.getElementById('send-mail-modal')

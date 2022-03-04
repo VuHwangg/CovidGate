@@ -599,6 +599,15 @@ ul {
 
 /* Pandemic Data */
 
+.pandemic-data .world-data .news-classify {
+    margin: 32px 0;
+}
+
+.pandemic-data .vietnam-data i,
+.pandemic-data .world-data i {
+    color: var(--main-color-orange);
+}
+
 .pandemic-data .day-update {
     color: var(--main-color-orange);
     font-weight: 500;
@@ -611,10 +620,17 @@ ul {
     color: white;
 }
 
-.pandemic-data .case-data p {
+.pandemic-data .case-data .text {
     margin: 8px 8px;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 18px;
+}
+
+.pandemic-data .case-data .value {
+    color: white;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .pandemic-data .case-infection {
@@ -627,6 +643,10 @@ ul {
 
 .pandemic-data .case-death {
     background-color: rgba(99, 98, 98, 0.9);
+}
+
+.pandemic-data .case-treated {
+    background-color: rgba(228, 122, 1, 0.9);
 }
 
 .pandemic-data .detail-data-button {
