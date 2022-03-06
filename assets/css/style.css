@@ -738,17 +738,39 @@ ul {
     
 }
 /*home- quay về trang chủ*/
- #header-trang #home{
+#header-trang #home{
+ 
+}
 
-    
+#header-trang .heading-name-trang h2 {
+    text-align: center !important;
+    color: #fff; 
 }
- #header-trang #heading-name-trang {
-    text-align: center;
+
+#header-trang .nav-process-trang{
+    display: flex;
+    justify-content: center;
+}
+
+#header-trang .back_btn a{
+    font-size: 18px;
+    font-weight: 600;
     color: #fff;
-    
+    text-decoration: none;
 }
- #header-trang #heading-name-trang #nav-process-trang{
-   
+
+#header-trang .back_btn a span {
+    transition: all 0.4s ease;
+}
+
+#header-trang .back_btn a:hover span{
+    padding-left: 8px;
+}
+
+@media (max-width: 500px) {
+    #header-trang .nav-process-trang .btn {
+        font-size: 14px;
+    }
 }
 
 
