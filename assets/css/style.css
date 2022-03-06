@@ -742,12 +742,14 @@ ul {
 
     
 }
- #header-trang #heading-name-trang {
+ #header-trang .heading-name-trang {
     text-align: center;
     color: #fff;
+
     
 }
- #header-trang #heading-name-trang #nav-process-trang{
+
+ #header-trang .heading-name-trang #nav-process-trang{
    
 }
 
@@ -828,7 +830,7 @@ float: right;
     margin-bottom: 14px;
 }  
 #content #carouse-content1-trang{
-    
+
 }  
 
 #footer-trang{
