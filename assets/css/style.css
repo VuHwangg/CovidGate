@@ -826,7 +826,10 @@ float: right;
 #content1 h1{
     text-align: center;
     margin-bottom: 14px;
-}    
+}  
+#content #carouse-content1-trang{
+    
+}  
 
 #footer-trang{
     /* background-image:url(https://special.nhandan.vn/daumoc-Covid-19/assets/Y92OrKReMq/cv1-1920x1080.jpeg) linear-gradient(0, #fff, rgb(70, 70, 121) ) ;
