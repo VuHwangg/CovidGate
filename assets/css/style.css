@@ -738,9 +738,13 @@ ul {
     
 }
 /*home- quay về trang chủ*/
- #header-trang #home{
+#header-trang #home{
+ 
+}
 
-    
+#header-trang .heading-name-trang h2 {
+    text-align: center !important;
+    color: #fff; 
 }
  #header-trang .heading-name-trang {
     text-align: center;
