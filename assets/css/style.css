@@ -15,6 +15,7 @@ html {
 }
 
 body {
+    position: relative;
     font-size: 16px;
     line-height: 1.6;
     font-weight: 400;
@@ -712,16 +713,61 @@ ul {
     transform: scale(1.1);
 }
 
-/* Pandemic Prevention: Nguyên */
+/* Sub Carousel */
+.sub-carousel .carousel-inner {
+    background-color: black;
+    border-radius: 15px;
+    margin-top: 8px;
+}
 
+.sub-carousel .carousel-item {
+    overflow: hidden;
+}
 
+.sub-carousel .carousel-item img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    opacity: 0.8;
+}
 
+.sub-carousel .carousel-inner .carousel-caption {
+    text-shadow: 5px 5px 8px #000;
+}
+
+.sub-carousel .carousel-item .carousel-caption a {
+    color: white;
+}
+
+.sub-carousel .carousel-item .carousel-caption a:hover {
+    color: #e2bb0c;
+}
+
+/* Pandemic Prevention */
+
+.pandemic-prevention .text-center {
+    margin-bottom: 36px;
+}
+
+.pandemic-prevention .pandemic-prevention-content .text {
+    padding-left: 30px;
+}
+
+.pandemic-prevention .pandemic-prevention-content .text li {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.pandemic-prevention .pandemic-prevention-content .btn-group a {
+    font-weight: 500;
+}
+
+.pandemic-prevention .modal-prevention .modal-body li {
+    font-size: 18px;
+    font-weight: 500;
+}
 
 /* Pandemic Process: Trang */
-
-#main-trang{
-
-}
 
 /* tiêu đề, khung header*/
 #header-trang{
@@ -872,10 +918,6 @@ float: right;
     margin-top: 24px;
 }
 
-.pandemic-process .accordion {
-    margin-top: 8px;
-}
-
 .pandemic-process .accordion .btn {
     margin-top: 8px;
     width: 100%;
@@ -888,24 +930,9 @@ float: right;
     color: white;
 }
 
-.pandemic-process .sub-carousel .carousel-inner {
-    border-radius: 15px;
-    margin-top: 8px;
-}
-
-.pandemic-process .sub-carousel .carousel-item {
-    overflow: hidden;
-}
-
-.pandemic-process .sub-carousel .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    height: 375px;
-}
-
-@media (max-width: 575px) {
-    .pandemic-process .sub-carousel {
+@media (max-width: 767px) {
+    .content-section .sub-carousel,
+    .pandemic-process .pandemic-process-video {
         display: none;
     }
 }

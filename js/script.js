@@ -46,6 +46,10 @@ if (toastTrigger4) {
   })
 }
 
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar-example'
+})
+
 // Modal Send Email - Cửa sổ send email
 var sendMailModal = document.getElementById('send-mail-modal')
 sendMailModal.addEventListener('show.bs.modal', function (event) {
