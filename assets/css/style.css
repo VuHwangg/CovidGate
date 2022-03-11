@@ -1157,6 +1157,84 @@ float: right;
     }
 }
 
+.modal-variations .modal-body .modal-image {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 12px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.modal-variations .modal-body img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.7s;
+}
+
+.modal-variations .modal-body img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); 
+    opacity: 0.6;
+}
+
+#variant1-modal .modal-body .container-fluid {
+    background-color: #454545;
+    color: white;
+}
+
+#variant2-modal .modal-body .container-fluid {
+    background-color: #69717a;
+    color: white;
+}
+
+#variant3-modal .modal-body .container-fluid {
+    background-color: #a38b8d;
+    color: white;
+}
+
+#variant4-modal .modal-body .container-fluid {
+    background-color: #223c33;
+    color: white;
+}
+
+#variant5-modal .modal-body .container-fluid {
+    background-color: #3a3378;
+    color: white;
+}
+
+#variant6-modal .modal-body .container-fluid {
+    background-color: #586b0f;
+    color: white;
+}
+
+#variant7-modal .modal-body .container-fluid {
+    background-color: #02444e;
+    color: white;
+}
+
+#variant8-modal .modal-body .container-fluid {
+    background-color: #553c77;
+    color: white;
+}
+
+.modal-variations .modal-body .container-fluid span {
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.modal-variations .modal-body .container-fluid a {
+    font-weight: 700;
+    color: #ffe343;
+}
+
+.modal-variations .modal-body .container-fluid a:hover {
+    color: #dfbf0e;
+}
+
+
+
 
 /* Pandemic Vaccines: Văn Nghĩa */
 /* font-family: 'et-line';
