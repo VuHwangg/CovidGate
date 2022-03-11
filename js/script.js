@@ -10,36 +10,10 @@ window.addEventListener("scroll", ()=>{
 });
 
 // Toasts - Cửa sổ pop up
-var toastTrigger1 = document.getElementById('liveToastBtn1')
-var toastTrigger2 = document.getElementById('liveToastBtn2')
-var toastTrigger3 = document.getElementById('liveToastBtn3')
-var toastTrigger4 = document.getElementById('liveToastBtn4')
-var toastTrigger5 = document.getElementById('liveToastBtn5')
-var toastTrigger6 = document.getElementById('liveToastBtn6')
+var toastTrigger = document.getElementById('liveToastBtn')
 var toastLiveExample = document.getElementById('liveToast')
-if (toastTrigger1) {
+if (toastTrigger) {
   toastTrigger1.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveExample)
-
-    toast.show()
-  })
-}
-if (toastTrigger2) {
-  toastTrigger2.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveExample)
-
-    toast.show()
-  })
-}
-if (toastTrigger3) {
-  toastTrigger3.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveExample)
-
-    toast.show()
-  })
-}
-if (toastTrigger4) {
-  toastTrigger4.addEventListener('click', function () {
     var toast = new bootstrap.Toast(toastLiveExample)
 
     toast.show()

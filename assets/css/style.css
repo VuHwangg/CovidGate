@@ -367,11 +367,14 @@ ul {
 /** Carousel **/
 
 .carousel-main {
-    
     background-color: black;
+    overflow: hidden;
 }
 
 .carousel-main .carousel-inner img {
+    height: 100vh;
+    width: 100vh;
+    object-fit: cover;
     opacity: 0.7;
 }
 
@@ -414,14 +417,9 @@ ul {
     padding: 9px 16px;
 }
 
-@media (max-width: 900px) {
-    .carousel-main .carousel-inner img {
-        margin-top: 58px;
-    }
-}
 @media (max-width: 500px) {
-    .carousel-main .carousel-inner {
-        display: none;
+    .carousel-main .carousel-inner .carousel-caption {
+        top: 33%;
     }
 }
 
@@ -463,12 +461,6 @@ ul {
     }
     .content-section {
         margin: 30px 18px;
-    }
-}
-
-@media (max-width: 500px) {
-    .about-us {
-        margin-top: 68px;
     }
 }
 
@@ -939,6 +931,7 @@ float: right;
 /* Pandemic Variations - Vũ */
 
 .pandemic-variations {
+    margin-top: 24px;
     display: flex;
     min-height: 60vh;
     align-items: center;
@@ -949,8 +942,11 @@ float: right;
     content: '';
     position: absolute;
     width: 100%;
-    background: var(--main-color-lightblue);
-    clip-path: inset(43% 0 0 0);
+    background-color: var(--main-color-lightblue);
+    background-image: url(/CovidGate/assets/img/sub-carousel/img-1.jpg);
+    background-origin: border;
+    border-radius: 18px;
+    clip-path: inset(0% 0 0 0);
     z-index: -1;
     height: 100%;
 }
@@ -1021,6 +1017,7 @@ float: right;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .pandemic-variations .card .content .name {
