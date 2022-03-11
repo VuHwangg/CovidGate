@@ -26,7 +26,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <div id="main">
 
          <!-- Modal hiển thị lưu ý khi truy cập website -->
@@ -333,7 +333,7 @@
                                     <i class="bi bi-caret-down-fill"></i>
                                 </a>
                             </p>
-                          </div>
+                        </div>
                     </div>
                     
                     <!-- Member list -->
@@ -861,15 +861,150 @@
                 </div>
             </div>
 
+            <div class="content-section">
+                <div id="sub-carousel-control" class="sub-carousel carousel carousel-fade slide col-12" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/sub-carousel/img-1.jpg" class="d-block w-100 image-carousel-trang" alt="">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Cập Nhật Tin Tức Về Dịch Bệnh Đầy Đủ Nhất Tại</h1>
+                                <a href="https://covid19.gov.vn/" target="_blank" rel="noopener noreferrer">
+                                    <h1>covid19.gov.vn</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/sub-carousel/img-2.jpg" class="d-block w-100 image-carousel-trang" alt="">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Cập Nhật Tin Tức Về Dịch Bệnh Đầy Đủ Nhất Tại</h1>
+                                <a href="https://covid19.gov.vn/" target="_blank" rel="noopener noreferrer">
+                                    <h1>covid19.gov.vn</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/sub-carousel/img-3.jpg" class="d-block w-100 image-carousel-trang" alt="">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Cập Nhật Tin Tức Về Dịch Bệnh Đầy Đủ Nhất Tại</h1>
+                                <a href="https://covid19.gov.vn/" target="_blank" rel="noopener noreferrer">
+                                    <h1>covid19.gov.vn</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sub-carousel-control" data-bs-slide="prev"></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sub-carousel-control" data-bs-slide="next"></button>
+                </div>
+            </div>
+
             <!-- Các biện pháp phòng chống dịch, thông tin, thói quen sai lệch phổ biến cần tránh -->
             <div class="pandemic-prevention content-section">
                 <div id="the-line"></div> 
                 <div class="col-12 text-center">
                     <h1 class="display-4">Các Biện Pháp Phòng & Chống Dịch</h1>
                 </div>
-                
+                <div class="row padding">
+                    <div class="pandemic-prevention-video col-md-12 col-lg-5">
+                        <iframe style="border-radius: 20px;" width="100%" height="100%" src="https://www.youtube.com/embed/O8B_3XQ1Jp0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="pandemic-prevention-content col-md-12 col-lg-7">
+                        <div class="text">
+                            <ul class="lead">
+                                <li>Thực hiện đầy đủ các quy tắc 5K</li>
+                                <li>Thường xuyên rửa tay bằng xà phòng, dung dịch sát khuẩn ít nhất 60% cồn</li>
+                                <li>Hạn chế đưa tay lên mắt mũi miệng</li>
+                                <li>Giữ gìn vệ sinh xung quanh, vệ sinh thông thoáng nhà cửa</li>
+                                <li>Thực hiện khai báo y tế trung thực, cập nhật sức khỏe bản thân</li>
+                                <li>Hạn chế mời khách đến nhà và đến nhà người khác</li>
+                                <li>Tăng cường vận động, rèn luyện thể lực, xây dựng lỗi sống lành mạnh</li>
+                                <li>Thường xuyên cập nhật thông tin về dịch bệnh tại COVID Gate</li>
+                            </ul>
+                        </div>
+                        <hr class="my-2">
+                        <div class="btn-group lead" role="group">
+                            <a type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#btn-prevention1-modal">Thông tin sai lệch cần tránh</a>
+                            <a type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#btn-prevention2-modal">Một số lưu ý khi là F0</a>
+                            <a type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#btn-prevention3-modal">Một số lưu ý hậu COVID</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="modal modal-prevention fade" id="btn-prevention1-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Các Biện Pháp Phòng & Chống Dịch</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 10px;"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid bg-danger text-white" style="padding:100px 20px;">
+                                    <h1>Một số thông tin sai lệch cần tránh</h1> 
+                                    <p>
+                                        <li>Tắm nước nóng diệt được Covid 19</li>
+                                        <li>Tiêm vaccine sẽ không nhiễm bệnh</li>
+                                        <li>Uống đồ uống có cồn diệt Covid 19</li>
+                                        <li>Virus Covid 19 có thể lây lan qua đường hàng hóa, trao đổi đồ vật</li>
+                                        <li>Đóng kín các cửa khi hang xóm là bệnh nhân Covid 19 cách li tại nhà</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="modal modal-prevention fade" id="btn-prevention2-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Các Biện Pháp Phòng & Chống Dịch</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 10px;"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid bg-warning" style="padding:60px 20px;">
+                                    <h1>Một số lưu ý khi bản thân là F0</h1>
+                                    <p>
+                                        <li>Sáng sớm, chiều tối nhớ xúc miệng nước muối. Xông bằng viên xông hoặc tinh dầu tràm</li>
+                                        <li>Thường xuyên rửa mũi bằng nc muối sinh lý hoặc xịt mũi bằng nước biển sâu Xisat</li>
+                                        <li>Thường xuyên xông phòng bằng bồ kết</li>
+                                        <li>Giữ ấm cơ thể, tắm nước nóng. Ko cần kiêng tắm gội nhé các bác. Có thể nhỏ vài giọt tinh dầu tràm</li>
+                                        <li>Nấu một nồi xông bằng sả chanh, gừng muối rồi xông 15’, ngày 2 lần</li>
+                                        <li>Uống Vitamin 3B, 9B, VTMC và kẽm tăng cường đề kháng</li>
+                                        <li>Bị gì thì dùng nấy. Tránh dùng những loại thuốc không cần thiết. Ưu tiên siro thảo dược và viên ngậm thảo dược</li>
+                                        <li>Người mệt mỏi, ko muốn dạy, chỉ muốn nằm nhưng vẫn hãy cố dậy vận động, đi lại tránh nằm bẹp 1 chỗ</li>
+                                        <li>Sẽ trải qua giai đoạn mất mùi, mất vị giác. Ăn ko thấy ngon và cũng ko ngửi thấy mùi gì hết tầm 2-3 ngày. Lúc này ăn ko ngon cũng nên cố ăn thật nhiều</li>
+                                        <li>Uống nước dừa, nước cam ăn nhiều hoa quả , sữa chua, để tăng sức đề kháng</li>
+                                        <li>Nếu không muốn ăn phải cố gắng ăn , uống nước ấm liên tục để cổ họng mình không bị khô và nên ăn đồ nóng</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="modal modal-prevention fade" id="btn-prevention3-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Các Biện Pháp Phòng & Chống Dịch</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 10px;"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid bg-success text-white" style="padding:60px 20px;">
+                                    <h1>Một số lưu ý hậu COVID</h1>
+                                    <p>
+                                        <li>Sau khi khỏi bệnh BẤT BUỘC cần tái khám từ 2 đến 4 tuần nhằm đánh giá và chẩn đoán tình trạng các cơ quan, kiểm tra tình trạng viêm và đông máu, điều trị các di chứng và dự phòng nguy cơ</li>
+                                        <li>F0 nặng từng phải điều trị trong phòng hồi sức, người đã âm tính nhưng phải chuyển sang khu phục hồi chức năng điều trị tiếp, có khả năng cao bị di chứng hậu nhiễm do thở máy nhiều, nằm lâu quá sẽ bị teo cơ, thậm chí phụ thuộc máy thời gian dài khiến phổi bị xơ</li>
+                                        <li>F0 trên nguy cơ cao có cục máu đông cần tái khám kiểm tra dấu hiệu tăng đông để điều trị thuốc chống đông kịp thời</li>
+                                        <li>F0 đã âm tính, đang vận động mà bị ngộp thở, tức ngực, khó thở, vận động kém có thể bị hậu nhiễm</li>
+                                        <li>Có dấu hiệu rối loạn tâm thần như hoảng loạn, bế tắc do căng thẳng, nhạy cảm quá mức</li>
+                                        <li>Có triệu chứng mệt mỏi kéo dài, ho, sốt, đau nhức người, rụng tóc… qua thời gian dài cơ thể không tự điều chỉnh được hoặc đã uống thuốc, tập vật lý trị liệu, bổ sung dinh dưỡng, vitamin, khoáng chất mà vẫn không cải thiện</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
 
             <!-- Lịch sử và quá trình hình thành đại dịch -->
             <div class="pandemic-process content-section" id="formation-pandemic">
@@ -885,7 +1020,7 @@
                 <div id="pandemic-process-box-trang" class="row">
 
                     <!-- button list content -->
-                    <div class="accordion col-sm-6" id="accordionExample">
+                    <div class="accordion col-md-6" id="accordionExample">
                         
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
@@ -945,38 +1080,16 @@
                                 </div>
                             </div>
                         </div>
-
+                        
                         <button type="button" class="btn btn-main">
-                            <a href="formation-Trang.html" target="_blank" rel="noopener noreferrer">
+                            <a href="formation-Trang.html">
                                 Tìm Hiểu Thêm
                             </a>
                         </button>
                     </div>
                     
-                    <!-- carousel_slide -->
-                    <div id="carouselExampleControls" class="sub-carousel carousel slide col-sm-6" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://special.nhandan.vn/daumoc-Covid-19/assets/Y92OrKReMq/cv1-1920x1080.jpeg" class="d-block w-100 image-carousel-trang" alt="">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://special.nhandan.vn/daumoc-Covid-19/assets/Y92OrKReMq/cv1-1920x1080.jpeg" class="d-block w-100 image-carousel-trang" alt="">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2022/2/15/f0-tai-nha-1644941146612196937686.jpeg" class="d-block w-100 image-carousel-trang" alt="">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2022/2/15/f0-tai-nha-1644941146612196937686.jpeg" class="d-block w-100 image-carousel-trang" alt="">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                    <div class="pandemic-process-video col-md-6">
+                        <iframe style="border-radius: 20px;" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/AB3g8iyclG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     
 
