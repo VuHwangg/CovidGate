@@ -1581,7 +1581,6 @@ you can use the generic selector below, but it's slower:
 }
 .icon-dribbble:before {
 	content: "\e063";
-<<<<<<< HEAD
 } */
 
 table{
