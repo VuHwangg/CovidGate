@@ -8,55 +8,21 @@ window.addEventListener("scroll", ()=>{
     nav.classList.remove("nav-sticky")
   }
 });
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 64a57f1c26366920e9b0207f9e55d131b10b10f5
 
 // Toasts - Cửa sổ pop up
-var toastTrigger1 = document.getElementById('liveToastBtn1')
-var toastTrigger2 = document.getElementById('liveToastBtn2')
-var toastTrigger3 = document.getElementById('liveToastBtn3')
-var toastTrigger4 = document.getElementById('liveToastBtn4')
-var toastTrigger5 = document.getElementById('liveToastBtn5')
-var toastTrigger6 = document.getElementById('liveToastBtn6')
+var toastTrigger = document.getElementById('liveToastBtn')
 var toastLiveExample = document.getElementById('liveToast')
-if (toastTrigger1) {
+if (toastTrigger) {
   toastTrigger1.addEventListener('click', function () {
     var toast = new bootstrap.Toast(toastLiveExample)
 
     toast.show()
   })
 }
-if (toastTrigger2) {
-  toastTrigger2.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveExample)
 
-    toast.show()
-  })
-}
-if (toastTrigger3) {
-  toastTrigger3.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveExample)
-
-    toast.show()
-  })
-}
-if (toastTrigger4) {
-  toastTrigger4.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveExample)
-
-    toast.show()
-  })
-}
-if (toastTrigger6) {
-  toastTrigger6.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveExample)
-
-    toast.show()
-  })
-}
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar-example'
+})
 
 // Modal Send Email - Cửa sổ send email
 var sendMailModal = document.getElementById('send-mail-modal')
