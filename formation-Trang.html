@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <!-- link favicon logo -->
     <link rel="icon" href="./assets/favicon/Logo4 (no background).png" type="image/x-icon">
     
@@ -16,8 +19,14 @@
     <!-- link icon của bootstrap-icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
 </head>
 <body>
     
@@ -36,11 +45,20 @@
             <br>
 
             <div class="nav-process-trang">
-                <button type="button" class="btn btn-outline-primary">Làn sóng dịch thứ 1</button>
-                <button type="button" class="btn btn-outline-secondary">Làn sóng dịch thứ 2</button>
-                <button type="button" class="btn btn-outline-success">Làn sóng dịch thứ 3</button>
-                <button type="button" class="btn btn-outline-danger">Làn sóng dịch thứ 4</button>
-                <button type="button" class="btn btn-outline-warning">Tổng kết 4 giai đoạn</button>
+
+                <!-- button chuyển đến vị trí các giai đoạn -->
+                <a href="#carouse-content1-trang">
+                    <button type="button" class="btn btn-outline-primary" >Làn sóng dịch thứ 1</button>
+                </a>
+                <a href="#giai-doan2-trang">
+                    <button type="button" class="btn btn-outline-secondary">Làn sóng dịch thứ 2</button>
+                </a>           
+                <a href="#giai-doan3-trang">
+                    <button type="button" class="btn btn-outline-success">Làn sóng dịch thứ 3</button>
+                </a>
+                <a href="#giai-doan4-trang">
+                    <button type="button" class="btn btn-outline-danger">Làn sóng dịch thứ 4</button>
+                </a>    
             </div>
 
         </div>
@@ -53,6 +71,16 @@
         <br><br><br><br><br><br>
         <div class="content-section">
 
+            <div class="infogram-embed" data-id="c0524a87-4fe8-4e6d-ad9c-4b8fc3ccd7d4" data-type="interactive" data-title="944984-bd1">
+
+            </div>
+            <script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script>
+            <div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+                <a href="https://infogram.com/c0524a87-4fe8-4e6d-ad9c-4b8fc3ccd7d4" style="color:#989898!important;text-decoration:none!important;" target="_blank"></a>
+                <br>
+                <a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow"></a>
+            </div>
+            <br><br><br><br>
             <!-- đợt dịch 1 -->
             <div id="carouse-content1-trang" class="row">
 
@@ -316,17 +344,132 @@
        <!-- đợt dịch 2  -->
 <div id="giai-doan2-trang" class="row">
     <div class="accordion col-sm-6" id="accordionExample">
-        <div class="infogram-embed" data-id="85637abc-39b7-4cb7-a998-eed7347d0ad4" data-type="interactive" data-title="Timeline Dark Infographic"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/85637abc-39b7-4cb7-a998-eed7347d0ad4" style="color:#989898!important;text-decoration:none!important;" target="_blank"></a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow"></a></div>
+        <div class="infogram-embed" data-id="6fddd7a1-0b1b-4a93-ab00-4898723d22d1" data-type="interactive" data-title="Timeline Dark Infographic"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/6fddd7a1-0b1b-4a93-ab00-4898723d22d1" style="color:#989898!important;text-decoration:none!important;" target="_blank">Timeline Dark Infographic</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
     </div>
     <div class="accordion col-sm-6" id="accordionExample">
         <div class="infogram-embed" data-id="1213d09c-77b0-4733-832f-9e354e91d8e6" data-type="interactive" data-title="Copy: Timeline Dark Infographic"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/1213d09c-77b0-4733-832f-9e354e91d8e6" style="color:#989898!important;text-decoration:none!important;" target="_blank"></a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow"></a></div>
     </div>
 </div>
+<br><br><br>
 
 
         <!-- đợt dịch 3 -->
-<div class="infogram-embed" data-id="c2d8a142-adc5-463d-8e8c-0766db29dcf8" data-type="interactive" data-title="Note Board"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/c2d8a142-adc5-463d-8e8c-0766db29dcf8" style="color:#989898!important;text-decoration:none!important;" target="_blank"></a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow"></a></div>
-    
+  <div class="giai-doan3-trang" id="giai-doan3-trang">
+    <div class="infogram-embed" data-id="c2d8a142-adc5-463d-8e8c-0766db29dcf8" data-type="interactive" data-title="Note Board">
+
+    </div>
+    <script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script>
+    <div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+        <a href="https://infogram.com/c2d8a142-adc5-463d-8e8c-0766db29dcf8" style="color:#989898!important;text-decoration:none!important;" target="_blank"></a>
+        <br>
+        <a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow"></a>
+    </div>
+  </div>      
+
+         <!--đợt dịch 4-->
+  <div class="giai-doan4-trang" id="giai-doan4-trang">
+        <!-- left-image -->
+      <!-- <div id="left-image-process">
+        <img src="https://bvdktinhthanhhoa.com.vn/Public/data/files/images/Tin%20bai/Hdnganh/2020/IMG_20200730_104636.jpg" alt="#">
+    </div> -->
+    <!-- content-4 -->
+
+
+    <h2>LÀN SÓNG DỊCH THỨ 4</h2>
+     <div id="center-content-4" class="row">
+         
+        <div class="accordion col-md-6" id="accordionExample">
+            <div class="infogram-embed" data-id="f61da66a-30de-480c-aa8d-56b64a3527db" data-type="interactive" data-title="Biểu đồ làn sóng dịch thứ 4"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/f61da66a-30de-480c-aa8d-56b64a3527db" style="color:#989898!important;text-decoration:none!important;" target="_blank">Biểu đồ làn sóng dịch thứ 4</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+        </div>
+        
+        <div class="accordion col-md-6" id="accordionExample">
+            <!-- Button trigger modal -->
+             <div class="btn-group lead" role="group">
+                 <a type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#btn-process1-modal">Tháng 4 - 5</a>
+                 <a type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#btn-process2-modal">Tháng 6 - 7</a>
+                 <a type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#btn-process3-modal">Tháng 8 - 9</a>
+                 <a type="button" class= "btn btn-light" data-bs-toggle="modal" data-bs-target="#btn-process1-modal">Tháng 10 - 11</a>
+                 <a type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#btn-process1-modal">Tháng 12</a>
+             </div>
+        </div>
+
+
+
+<div class="modal modal-prevention fade" id="btn-process1-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Tháng 4 - 5</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 10px;"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid bg-warning" style="padding:60px 20px;">
+                    <p>
+                        <div class="infogram-embed" data-id="c7f04747-df87-4640-902c-e8a75098e36f" data-type="interactive" data-title="Rainbow Timeline"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/c7f04747-df87-4640-902c-e8a75098e36f" style="color:#989898!important;text-decoration:none!important;" target="_blank">Rainbow Timeline</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-prevention fade" id="btn-process2-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Tháng 6 - 7</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 10px;"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid bg-warning" style="padding:60px 20px;">
+                    <p>
+                        <div class="infogram-embed" data-id="85637abc-39b7-4cb7-a998-eed7347d0ad4" data-type="interactive" data-title="Timeline Dark Infographic"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/85637abc-39b7-4cb7-a998-eed7347d0ad4" style="color:#989898!important;text-decoration:none!important;" target="_blank">Timeline Dark Infographic</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+                    </p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-prevention fade" id="btn-process-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Các Biện Pháp Phòng & Chống Dịch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 10px;"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid bg-warning" style="padding:60px 20px;">
+                    <h1>Một số lưu ý khi bản thân là F0</h1>
+                    <p>
+                        <li>Sáng sớm, chiều tối nhớ xúc miệng nước muối. Xông bằng viên xông hoặc tinh dầu tràm.</li>
+                        <li>Thường xuyên rửa mũi bằng nc muối sinh lý hoặc xịt mũi bằng nước biển sâu Xisat.</li>
+                        <li>Thường xuyên xông phòng bằng bồ kết.</li>
+                        <li>Giữ ấm cơ thể, tắm nước nóng. Ko cần kiêng tắm gội nhé các bác. Có thể nhỏ vài giọt tinh dầu tràm.</li>
+                        <li>Nấu một nồi xông bằng sả chanh, gừng muối rồi xông 15’, ngày 2 lần.</li>
+                        <li>Uống Vitamin 3B, 9B, VTMC và kẽm tăng cường đề kháng.</li>
+                        <li>Bị gì thì dùng nấy. Tránh dùng những loại thuốc không cần thiết. Ưu tiên siro thảo dược và viên ngậm thảo dược.</li>
+                        <li>Người mệt mỏi, ko muốn dạy, chỉ muốn nằm nhưng vẫn hãy cố dậy vận động, đi lại tránh nằm bẹp 1 chỗ.</li>
+                        <li>Sẽ trải qua giai đoạn mất mùi, mất vị giác. Ăn ko thấy ngon và cũng ko ngửi thấy mùi gì hết tầm 2-3 ngày. Lúc này ăn ko ngon cũng nên cố ăn thật nhiều.</li>
+                        <li>Uống nước dừa, nước cam ăn nhiều hoa quả , sữa chua, để tăng sức đề kháng.</li>
+                        <li>Nếu không muốn ăn phải cố gắng ăn , uống nước ấm liên tục để cổ họng mình không bị khô và nên ăn đồ nóng.</li>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+       
+    </div>
+    <!-- right-image -->
+    <!-- <div id ="right-image-process">
+        <img src="https://bvdktinhthanhhoa.com.vn/Public/data/files/images/Tin%20bai/Hdnganh/2020/IMG_20200730_104636.jpg" alt="">
+    </div> -->
+    </div>
+ 
 
 
         <div id="footer-trang">
