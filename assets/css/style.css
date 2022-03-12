@@ -367,11 +367,14 @@ ul {
 /** Carousel **/
 
 .carousel-main {
-    
     background-color: black;
+    overflow: hidden;
 }
 
 .carousel-main .carousel-inner img {
+    height: 100vh;
+    width: 100vh;
+    object-fit: cover;
     opacity: 0.7;
 }
 
@@ -414,14 +417,9 @@ ul {
     padding: 9px 16px;
 }
 
-@media (max-width: 900px) {
-    .carousel-main .carousel-inner img {
-        margin-top: 58px;
-    }
-}
 @media (max-width: 500px) {
-    .carousel-main .carousel-inner {
-        display: none;
+    .carousel-main .carousel-inner .carousel-caption {
+        top: 33%;
     }
 }
 
@@ -463,12 +461,6 @@ ul {
     }
     .content-section {
         margin: 30px 18px;
-    }
-}
-
-@media (max-width: 500px) {
-    .about-us {
-        margin-top: 68px;
     }
 }
 
@@ -743,7 +735,7 @@ ul {
     color: #e2bb0c;
 }
 
-/* Pandemic Prevention */
+/* Pandemic Prevention - Vũ*/
 
 .pandemic-prevention .text-center {
     margin-bottom: 36px;
@@ -802,9 +794,6 @@ ul {
  #header-trang .heading-name-trang #nav-process-trang{
    
 }
-
-
-
 
 #main #content{
 height: 1500px;
@@ -923,9 +912,310 @@ float: right;
 
 
 
+/* Pandemic Variations - Vũ */
 
+.pandemic-variations {
+    margin-top: 24px;
+    display: flex;
+    min-height: 60vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.pandemic-variations::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-color: var(--main-color-lightblue);
+    background-image: url(/CovidGate/assets/img/sub-carousel/img-1.jpg);
+    background-origin: border;
+    border-radius: 18px;
+    clip-path: inset(0% 0 0 0);
+    z-index: -1;
+    height: 100%;
+}
 
-/* Pandemic Variations: Trọng Nghĩa */
+.pandemic-variations .container {
+    max-width: 950px;
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.pandemic-variations .container .main-card {
+    display: flex;
+    justify-content: space-evenly;
+    width: 400%;
+    transition: 1s;
+}
+
+.pandemic-variations #two:checked ~ .main-card {
+    margin-left: -100%;
+}
+
+.pandemic-variations #three:checked ~ .main-card {
+    margin-left: -200%;
+}
+
+.pandemic-variations #four:checked ~ .main-card {
+    margin-left: -300%;
+}
+
+.pandemic-variations .container .main-card .cards {
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-between;
+}
+
+.pandemic-variations .main-card .cards .card {
+    width: calc(100% / 2 - 10px);
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+
+.pandemic-variations .main-card .cards .card:hover {
+    transform: translateY(-15px);
+}
+
+.pandemic-variations .cards .card .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pandemic-variations .cards .card .content .img {
+    height: 130px;
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.pandemic-variations .card .content .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.pandemic-variations .card .content .name {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.card .content .origin{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main-color-gray);
+    margin-bottom: 14px;
+}
+
+.pandemic-variations .read-more a {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFF;
+    background: var(--main-color-blue);
+    transition: all 0.3s ease;
+}
+
+.pandemic-variations .read-more a:hover {
+    color: var(--main-color-blue);
+    background-color: #fff;
+    border: 4px solid var(--main-color-blue);
+}
+
+.pandemic-variations .container .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.pandemic-variations .button label {
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: #fff;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.pandemic-variations .button label.active {
+    width: 35px;
+}
+
+/* check dot one */
+.pandemic-variations #one:checked ~ .button .one {
+    width: 35px;
+}
+
+.pandemic-variations #one:checked ~ .button .two {
+    width: 15px;
+}
+
+.pandemic-variations #one:checked ~ .button .three {
+    width: 15px;
+}
+
+.pandemic-variations #one:checked ~ .button .four {
+    width: 15px;
+}
+
+/* check dot two */
+
+.pandemic-variations #two:checked ~ .button .one {
+    width: 15px;
+}
+
+.pandemic-variations #two:checked ~ .button .two {
+    width: 35px;
+}
+
+.pandemic-variations #two:checked ~ .button .three {
+    width: 15px;
+}
+
+.pandemic-variations #two:checked ~ .button .four {
+    width: 15px;
+}
+
+/* check dot three */
+
+.pandemic-variations #four:checked ~ .button .one {
+    width: 15px;
+}
+
+.pandemic-variations #four:checked ~ .button .two {
+    width: 15px;
+}
+
+.pandemic-variations #four:checked ~ .button .three {
+    width: 15px;
+}
+
+.pandemic-variations #four:checked ~ .button .four {
+    width: 35px;
+}
+
+/* check dot four */
+
+.pandemic-variations #three:checked ~ .button .one {
+    width: 15px;
+}
+
+.pandemic-variations #three:checked ~ .button .two {
+    width: 15px;
+}
+
+.pandemic-variations #three:checked ~ .button .three {
+    width: 35px;
+}
+
+.pandemic-variations #three:checked ~ .button .four {
+    width: 15px;
+}
+
+.pandemic-variations input[type="radio"] {
+    display: none;
+}
+  
+@media (max-width: 768px) {
+    .pandemic-variations .main-card .cards .card{
+      margin: 20px 0 10px 0;
+      width: calc(100% / 2 - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .pandemic-variations .main-card .cards .card{
+      /* margin: 20px 0 10px 0; */
+      width: 100%;
+    }
+}
+
+.modal-variations .modal-body .modal-image {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 12px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.modal-variations .modal-body img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.7s;
+}
+
+.modal-variations .modal-body img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); 
+    opacity: 0.6;
+}
+
+#variant1-modal .modal-body .container-fluid {
+    background-color: #454545;
+    color: white;
+}
+
+#variant2-modal .modal-body .container-fluid {
+    background-color: #69717a;
+    color: white;
+}
+
+#variant3-modal .modal-body .container-fluid {
+    background-color: #a38b8d;
+    color: white;
+}
+
+#variant4-modal .modal-body .container-fluid {
+    background-color: #223c33;
+    color: white;
+}
+
+#variant5-modal .modal-body .container-fluid {
+    background-color: #3a3378;
+    color: white;
+}
+
+#variant6-modal .modal-body .container-fluid {
+    background-color: #586b0f;
+    color: white;
+}
+
+#variant7-modal .modal-body .container-fluid {
+    background-color: #02444e;
+    color: white;
+}
+
+#variant8-modal .modal-body .container-fluid {
+    background-color: #553c77;
+    color: white;
+}
+
+.modal-variations .modal-body .container-fluid span {
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.modal-variations .modal-body .container-fluid a {
+    font-weight: 700;
+    color: #ffe343;
+}
+
+.modal-variations .modal-body .container-fluid a:hover {
+    color: #dfbf0e;
+}
 
 
 

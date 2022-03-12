@@ -101,7 +101,7 @@
                                 <a class="nav-link" href="#pandemic-news">Tin tức dịch bệnh</a>
                             </li>
                             <li class="nav-item">
-                                <a id="liveToastBtn4" class="nav-link" role="button">Biện pháp phòng dịch</a>
+                                <a class="nav-link" href="#pandemic-preventions">Biện pháp phòng dịch</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#pandemic-at-home">Cách li tại nhà</a>
@@ -113,9 +113,9 @@
 
                                 <ul class="dropdown-menu dropdown-list" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#formation-pandemic">Lịch sử và quá trình hình thành</a></li>
-                                    <li><a class="dropdown-item" href="#">Các biến thể từng được ghi nhận</a></li>
+                                    <li><a class="dropdown-item" href="#pandemic-variations">Các biến thể từng được ghi nhận</a></li>
                                     <li><a class="dropdown-item" href="#">Các loại vaccine hiện hành</a></li>
-                                  </ul>
+                                </ul>
                                   
                             </li>
                             <li>
@@ -201,48 +201,65 @@
         <!-- Carousel - Băng Chuyền Ảnh -->
         <div class="carousel slide carousel-main" id="carousel-main" data-bs-ride="carousel">
             
-            <!--             
-            Carousel Indicators
-            
+                      
+            <!-- Carousel Indicators -->
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
-             -->
 
             <!-- Ảnh trong Carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./assets/img/carousel/carousel_1.png" class="d-block w-100" alt="carousel_1">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h1>Kiểm Tra COVID-19 Trực Tuyến</h1>
                         <p>Tính năng duy nhất chỉ có ở COVID Gate cho phép bạn kiểm tra trực tuyến tỉ lệ dương tính với COVID-19 ngay trên website</p>
-                        <button type="button" class="btn btn-main btn-lg">
+                        <button type="button" class="btn btn-outline-light btn-lg">
                             <a href="quizzes-Vu.html">Kiểm Tra Ngay</a>
-                        </button>
-                        <button id="liveToastBtn1" class="btn btn-outline-light btn-lg me-1" type="button">
-                            <a href="#">Tìm Hiểu Thêm</a>
                         </button>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./assets/img/carousel/carousel_2.png" class="d-block w-100" alt="carousel_2">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h1>Các Loại Vaccine COVID-19</h1>
                         <p>Thống kê đầy đủ mọi loại vaccine cho COVID-19 một cách chi tiết và trực quan nhất</p>
-                        <button id="liveToastBtn2" class="btn btn-outline-light btn-lg" type="button">
+                        <button id="liveToastBtn" class="btn btn-outline-light btn-lg" type="button">
                             <a href="#">Khám Phá Ngay</a>
                         </button>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./assets/img/carousel/carousel_3.png" class="d-block w-100" alt="carousel_3">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h1>Các Biến Thể Mới Của Corona Virus</h1>
                         <p>Các chủng biến thể mới từ Corona Virus đã được ghi nhận, tính chất cũng như mức độ nguy hiểm của từng loại biến thể đối với nhân loại</p>
-                        <button id="liveToastBtn3" class="btn btn-outline-light btn-lg" type="button">
-                            <a href="#">Khám Phá Ngay</a>
+                        <button class="btn btn-outline-light btn-lg" type="button">
+                            <a href="#pandemic-variations">Khám Phá Ngay</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/carousel/carousel_4.png" class="d-block w-100" alt="carousel_4">
+                    <div class="carousel-caption">
+                        <h1>Cập Nhật Nhanh Chóng Các Số Liệu Về COVID-19</h1>
+                        <p>Các số liệu thống kê cũng như tin tức về dịch bệnh sẽ được cập nhật liên tục, nhanh chóng và đầy đủ tại COVID Gate</p>
+                        <button class="btn btn-outline-light btn-lg" type="button">
+                            <a href="#pandemic-news">Khám Phá Ngay</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/carousel/carousel_7.png" class="d-block w-100" alt="carousel_5">
+                    <div class="carousel-caption">
+                        <h1>Lịch Sử Và Quá Trình Hình Thành Của Đại Dịch</h1>
+                        <p>Đại dịch COVID-19 đã được hình thành như thế nào? Corona Virus xuất hiện lần đầu tiên ở đâu? Quá trình hình thành đại dịch trải qua bao nhiêu giai đoạn? Hãy cùng làm rõ những câu hỏi đó tại COVID Gate</p>
+                        <button class="btn btn-outline-light btn-lg" type="button">
+                            <a href="#formation-pandemic">Khám Phá Ngay</a>
                         </button>
                     </div>
                 </div>
@@ -589,11 +606,12 @@
                         </div>
                         <div class="row">
                             <div class="col-md-5">
-                                <iframe src="https://public.domo.com/cards/aKg4r" width="100%" height="400" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+                                <iframe src="https://public.domo.com/cards/aKg4r" width="100%" height="350" marginheight="0" marginwidth="0" frameborder="0"></iframe>
                                 <iframe src="https://public.domo.com/cards/aOm4g" width="100%" height="320" marginheight="0" marginwidth="0" frameborder="0"></iframe>
                             </div>
                             <div class="col-md-7">
-                                <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="700px"></iframe>
+                                <iframe src="https://public.domo.com/cards/bWxVg" width="100%" height="700" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+                                <!-- <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="700px"></iframe> -->
                             </div>
                         </div>
                     </div>
@@ -804,7 +822,7 @@
                         <div class="news-video-content card h-100">
                             <a href="https://covid19.gov.vn/6-bien-phap-dam-bao-thich-ung-an-toan-linh-hoat-kiem-soat-hieu-qua-dich-covid-19-171211019073253778.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="news-video">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L_cNoOo7ll0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/L_cNoOo7ll0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">6 biện pháp đảm bảo thích ứng an toàn, linh hoạt, kiểm soát hiệu quả dịch COVID-19</h5>
@@ -819,7 +837,7 @@
                         <div class="news-video-content card h-100">
                             <a href="https://covid19.gov.vn/bo-y-te-huong-dan-phan-loai-va-pham-vi-danh-gia-cap-do-dich-171211015182641182.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="news-video">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nktnZyiZ4ns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nktnZyiZ4ns?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Bộ Y tế hướng dẫn phân loại và phạm vi đánh giá cấp độ dịch</h5>
@@ -834,7 +852,7 @@
                         <div class="news-video-content card h-100">
                             <a href="https://covid19.gov.vn/huong-dan-tu-lay-mau-xet-nghiem-covid-19-tai-nha-171211009143132481.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="news-video">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kMIOZS03774" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kMIOZS03774?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Hướng dẫn tự lấy mẫu xét nghiệm COVID-19 tại nhà</h5>
@@ -849,7 +867,7 @@
                         <div class="news-video-content card h-100">
                             <a href="https://covid19.gov.vn/huong-dan-su-dung-thuoc-dieu-tri-covid-19-tai-nha-17121100515443193.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="news-video">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nFGaf_Dqm0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nFGaf_Dqm0g?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Hướng dẫn sử dụng thuốc điều trị COVID-19 tại nhà</h5>
@@ -898,14 +916,14 @@
             </div>
 
             <!-- Các biện pháp phòng chống dịch, thông tin, thói quen sai lệch phổ biến cần tránh -->
-            <div class="pandemic-prevention content-section">
+            <div class="pandemic-prevention content-section" id="pandemic-preventions">
                 <div id="the-line"></div> 
                 <div class="col-12 text-center">
                     <h1 class="display-4">Các Biện Pháp Phòng & Chống Dịch</h1>
                 </div>
                 <div class="row padding">
                     <div class="pandemic-prevention-video col-md-12 col-lg-5">
-                        <iframe style="border-radius: 20px;" width="100%" height="100%" src="https://www.youtube.com/embed/O8B_3XQ1Jp0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe style="border-radius: 20px;" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/O8B_3XQ1Jp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="pandemic-prevention-content col-md-12 col-lg-7">
                         <div class="text">
@@ -930,7 +948,7 @@
                 </div>
             
                 <div class="modal modal-prevention fade" id="btn-prevention1-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title">Các Biện Pháp Phòng & Chống Dịch</h5>
@@ -940,11 +958,11 @@
                                 <div class="container-fluid bg-danger text-white" style="padding:100px 20px;">
                                     <h1>Một số thông tin sai lệch cần tránh</h1> 
                                     <p>
-                                        <li>Tắm nước nóng diệt được Covid 19</li>
-                                        <li>Tiêm vaccine sẽ không nhiễm bệnh</li>
-                                        <li>Uống đồ uống có cồn diệt Covid 19</li>
-                                        <li>Virus Covid 19 có thể lây lan qua đường hàng hóa, trao đổi đồ vật</li>
-                                        <li>Đóng kín các cửa khi hang xóm là bệnh nhân Covid 19 cách li tại nhà</li>
+                                        <li>Tắm nước nóng diệt được Covid 19.</li>
+                                        <li>Tiêm vaccine sẽ không nhiễm bệnh.</li>
+                                        <li>Uống đồ uống có cồn diệt Covid 19.</li>
+                                        <li>Virus Covid 19 có thể lây lan qua đường hàng hóa, trao đổi đồ vật.</li>
+                                        <li>Đóng kín các cửa khi hang xóm là bệnh nhân Covid 19 cách li tại nhà.</li>
                                     </p>
                                 </div>
                             </div>
@@ -953,7 +971,7 @@
                 </div>
     
                 <div class="modal modal-prevention fade" id="btn-prevention2-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title">Các Biện Pháp Phòng & Chống Dịch</h5>
@@ -963,17 +981,17 @@
                                 <div class="container-fluid bg-warning" style="padding:60px 20px;">
                                     <h1>Một số lưu ý khi bản thân là F0</h1>
                                     <p>
-                                        <li>Sáng sớm, chiều tối nhớ xúc miệng nước muối. Xông bằng viên xông hoặc tinh dầu tràm</li>
-                                        <li>Thường xuyên rửa mũi bằng nc muối sinh lý hoặc xịt mũi bằng nước biển sâu Xisat</li>
-                                        <li>Thường xuyên xông phòng bằng bồ kết</li>
-                                        <li>Giữ ấm cơ thể, tắm nước nóng. Ko cần kiêng tắm gội nhé các bác. Có thể nhỏ vài giọt tinh dầu tràm</li>
-                                        <li>Nấu một nồi xông bằng sả chanh, gừng muối rồi xông 15’, ngày 2 lần</li>
-                                        <li>Uống Vitamin 3B, 9B, VTMC và kẽm tăng cường đề kháng</li>
-                                        <li>Bị gì thì dùng nấy. Tránh dùng những loại thuốc không cần thiết. Ưu tiên siro thảo dược và viên ngậm thảo dược</li>
-                                        <li>Người mệt mỏi, ko muốn dạy, chỉ muốn nằm nhưng vẫn hãy cố dậy vận động, đi lại tránh nằm bẹp 1 chỗ</li>
-                                        <li>Sẽ trải qua giai đoạn mất mùi, mất vị giác. Ăn ko thấy ngon và cũng ko ngửi thấy mùi gì hết tầm 2-3 ngày. Lúc này ăn ko ngon cũng nên cố ăn thật nhiều</li>
-                                        <li>Uống nước dừa, nước cam ăn nhiều hoa quả , sữa chua, để tăng sức đề kháng</li>
-                                        <li>Nếu không muốn ăn phải cố gắng ăn , uống nước ấm liên tục để cổ họng mình không bị khô và nên ăn đồ nóng</li>
+                                        <li>Sáng sớm, chiều tối nhớ xúc miệng nước muối. Xông bằng viên xông hoặc tinh dầu tràm.</li>
+                                        <li>Thường xuyên rửa mũi bằng nc muối sinh lý hoặc xịt mũi bằng nước biển sâu Xisat.</li>
+                                        <li>Thường xuyên xông phòng bằng bồ kết.</li>
+                                        <li>Giữ ấm cơ thể, tắm nước nóng. Ko cần kiêng tắm gội nhé các bác. Có thể nhỏ vài giọt tinh dầu tràm.</li>
+                                        <li>Nấu một nồi xông bằng sả chanh, gừng muối rồi xông 15’, ngày 2 lần.</li>
+                                        <li>Uống Vitamin 3B, 9B, VTMC và kẽm tăng cường đề kháng.</li>
+                                        <li>Bị gì thì dùng nấy. Tránh dùng những loại thuốc không cần thiết. Ưu tiên siro thảo dược và viên ngậm thảo dược.</li>
+                                        <li>Người mệt mỏi, ko muốn dạy, chỉ muốn nằm nhưng vẫn hãy cố dậy vận động, đi lại tránh nằm bẹp 1 chỗ.</li>
+                                        <li>Sẽ trải qua giai đoạn mất mùi, mất vị giác. Ăn ko thấy ngon và cũng ko ngửi thấy mùi gì hết tầm 2-3 ngày. Lúc này ăn ko ngon cũng nên cố ăn thật nhiều.</li>
+                                        <li>Uống nước dừa, nước cam ăn nhiều hoa quả , sữa chua, để tăng sức đề kháng.</li>
+                                        <li>Nếu không muốn ăn phải cố gắng ăn , uống nước ấm liên tục để cổ họng mình không bị khô và nên ăn đồ nóng.</li>
                                     </p>
                                 </div>
                             </div>
@@ -982,7 +1000,7 @@
                 </div>
     
                 <div class="modal modal-prevention fade" id="btn-prevention3-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-dialog modal-xl modal-dialog-scrollable">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title">Các Biện Pháp Phòng & Chống Dịch</h5>
@@ -992,12 +1010,12 @@
                                 <div class="container-fluid bg-success text-white" style="padding:60px 20px;">
                                     <h1>Một số lưu ý hậu COVID</h1>
                                     <p>
-                                        <li>Sau khi khỏi bệnh BẤT BUỘC cần tái khám từ 2 đến 4 tuần nhằm đánh giá và chẩn đoán tình trạng các cơ quan, kiểm tra tình trạng viêm và đông máu, điều trị các di chứng và dự phòng nguy cơ</li>
-                                        <li>F0 nặng từng phải điều trị trong phòng hồi sức, người đã âm tính nhưng phải chuyển sang khu phục hồi chức năng điều trị tiếp, có khả năng cao bị di chứng hậu nhiễm do thở máy nhiều, nằm lâu quá sẽ bị teo cơ, thậm chí phụ thuộc máy thời gian dài khiến phổi bị xơ</li>
-                                        <li>F0 trên nguy cơ cao có cục máu đông cần tái khám kiểm tra dấu hiệu tăng đông để điều trị thuốc chống đông kịp thời</li>
-                                        <li>F0 đã âm tính, đang vận động mà bị ngộp thở, tức ngực, khó thở, vận động kém có thể bị hậu nhiễm</li>
-                                        <li>Có dấu hiệu rối loạn tâm thần như hoảng loạn, bế tắc do căng thẳng, nhạy cảm quá mức</li>
-                                        <li>Có triệu chứng mệt mỏi kéo dài, ho, sốt, đau nhức người, rụng tóc… qua thời gian dài cơ thể không tự điều chỉnh được hoặc đã uống thuốc, tập vật lý trị liệu, bổ sung dinh dưỡng, vitamin, khoáng chất mà vẫn không cải thiện</li>
+                                        <li>Sau khi khỏi bệnh BẤT BUỘC cần tái khám từ 2 đến 4 tuần nhằm đánh giá và chẩn đoán tình trạng các cơ quan, kiểm tra tình trạng viêm và đông máu, điều trị các di chứng và dự phòng nguy cơ.</li>
+                                        <li>F0 nặng từng phải điều trị trong phòng hồi sức, người đã âm tính nhưng phải chuyển sang khu phục hồi chức năng điều trị tiếp, có khả năng cao bị di chứng hậu nhiễm do thở máy nhiều, nằm lâu quá sẽ bị teo cơ, thậm chí phụ thuộc máy thời gian dài khiến phổi bị xơ.</li>
+                                        <li>F0 trên nguy cơ cao có cục máu đông cần tái khám kiểm tra dấu hiệu tăng đông để điều trị thuốc chống đông kịp thời.</li>
+                                        <li>F0 đã âm tính, đang vận động mà bị ngộp thở, tức ngực, khó thở, vận động kém có thể bị hậu nhiễm.</li>
+                                        <li>Có dấu hiệu rối loạn tâm thần như hoảng loạn, bế tắc do căng thẳng, nhạy cảm quá mức.</li>
+                                        <li>Có triệu chứng mệt mỏi kéo dài, ho, sốt, đau nhức người, rụng tóc… qua thời gian dài cơ thể không tự điều chỉnh được hoặc đã uống thuốc, tập vật lý trị liệu, bổ sung dinh dưỡng, vitamin, khoáng chất mà vẫn không cải thiện.</li>
                                     </p>
                                 </div>
                             </div>
@@ -1136,9 +1154,430 @@
             </div>
 
             <!-- Thông tin về các biến thể của Corona virus từng đc ghi nhận -->
-            
-            <div class="pandemic-variations content-section">
-                
+            <div class="content-section" id="pandemic-variations">
+                <div id="the-line"></div>
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Các Biến Thể Của Corona Virus Từng Được Ghi Nhận</h1>
+                </div>
+                <div class="pandemic-variations">
+                    <div class="container">
+                        <input type="radio" name="dot" id="one">
+                        <input type="radio" name="dot" id="two">
+                        <input type="radio" name="dot" id="three">
+                        <input type="radio" name="dot" id="four">
+                        
+                        <div class="main-card">
+                            <div class="cards">
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/variants/omicron.jpg" alt="omicron">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Biến Thể Omicron</div>
+                                            <div class="origin">Xuất xứ: Nam Phi</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#variant1-modal" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/variants/delta-plus.jpg" alt="delta-plus">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Biến Thể Delta&nbsp;Plus</div>
+                                            <div class="origin">Xuất xứ: Ấn Độ</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#variant2-modal" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cards">
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/variants/lambda.jpg" alt="lambda">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Biến Thể Lambda</div>
+                                            <div class="origin">Xuất xứ: Peru</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#variant3-modal" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/variants/ay3.jpg" alt="AY3">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Biến Thể AY3</div>
+                                            <div class="origin">Xuất xứ: Israel</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#variant4-modal" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cards">
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/variants/delta-B.1.617.2.jpg" alt="Delta B.1.617.2">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Biến Thể Kép Delta&nbsp;B.1.617.2</div>
+                                            <div class="origin">Xuất xứ: Ấn Độ</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#variant5-modal" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/variants/B.1.1.7.jpg" alt="B.1.1.7">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Biến Thể B.1.1.7</div>
+                                            <div class="origin">Xuất xứ: Vương Quốc Anh</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#variant6-modal" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="cards">
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/variants/Belta(B.1.351).jpg" alt="Beta(B.1.351) ">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Biến Thể Beta B.1.351</div>
+                                            <div class="origin">Xuất xứ: Nam Phi</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#variant7-modal" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/variants/BrazilP.1.jpg" alt="BrazilP.1">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Biến Thể Brazil Dòng P.1</div>
+                                            <div class="origin">Xuất xứ: Brazil</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#variant8-modal" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="button">
+                          <label for="one" class=" active one"></label>
+                          <label for="two" class="two"></label>
+                          <label for="three" class="three"></label>
+                          <label for="four" class="four"></label>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- Modal 1: Omicron -->
+                <div class="modal modal-variations fade" id="variant1-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Biến thể Omicron</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 10px;"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-image">
+                                    <a href="https://vnvc.vn/omicron/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./assets/img/variants/omicron.jpg" alt="omicron">
+                                    </a>
+                                </div>
+                                <div class="container-fluid" style="padding:30px 20px;">
+                                    <p>
+                                        <span>Khái niệm:</span> Là chủng mới của virus SARS-CoV-2 có khả năng lây nhanh hơn biến thể Delta gấp 500%. Bộ Y tế đang gấp rút triển khai các phương án phòng ngừa biến thể nguy hiểm này.
+                                    </p>
+                                    <p>
+                                        <span>Triệu chứng của biến thể Omicron Covid:</span>
+                                        <li>Theo thông tin của hãng Bloomberg, bệnh nhân nhiễm biến chủng Omicron có triệu chứng mệt mỏi trong khoảng 1 đến 2 ngày, đau đầu và cơ thể, thỉnh thoảng đau họng và ho, không bị mất vị giác, khứu giác.</li>
+                                        <li>Một vài trường hợp nhiễm thể Omicron có triệu chứng khá bất thường, như trường hợp của một bé gái 6 tuổi. Bé sốt cao, nhịp tim nhanh bất thường, nhưng chỉ sau 2 ngày tình trạng đã tiến triển tốt hơn.</li>
+                                        <br>
+                                        <b>Virus này được tối ưu hóa để lây nhiễm, nhưng lại ít gây bệnh nghiêm trọng hơn</b>
+                                    </p>
+                                    <p>
+                                        <span>Tài liệu tham khảo:</span> <a target="_blank" rel="noopener noreferrer" href="https://vnvc.vn/omicron/"> https://vnvc.vn/omicron/</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2: Delta Plus -->
+                <div class="modal modal-variations fade" id="variant2-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Biến thể Delta Plus</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 10px;"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-image">
+                                    <a href="https://vnvc.vn/bien-the-delta-plus/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./assets/img/variants/delta-plus.jpg" alt="delta-plus">
+                                    </a>
+                                </div>
+                                <div class="container-fluid" style="padding:30px 20px;">
+                                    <p>
+                                        <span>Khái niệm:</span> Biến thể Delta Plus (còn được gọi tên khác là B.1.617.2.1 hoặc AY.1) là một biến thể mới của virus SARS-CoV-2, và là phiên bản đột biến mới của Delta được phát hiện lần đầu tiên ở Ấn Độ vào tháng 12/2020.
+                                    </p>
+                                    <p>
+                                        <span>Triệu chứng của biến chủng Delta Plus:</span> 
+                                        Ho khan, sốt, mệt mỏi, đau mỏi cơ, đau họng, viêm kết mạc, mất vị giác hoặc khứu giác, tiêu chảy, đau đầu,… Đáng chú ý, những dấu hiệu nhận biết lâm sàng do biến chủng virus Corona Delta Plus gây ra rất dễ gây nhầm lẫn với bệnh cảm lạnh thông thường, khiến nhiều người chủ quan bỏ qua, làm tăng nguy cơ biến chứng hoặc tử vong ở người bệnh.
+                                    </p>
+                                    <p>
+                                        <span>Nguy hiểm của virus Delta Plus:</span> 
+                                        Giám đốc Viện khoa học y tế toàn Ấn (AIIM) Randeep Guleria đánh giá Delta Plus dễ lây đến mức chỉ cần đi cạnh một người nhiễm biến thể này không đeo khẩu trang thì cũng có thể bị mắc COVID-19.
+                                    </p>
+                                    <p>
+                                        <span>Tài liệu tham khảo:</span> <a target="_blank" rel="noopener noreferrer" href="https://vnvc.vn/bien-the-delta-plus/"> https://vnvc.vn/bien-the-delta-plus/</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 3: Lambda -->
+                <div class="modal modal-variations fade" id="variant3-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Biến thể Lambda</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 10px;"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-image">
+                                    <a href="https://vnvc.vn/bien-the-lambda/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./assets/img/variants/lambda.jpg" alt="Lambda">
+                                    </a>
+                                </div>
+                                <div class="container-fluid" style="padding:30px 20px;">
+                                    <p>
+                                        <span>Khái niệm:</span> Biến thể Lambda (C.37) là một chủng đột biến của virus gốc gây bệnh Covid-19 SARS-CoV-2. Hiện biến chủng Lambda được Tổ chức Y tế thế giới (WHO) xếp vào danh mục biến thể cần chú ý (VOI), thấp hơn các biến thể trong danh mục cần được quan tâm (VOC) như biến chủng Delta xuất hiện cách đây không lâu.
+                                    </p>
+                                    <p>
+                                        <span>Triệu chứng của biến thể Lambda (C.37):</span> Sốt, nhức đầu, ho, đau họng, khó thở, chảy nước mũi.
+                                    </p>
+                                    <p>
+                                        <span>Thông tin về biến thể:</span> Hiện vẫn chưa có đầy đủ dữ liệu khẳng định hiệu quả của vắc xin với biến thể Lambda. Biến thể này vẫn còn rất nhiều khía cạnh bí ẩn mà các nhà khoa học cần khám phá. Tuy nhiên, hầu hết các loại vắc xin phòng Covid-19 được cấp phép lưu hành trên thị trường hiện nay có hiệu quả trong việc chống lại các biến thể virus. Do đó, người dân nên tiêm các loại vắc xin sẵn có để có thể bảo vệ sức khỏe của bản thân, gia đình và cộng đồng.
+                                    </p>
+                                    <p>
+                                        <span>Tài liệu tham khảo:</span> <a target="_blank" rel="noopener noreferrer" href="https://vnvc.vn/bien-the-lambda/"> https://vnvc.vn/bien-the-lambda/</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 4: AY3 -->
+                <div class="modal modal-variations fade" id="variant4-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Biến thể AY3</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 10px;"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-image">
+                                    <a href="https://vnvc.vn/bien-the-ay3/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./assets/img/variants/ay3.jpg" alt="AY3">
+                                    </a>
+                                </div>
+                                <div class="container-fluid" style="padding:30px 20px;">
+                                    <p>
+                                        <span>Khái niệm:</span> Biến thể AY3 là một dòng đột biến phụ mới của biến thể Delta được phát hiện tại Ấn Độ vào tháng 10/2020. Các nhà khoa học đánh giá biến thể AY.3 nguy hiểm và có khả năng trốn thoát hệ miễn dịch tốt hơn tất cả các chủng virus SARS-CoV-2 trước đây.
+                                    </p>
+                                    <p>
+                                        <span>Biến thể AY3 được xếp vào hàng các biến thể đáng lo ngại (Variants of Concern-VOC) vì AY3 “sở hữu” ít nhất một trong 3 tiêu chí so với chủng SARS-CoV-2 ban đầu gồm:</span>
+                                        <li>Tăng khả năng lây truyền hoặc có các đột biến gây bất lợi trong dịch tễ.</li>
+                                        <li>Tăng độc lực hoặc có các thay đổi trên biểu hiện lâm sàng.</li>
+                                        <li>Giảm hiệu quả của các biện pháp y tế công cộng và xã hội, các biện pháp chẩn đoán, vắc xin và phương pháp điều trị có sẵn.</li>
+                                    </p>
+                                    <p>
+                                        <span>Triệu chứng của biến thể AY3:</span> Theo các nhà dịch tễ, hiện tại vẫn còn quá sớm để khẳng định các triệu chứng nhận biết của chủng AY.3 vì dữ liệu còn tương đối hạn chế. Nhưng về cơ bản, triệu chứng của người nhiễm biến thể AY3 cũng tương tự như với chủng SARS-CoV-2 gốc ban đầu, chủng Delta hay các chủng virus khác như: Sốt, mệt mỏi, đau đầu, ho khan, đau họng, mất vị giác, tiêu chảy, suy giảm thính lực,…
+                                    </p>
+                                    <p>
+                                        <span>Tài liệu tham khảo:</span> <a target="_blank" rel="noopener noreferrer" href="https://vnvc.vn/bien-the-ay3/"> https://vnvc.vn/bien-the-ay3/</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 5: Biến thể kép Delta B.1.617.2 -->
+                <div class="modal modal-variations fade" id="variant5-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Biến thể Kép Delta B.1.617.2</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 10px;"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-image">
+                                    <a href="https://vnvc.vn/bien-chung-virus-corona/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./assets/img/variants/delta-B.1.617.2.jpg" alt="B.1.617.2">
+                                    </a>
+                                </div>
+                                <div class="container-fluid" style="padding:30px 20px;">
+                                    <p>
+                                        <span>Khái niệm:</span> Biến thể Delta (B.1.617.2), còn gọi là “đột biến kép” được phát hiện lần đầu tiên tại Ấn Độ vào tháng 12/2020. Với khả năng lây nhiễm nguy hiểm, Delta sớm trở thành chủng virus thống trị ở cả Ấn Độ, đến Vương quốc Anh, rồi lần lượt “ghé thăm” các nước khác, áp đảo hệ thống y tế toàn cầu.
+                                    </p>
+                                    <p>
+                                        Các nhà dịch tễ học cho rằng, biến thể Delta là một kẻ thù đặc biệt đáng sợ. Nếu tiếp tục đột biến, chủng này sẽ gây ra mối đe dọa vô cùng lớn, đó là lý do khiến các chuyên gia y tế đang vô cùng căng thẳng. Với khả năng lây nhiễm cao, biến thể Delta có nguy cơ đảo ngược cả những thành quả chống dịch khá ấn tượng tại các quốc gia có độ tiêm chủng nhanh như Mỹ và châu Âu.
+                                    </p>
+                                    <p>
+                                        Các loại vaccine Covid hiện nay có chống lại các biến thể virus Corona mới này vì các dữ liệu nghiên cứu  cho thấy, vắc xin COVID-19 có hiệu quả trong việc chống lại hầu hết các biến thể mới. Vắc xin xây dựng miễn dịch cộng đồng nhờ vắc xin COVID-19 được xem là “vũ khí” sắc bén nhất, an toàn nhất giúp chấm dứt đại dịch, sớm đưa cuộc sống trở lại bình thường.
+                                    </p>
+                                    <p>
+                                        <span>Tài liệu tham khảo:</span> <a target="_blank" rel="noopener noreferrer" href="https://vnvc.vn/bien-chung-virus-corona/"> https://vnvc.vn/bien-chung-virus-corona/</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 6: Biến thể B.1.1.7 -->
+                <div class="modal modal-variations fade" id="variant6-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Biến thể B.1.1.7 (20B/501Y.V1)</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 10px;"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-image">
+                                    <a href="https://vnvc.vn/bien-chung-virus-corona/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./assets/img/variants/B.1.1.7.jpg" alt="B.1.1.7">
+                                    </a>
+                                </div>
+                                <div class="container-fluid" style="padding:30px 20px;">
+                                    <p>
+                                        <span>Khái niệm:</span> Được phát hiện lần đầu tiên tại Vương quốc Anh, trở thành chủng virus rất phổ biến ở thành phố Luân Đôn và vùng đông nam nước Anh. Đây cũng là biến chủng đánh dấu cho đợt bùng phát Covid-19 mới của toàn cầu vào cuối năm 2020. Đến nay, hơn 100 quốc gia đã có người nhiễm biến chủng B.1.1.7, trong đó có Việt Nam.
+                                    </p>
+                                    <p>
+                                        <span>Khác biệt của biến thể B.1.1.7:</span> Biến thể B.1.1.7 có một đột biến ở vùng gắn thụ thể (RBD) của protein gai tại vị trí 501, nơi acid amin asparagine (N) đã được thay thế bằng tyrosine (Y), nên được viết tắt là N501Y. Biến thể này cũng có một số đột biến khác, bao gồm:
+                                        <li>Đứt đoạn 69/70: đứt đoạn kép này xảy ra tự nhiên nhiều lần và có thể dẫn đến sự thay đổi hình dạng của protein gai.</li>
+                                        <li>P681H: gần vị trí phân cắt S1/S2 furin, một vị trí có sự biến đổi cao ở virus Corona. Đột biến này cũng đã xuất hiện một cách tự phát nhiều lần.</li>
+                                        <li>Mã dừng ORF8 (Q27stop): đột biến tại vị trí ORF8.</li>
+                                    </p>
+                                    <p>
+                                        Chủng B.1.1.7 có khả năng lây nhiễm lớn, tải lượng virus tăng gấp 4 lần so với chủng trước đây. Ở các đợt dịch trước, các nhà dịch tễ tính toán chu kỳ lây nhiễm khoảng 4-5 ngày với chu kỳ lây rất rõ ràng, nhưng lần này chu kỳ lây ngắn hơn với thời gian khởi phát của bệnh cũng rất nhanh. Ở biến thể virus Corona này, chỉ tới ngày thứ 2 đã xuất hiện virus vùng hầu họng, từ đó, khả năng nhân lên của virus, đào thải mầm bệnh và lây lan trong không khí rất cao.
+                                    </p>
+                                    <p>
+                                        <span>Tài liệu tham khảo:</span> <a target="_blank" rel="noopener noreferrer" href="https://vnvc.vn/bien-chung-virus-corona/"> https://vnvc.vn/bien-chung-virus-corona/</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 7: Biến thể Beta B.1.351 -->
+                <div class="modal modal-variations fade" id="variant7-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Biến thể Beta B.1.351</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 10px;"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-image">
+                                    <a href="https://vnvc.vn/bien-chung-virus-corona/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./assets/img/variants/Belta(B.1.351).jpg" alt="Beta B.1.351">
+                                    </a>
+                                </div>
+                                <div class="container-fluid" style="padding:30px 20px;">
+                                    <p>
+                                        <span>Phát hiện lần đầu tiên:</span> Tháng 12/2020, Bộ Y tế Nam Phi lần đầu tiên thông báo một chủng đột biến mới có tên gọi là Belta (B.1.351) được phát hiện ở Vịnh Nelson Mandela, Nam Phi.
+                                    </p>
+                                    <p>
+                                        Theo đánh giá của các nhà khoa học, biến thể Belta ở Nam Phi khác với biến thể Alpha ở Anh, có khả năng lây nhiễm gấp 1.5 lần, hung hãn hơn,có thể tiến hóa và thích nghi cao hơn… Ngày 31/01/2021, Việt Nam ghi nhận ca nhiễm biến thể Nam Phi Belta (B.1.351) đầu tiên từ chuyên gia nhập cảnh người Nam Phi.
+                                    </p>
+                                    <p>
+                                        <span>Khác biệt của biến thể B.1.351:</span>
+                                        <li>Biến thể B.1.351 có nhiều đột biến xảy ra trong protein gai, bao gồm cả N501Y. Không giống như dòng B.1.1.7 được phát hiện ở Anh, biến thể này không có đứt đoạn 69/70.</li>
+                                        <li>Biến chủng Belta (501.V2 hay B.1.351) mang 3 đột biến (E484K, K417N và N501Y) tại các vùng quan trọng của gene. Đây là nơi tạo ra protein gai mà virus dùng để gắn vào tế bào người. Trong đó, E484K có khả năng làm giảm độ nhận biết của kháng thể người với virus. Nhờ đó, nCoV vượt hàng rào miễn dịch do vắc xin COVID-19 sinh ra dễ dàng hơn.</li>
+                                    </p>
+                                    <p>
+                                        <span>Tài liệu tham khảo:</span> <a target="_blank" rel="noopener noreferrer" href="https://vnvc.vn/bien-chung-virus-corona/"> https://vnvc.vn/bien-chung-virus-corona/</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 8: Biến thể B.1.1.7 -->
+                <div class="modal modal-variations fade" id="variant8-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Biến thể Brazil Dòng P.1</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-right: 10px;"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-image">
+                                    <a href="https://vnvc.vn/bien-chung-virus-corona/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./assets/img/variants/BrazilP.1.jpg" alt="BrazilP.1">
+                                    </a>
+                                </div>
+                                <div class="container-fluid" style="padding:30px 20px;">
+                                    <p>
+                                        <span>Phát hiện lần đầu tiên: Brazil</span> 
+                                    </p>
+                                    <p>
+                                        <span>Khái niệm:</span> Biến thể P.1 có một “chòm sao đột biến độc đáo” và rất nhanh đã trở thành một biến thể nổi trội với tốc độ lây lan nhanh, có thể tái lây nhiễm cho những người trước đó đã khỏi bệnh. Đồng thời, các nhà khoa học cũng tính toán rằng virus P.1 có khả năng lây nhiễm cao hơn gấp 2.5 lần so với chủng virus SARS-CoV-2 gốc xuất hiện ban đầu, khả năng kháng lại các kháng thể cũng cao hơn.
+                                    </p>
+                                    <p>
+                                        <span>Khác biệt của biến thể P.1:</span>
+                                        <li>Biến thể P.1 có 17 đột biến amino acid độc nhất và 4 đột biến thay thế, trong đó ba đột biến đáng lo ngại nhất là K417T, E484K và N501Y. Đặc biệt, E484K thu hút sự chú ý lớn nhất và nó cũng đã được tìm thấy trên biến chủng B.1.351 ở Nam Phi. Đột biến E484K được cho là khiến P.1 gây tái nhiễm cho cả những người đã khỏi bệnh.</li>
+                                        <li>E484K xuất hiện trên gai protein của virus, khiến biến thể P.1 thay đổi hình dáng, tránh bị phát hiện bởi các kháng thể sản sinh sau khi tiêm vaccine COVID-19, hoặc sau lần đầu người bệnh mắc COVID-19 do các chủng virus khác.</li>
+                                        <li>Ngoài ra, đột biến N501Y và K417T chính là tác nhân khiến biến chủng P.1 lây lan mạnh hơn các chủng virus khác. Theo New York Times, kết quả nghiên cứu tại thành phố Manaus cho thấy P.1 có khả năng lây lan mạnh hơn các chủng virus cũ từ 40-120%.</li>
+                                    </p>
+                                    <p>
+                                        <span>Tài liệu tham khảo:</span> <a target="_blank" rel="noopener noreferrer" href="https://vnvc.vn/bien-chung-virus-corona/"> https://vnvc.vn/bien-chung-virus-corona/</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Thông tin về các loại vaccine hiện hành (số lượng, nước sx, ..) -->
@@ -1660,7 +2099,7 @@
                         <li><a href="./quizzes-Vu.html">Test COVID-19 trực tuyến</a></li>
                         <li><a href="#pandemic-at-home">Cách li tại nhà</a></li>
                         <li><a href="#formation-pandemic">Quá trình hình thành</a></li>
-                        <li><a href="#">Các loại biến thể</a></li>
+                        <li><a href="#pandemic-variations">Các loại biến thể</a></li>
                         <li><a href="#">Các loại vaccine</a></li>
                     </ul>
                 </div> 
