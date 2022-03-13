@@ -13,6 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- link file style.css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     
     <!-- link file icon của themify -->
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
@@ -114,7 +116,7 @@
                                 <ul class="dropdown-menu dropdown-list" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#formation-pandemic">Lịch sử và quá trình hình thành</a></li>
                                     <li><a class="dropdown-item" href="#pandemic-variations">Các biến thể từng được ghi nhận</a></li>
-                                    <li><a class="dropdown-item" href="#">Các loại vaccine hiện hành</a></li>
+                                    <li><a class="dropdown-item" href="#pandemic-vaccines">Các loại vaccine hiện hành</a></li>
                                 </ul>
                                   
                             </li>
@@ -148,7 +150,7 @@
                                 <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-twitter"></i></a>
                                 <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-instagram"></i></a>
                                 <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-linkedin"></i></a>
-                                <a class="dropdown-item icon-link-contact" href="#"><i class="bi bi-github"></i></a>
+                                <a class="dropdown-item icon-link-contact" href="https://github.com/VuHwangg/CovidGate"><i class="bi bi-github"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -229,7 +231,7 @@
                         <h1>Các Loại Vaccine COVID-19</h1>
                         <p>Thống kê đầy đủ mọi loại vaccine cho COVID-19 một cách chi tiết và trực quan nhất</p>
                         <button id="liveToastBtn" class="btn btn-outline-light btn-lg" type="button">
-                            <a href="#">Khám Phá Ngay</a>
+                            <a href="#pandemic-vaccines">Khám Phá Ngay</a>
                         </button>
                     </div>
                 </div>
@@ -436,7 +438,7 @@
                                             <h5 class="card-title member-name">Nguyễn Việt Anh</h5>
                                             <p class="card-text member-role">Ban Chuyên Môn</p>
                                             <p class="card-text"><small class="text-muted">
-                                                Lập trình viên full-stack<br/>
+                                                Lập trình viên Front-end<br/>
                                                 Tham gia lập trình, xây dựng website.<br/>
                                                 Hỗ trợ tìm kiếm và đóng góp ý tưởng, nội dung, thông tin, dữ liệu 
                                                 lên trên website.
@@ -465,7 +467,7 @@
                                             <h5 class="card-title member-name">Nguyễn Văn Nghĩa</h5>
                                             <p class="card-text member-role">Ban Chuyên Môn</p>
                                             <p class="card-text"><small class="text-muted">
-                                                Lập trình viên chuyên mảng Front-end<br/>                                           
+                                                Lập trình viên Front-end<br/>                                           
                                                 Tham gia lập trình, xây dựng website.<br/>
                                                 Hỗ trợ tìm kiếm và đóng góp ý tưởng, nội dung, thông tin, dữ liệu 
                                                 lên trên website.
@@ -560,32 +562,32 @@
                         <div class="col-12 text-center">
                             <p>
                                 Dữ liệu được cập nhật lần cuối cùng vào ngày 
-                                <span class="day-update">5/3/2022</span>
+                                <span class="day-update">14/3/2022</span>
                             </p>
                         </div>
                         <div class="row text-center padding">
                             <div class="col-sm-12 col-md-3">
                                 <div class="case-data case-infection">
                                     <p class="text">SỐ CA NHIỄM BỆNH</p>
-                                    <p class="value">3.987.287</p>
+                                    <p class="value">6.040.673</p>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-3">
                                 <div class="case-data case-cured">
                                     <p class="text">SỐ CA KHỎI BỆNH</p>
-                                    <p class="value">2.589.436</p>
+                                    <p class="value">3.163.571</p>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-3">
                                 <div class="case-data case-death">
                                     <p class="text">SỐ CA TỬ VONG</p>
-                                    <p class="value">40.647</p>
+                                    <p class="value">41.388</p>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-3">
                                 <div class="case-data case-treated">
                                     <p class="text">SỐ CA ĐANG ĐIỀU TRỊ</p>
-                                    <p class="value">1.357.260</p>
+                                    <p class="value">2.835.770</p>
                                 </div>
                             </div>
                         </div>
@@ -638,14 +640,14 @@
                     <!-- Việt Nam news 1 -->
                     <div class="col-lg-6">
                         <div class="news-content card h-100">
-                            <a href="https://covid19.gov.vn/thu-tuong-qua-kho-khan-tp-hcm-va-nganh-y-te-truong-thanh-len-rat-nhieu-17122012509344728.htm" target="_blank" rel="noopener noreferrer">
+                            <a href="https://covid19.gov.vn/f0-dung-thuoc-chong-viem-khong-dung-nguy-co-tro-nang-va-nhieu-bien-chung-171220313180838088.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="news-image">
-                                    <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/25/thu-tuong-1643012934086462841456-1643077209032-16430772094001143667423.jpg" class="card-img-top" alt="image_1">
+                                    <img src="https://www.healio.com/~/media/slack-news/pediatrics/misc/other/steroids_shutterstock.jpg" class="card-img-top" alt="image_1">
                                 </div>
                                 <div class="card-body">
-                                    <h2 class="card-title">Thủ tướng: Qua khó khăn, TP. HCM và ngành y tế trưởng thành lên rất nhiều</h2>
-                                    <p class="card-text">Thủ tướng Phạm Minh Chính ghi nhận, biểu dương, đánh giá cao những thành quả TP. HCM đạt được trong năm 2021, đặc biệt là trong công tác phòng, chống dịch COVID-19. Thủ tướng nhấn mạnh việc TP. HCM có đóng góp rất quan trọng ...</p>
-                                    <p class="card-text"><small class="text-muted">25/01/2022 09:34 (GMT+7)</small></p>
+                                    <h2 class="card-title">F0 dùng thuốc chống viêm không đúng, nguy cơ trở nặng và nhiều biến chứng</h2>
+                                    <p class="card-text">Dùng thuốc chống viêm corticoid không đúng thời điểm, lạm dụng thuốc, không những làm cho tình trạng COVID-19 trở nặng mà còn có nguy cơ loét, thủng đường tiêu hóa và nhiều biến chứng nguy hiểm khác. Thuốc chống viêm corticoid (còn được gọi là corticosteroid), là loại thuốc được sản xuất gần giống với cortisol một loại hormone mà tuyến thượng thận sản xuất tự nhiên trong cơ thể...</p>
+                                    <p class="card-text"><small class="text-muted">13/03/2022 14:07 (GMT+7)</small></p>
                                 </div>
                             </a>
                         </div>
@@ -654,16 +656,16 @@
                     <div class="col-lg-6">
                         <!-- Việt Nam news 2 -->
                         <div class="news-content card mb-3">
-                            <a href="https://covid19.gov.vn/benh-vien-da-nang-trien-khai-dieu-tri-benh-nhan-sau-mac-covid-19-171220124174730342.htm" target="_blank" rel="noopener noreferrer">
+                            <a href="https://covid19.gov.vn/chuyen-gia-khuyen-cao-f0-khoi-benh-khong-duoc-chu-quan-nhat-la-nguoi-co-nguy-co-tai-nhiem-cao-171220309152632172.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
                                     <div class="news-image col-sm-4">
-                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/ttxvn20220124benhviendanang-1643021221194-16430212217021657099884.jpg" class="img-fluid rounded-start" alt="image_2">
+                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/3/9/tai-nhiem-8458-16467827413081674826485-1646810324209-16468103243001495121315-1646814344328-1646814344521196196324.jpg" class="img-fluid rounded-start" alt="image_2">
                                     </div>
                                     <div class="col-sm-8">
                                         <div class="card-body">
-                                          <h5 class="card-title">Bệnh viện Đà Nẵng triển khai điều trị bệnh nhân sau mắc COVID-19</h5>
-                                          <p class="card-text">Hơn 2/3 bệnh nhân COVID-19 sau khi đã xác định hồi phục vẫn còn để lại những rối loạn về chức năng và triệu chứng, bệnh lý kéo dài có thể vài tháng thậm chí lâu hơn,..</p>
-                                          <p class="card-text"><small class="text-muted">24/01/2022 17:47 (GMT+7)</small></p>
+                                          <h5 class="card-title">Chuyên gia khuyến cáo F0 khỏi bệnh không được chủ quan.</h5>
+                                          <p class="card-text">Các chuyên gia nhận định, những người chưa tiêm vaccine, người cao tuổi, sức khỏe yếu, người có bệnh nền sẽ dễ bị tái nhiễm COVID-19 hơn...</p>
+                                          <p class="card-text"><small class="text-muted">09/03/2022 14:25 (GMT+7)</small></p>
                                         </div>
                                     </div>
                                 </div>        
@@ -672,16 +674,16 @@
 
                         <!-- Việt Nam news 3 -->
                         <div class="news-content card mb-3">
-                            <a href="https://covid19.gov.vn/don-tet-an-toan-than-toc-phu-vaccine-mui-3-171220124090049389.htm" target="_blank" rel="noopener noreferrer">
+                            <a href="https://covid19.gov.vn/co-so-y-te-tu-nhan-khong-duoc-loi-dung-dich-benh-de-tang-gia-xet-nghiem-covid-19-171220311115546114.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
                                     <div class="news-image col-sm-4">
-                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/20220122085234-16429059321211225805315-1642907066420858377375-1642989623103-1642989623346493868348.jpeg" class="img-fluid rounded-start" alt="image_3">
+                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/3/11/xet-nghiem-xac-dinh-covid-19-16386758216311728013898-1646974453349-1646974453485380040653.png" class="img-fluid rounded-start" alt="image_3">
                                     </div>
                                     <div class="col-sm-8">
                                         <div class="card-body">
-                                          <h5 class="card-title">Đón Tết an toàn, 'thần tốc' trong việc tiêm vaccine mũi 3</h5>
-                                          <p class="card-text">Ghi nhận của PV Báo Sức khỏe&Đời sống trên địa bàn Quận Thanh Xuân (Hà Nội), trong chiến dịch "thần tốc" phủ vaccine cho người dân.</p>
-                                          <p class="card-text"><small class="text-muted">24/01/2022 09:00 (GMT+7)</small></p>
+                                          <h5 class="card-title">Cơ sở y tế tư nhân không được lợi dụng dịch bệnh để tăng giá xét nghiệm COVID-19</h5>
+                                          <p class="card-text">Bộ Y tế yêu cầu các cơ sở y tế không được thu thêm của người bệnh hoặc yêu cầu người bệnh tự chi trả các chi phí liên quan đến việc thực hiện xét nghiệm...</p>
+                                          <p class="card-text"><small class="text-muted">11/03/2022 09:07 (GMT+7)</small></p>
                                         </div>
                                     </div>
                                 </div>
@@ -690,16 +692,16 @@
                         
                         <!-- Việt Nam news 4 -->
                         <div class="news-content card mb-3">
-                            <a href="https://suckhoedoisong.vn/sang-25-1-gan-800-ca-covid-19-nang-dang-tho-may-ecmo-13-tinh-thanh-nao-ghi-nhan-f0-nhiem-omicron-169220125074057345.htm" target="_blank" rel="noopener noreferrer">
+                            <a href="https://covid19.gov.vn/bo-y-te-tiep-tuc-nhac-cac-dia-phuong-than-toc-tiem-mui-3-vaccine-phong-covid-19-171220312202041948.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
                                     <div class="news-image col-sm-4">
-                                        <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2021/10/16/cach-ly-dieu-tri-benh-nhan-16343823775761139659239.jpeg" class="img-fluid rounded-start" alt="image_4">
+                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/3/12/tiem-tre-em-1646022773206726381785-1647091170970-16470911720421129883897.jpg" class="img-fluid rounded-start" alt="image_4">
                                     </div>
                                     <div class="col-sm-8">
                                         <div class="card-body">
-                                          <h5 class="card-title">Sáng 25/1: Gần 800 ca COVID-19 nặng đang thở máy, ECMO; 13 tỉnh, thành nào ghi nhận F0 nhiễm Omicron?</h5>
-                                          <p class="card-text">SKĐS - Bộ Y tế cho biết, đến nay cả nước đã có hơn 1,84 triệu bệnh nhân COVID-19 khỏi, trong số các ca đang điều trị có gần 800 trường hợp nặng phải thở máy, ECMO;..</p>
-                                          <p class="card-text"><small class="text-muted">25-01-2022 8:02 (GMT+7)</small></p>
+                                          <h5 class="card-title">Bộ Y tế tiếp tục "nhắc" các địa phương thần tốc tiêm mũi 3 vaccine phòng COVID-19</h5>
+                                          <p class="card-text">Bộ Y tế đề nghị các địa phương tăng cường tiêm chủng vaccine phòng COVID-19, trong đó đẩy mạnh và thần tốc hơn vữa việc tiêm mũi 3 cho người từ 18 tuổi trở lên...</p>
+                                          <p class="card-text"><small class="text-muted">12/03/2022 19:04 (GMT+7)</small></p>
                                         </div>
                                     </div>
                                 </div>
@@ -725,16 +727,16 @@
                     <!-- Quốc Tế news 1 -->
                     <div class="col-lg-6">
                         <div class="news-content card mb-3">
-                            <a href="https://covid19.gov.vn/so-ca-mac-covid-19-o-han-quoc-tang-len-muc-cao-nhat-171220125091744733.htm" target="_blank" rel="noopener noreferrer">
+                            <a href="https://covid19.gov.vn/covid-19-the-nang-de-doa-nguoi-mac-benh-tim-bam-sinh-ra-sao-17122031220241862.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
                                     <div class="news-image col-sm-4">
-                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/25/han-quoc-250122-1643077044001-164307704416749382366.jpg" class="img-fluid rounded-start" alt="image_5">
+                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/3/12/dieu-tri-mac-covid-1646994728-width960height639-1647087709000-16470877093321372930657-1647091395947-16470913962281534478718.jpg" class="img-fluid rounded-start" alt="image_5">
                                     </div>
                                     <div class="col-sm-8">
                                         <div class="card-body">
-                                          <h5 class="card-title">Số ca mắc COVID-19 ở Hàn Quốc tăng lên mức cao nhất</h5>
-                                          <p class="card-text">Phóng viên TTXVN tại Seoul đưa tin số ca mắc mới COVID-19 ở Hàn Quốc ngày 25/1 dự kiến được ghi nhận ở mức 9.000. Đây là con số cao nhất kể từ khi ...</p>
-                                          <p class="card-text"><small class="text-muted">25/01/2022 09:17 (GMT+7)</small></p>
+                                          <h5 class="card-title">COVID-19 thể nặng đe dọa người mắc bệnh tim bẩm sinh ra sao?</h5>
+                                          <p class="card-text">Theo một nghiên cứu của Mỹ được công bố, những người bị bệnh tim bẩm sinh mắc COVID-19 nhập viện có nguy cơ bệnh trở nặng hoặc tử vong cao hơn...</p>
+                                          <p class="card-text"><small class="text-muted">12/03/2022 20:24 (GMT+7)</small></p>
                                         </div>
                                     </div>
                                 </div>
@@ -745,16 +747,16 @@
                     <!-- Quốc Tế news 2 -->
                     <div class="col-lg-6">
                         <div class="news-content card mb-3">
-                            <a href="https://covid19.gov.vn/my-han-che-su-dung-2-lieu-phap-dieu-tri-khang-the-don-dong-cho-benh-nhan-covid-19-171220125091706217.htm" target="_blank" rel="noopener noreferrer">
+                            <a href="https://covid19.gov.vn/nhan-loai-con-phai-deo-khau-trang-phong-covid-19-trong-bao-lau-171220309175859351.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
                                     <div class="news-image col-sm-4">
-                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/25/thuoc-250122-1643077004428-1643077004835449093125.jpg" class="img-fluid rounded-start" alt="image_6">
+                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/3/9/ttxvnkhautrang-1646821835661-1646821836071194514321-1646823485651-16468234860461581769512.jpg" class="img-fluid rounded-start" alt="image_6">
                                     </div>
                                     <div class="col-sm-8">
                                         <div class="card-body">
-                                          <h5 class="card-title">Mỹ hạn chế sử dụng 2 liệu pháp điều trị kháng thể đơn dòng cho bệnh nhân</h5>
-                                          <p class="card-text">Cơ quan Quản lý thực phẩm và dược phẩm (FDA) Mỹ ngày 24/1 đã hạn chế đáng kể việc sử dụng 2 liệu pháp điều trị kháng thể đơn dòng do 2 hãng ...</p>
-                                          <p class="card-text"><small class="text-muted">25/01/2022 17:47 (GMT+7)</small></p>
+                                          <h5 class="card-title">Nhân loại còn phải đeo khẩu trang phòng COVID-19 trong bao lâu?</h5>
+                                          <p class="card-text">Bác sỹ Mỹ cho rằng việc đeo khẩu trang không cần phải duy trì mãi mãi, nhưng đây vẫn sẽ là một công cụ quan trọng để ngăn chặn sự lây lan...</p>
+                                          <p class="card-text"><small class="text-muted">09/03/2022 17:58 (GMT+7)</small></p>
                                         </div>
                                     </div>
                                 </div>
@@ -765,16 +767,16 @@
                     <!-- Quốc Tế news 3 -->
                     <div class="col-lg-6">
                         <div class="news-content card mb-3">
-                            <a href="https://covid19.gov.vn/han-quoc-chuyen-sang-phuong-thuc-ung-pho-voi-bien-the-omicron-171220124174247186.htm" target="_blank" rel="noopener noreferrer">
+                            <a href="https://covid19.gov.vn/gioi-chuyen-gia-dua-ra-du-doan-moi-nhat-ve-thoi-diem-ket-thuc-dai-dich-covid-19-17122031119091925.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
                                     <div class="news-image col-sm-4">
-                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/han-quoc-24122-1643020947034-1643020947198662170981.jpg" class="img-fluid rounded-start" alt="image_7">
+                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/3/11/co-16469853129652005603395-1647000552570-164700055359896051768.jpeg" class="img-fluid rounded-start" alt="image_7">
                                     </div>
                                     <div class="col-sm-8">
                                         <div class="card-body">
-                                          <h5 class="card-title">Hàn Quốc chuyển sang phương thức ứng phó với biến thể Omicron</h5>
-                                          <p class="card-text">Ngày 24/1, Tổng thống Hàn Quốc Moon Jae-in đã chỉ thị chính phủ nước này nhanh chóng chuyển sang các biện pháp ứng phó mới nhằm ngăn chặn ...</p>
-                                          <p class="card-text"><small class="text-muted">24/01/2022 17:47 (GMT+7)</small></p>
+                                          <h5 class="card-title">Giới chuyên gia dự đoán về thời điểm kết thúc đại dịch COVID-19</h5>
+                                          <p class="card-text">Đại dịch sẽ kết thúc như thế nào? Giới chuyên gia vừa đưa ra dự đoán mới nhất về thời điểm kết thúc đại dịch kinh hoàng này...</p>
+                                          <p class="card-text"><small class="text-muted">11/03/2022 16:18 (GMT+7)</small></p>
                                         </div>
                                     </div>
                                 </div>
@@ -785,16 +787,16 @@
                     <!-- Quốc Tế news 4 -->
                     <div class="col-lg-6">
                         <div class="news-content card mb-3">
-                            <a href="https://covid19.gov.vn/cac-truong-dai-hoc-my-no-luc-doi-pho-voi-so-ca-mac-covid-19-tang-cao-171220124174151226.htm" target="_blank" rel="noopener noreferrer">
+                            <a href="https://covid19.gov.vn/nguyen-do-gay-chung-covid-19-keo-dai-va-cach-dieu-tri-171220308161240911.htm" target="_blank" rel="noopener noreferrer">
                                 <div class="row g-0">
                                     <div class="news-image col-sm-4">
-                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/1/24/my-ca-mac-24012022-1643020846042-1643020846576360070090.jpg" class="img-fluid rounded-start" alt="image_8">
+                                        <img src="https://covid19.qltns.mediacdn.vn/354844073405468672/2022/3/8/long-16467131154021737154803-1646730670161-16467306703361522324356.jpeg" class="img-fluid rounded-start" alt="image_8">
                                     </div>
                                     <div class="col-sm-8">
                                         <div class="card-body">
-                                          <h5 class="card-title">Các trường đại học Mỹ nỗ lực đối phó với số ca mắc COVID-19 tăng cao</h5>
-                                          <p class="card-text">Số ca mắc COVID-19 trong các trường đại học đang gia tăng trên toàn nước Mỹ. Đây cũng là tuần có số ca mắc cao nhất mà đại học này ghi nhận ...</p>
-                                          <p class="card-text"><small class="text-muted">24/01/2022 17:47 (GMT+7)</small></p>
+                                          <h5 class="card-title">Nguyên do gây chứng COVID-19 kéo dài và cách điều trị</h5>
+                                          <p class="card-text">Hai năm sau đại dịch COVID-19, các câu hỏi về chứng COVID-19 kéo dài vẫn nhiều hơn những câu giải đáp, Đơn cử như tại sao một...</p>
+                                          <p class="card-text"><small class="text-muted">08/03/2022 14:30 (GMT+7)</small></p>
                                         </div>
                                     </div>
                                 </div>
@@ -885,7 +887,7 @@
                         <div class="carousel-item active">
                             <img src="./assets/img/sub-carousel/img-1.jpg" class="d-block w-100 image-carousel-trang" alt="">
                             <div class="carousel-caption d-none d-md-block">
-                                <h1>Cập Nhật Tin Tức Về Dịch Bệnh Đầy Đủ Nhất Tại</h1>
+                                <h2>Cập Nhật Tin Tức Về Dịch Bệnh Đầy Đủ Nhất Tại</h2>
                                 <a href="https://covid19.gov.vn/" target="_blank" rel="noopener noreferrer">
                                     <h1>covid19.gov.vn</h1>
                                 </a>
@@ -894,7 +896,7 @@
                         <div class="carousel-item">
                             <img src="./assets/img/sub-carousel/img-2.jpg" class="d-block w-100 image-carousel-trang" alt="">
                             <div class="carousel-caption d-none d-md-block">
-                                <h1>Cập Nhật Tin Tức Về Dịch Bệnh Đầy Đủ Nhất Tại</h1>
+                                <h2>Cập Nhật Tin Tức Về Dịch Bệnh Đầy Đủ Nhất Tại</h2>
                                 <a href="https://covid19.gov.vn/" target="_blank" rel="noopener noreferrer">
                                     <h1>covid19.gov.vn</h1>
                                 </a>
@@ -903,7 +905,7 @@
                         <div class="carousel-item">
                             <img src="./assets/img/sub-carousel/img-3.jpg" class="d-block w-100 image-carousel-trang" alt="">
                             <div class="carousel-caption d-none d-md-block">
-                                <h1>Cập Nhật Tin Tức Về Dịch Bệnh Đầy Đủ Nhất Tại</h1>
+                                <h2>Cập Nhật Tin Tức Về Dịch Bệnh Đầy Đủ Nhất Tại</h2>
                                 <a href="https://covid19.gov.vn/" target="_blank" rel="noopener noreferrer">
                                     <h1>covid19.gov.vn</h1>
                                 </a>
@@ -1107,47 +1109,6 @@
                     <div class="pandemic-process-video col-md-6">
                         <iframe style="border-radius: 20px;" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/AB3g8iyclG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    
-
-  
-
-<!-- 
-                      <div id="list-group-trang">
-                        <div id="list-example" class="list-group">
-                            <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-                          </div>
-                          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-                            <h4 id="list-item-1">Item 1</h4>
-                            <p>...</p>
-                            <h4 id="list-item-2">Item 2</h4>
-                            <p>...</p>
-                            <h4 id="list-item-3">Item 3</h4>
-                            <p>...</p>
-                            <h4 id="list-item-4">Item 4</h4>
-                            <p>...</p>
-                          </div> -->
-<!--     
-                          <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
-                            <a class="navbar-brand" href="#">Navbar</a>
-                            <nav class="nav nav-pills flex-column">
-                              <a class="nav-link" href="#item-1">Item 1</a>
-                              <nav class="nav nav-pills flex-column">
-                                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-                                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
-                              </nav>
-                              <a class="nav-link" href="#item-2">Item 2</a>
-                              <a class="nav-link" href="#item-3">Item 3</a>
-                              <nav class="nav nav-pills flex-column">
-                                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-                              </nav>
-                            </nav>
-                          </nav> -->
-                      <!-- </div> -->
-
                 </div>      
             </div>
 
@@ -1578,71 +1539,152 @@
                 </div>
             </div>
 
-<<<<<<< HEAD
-            <!-- < Thông tin về các loại vaccine hiện hành (số lượng, nước sx, ..)  -->
-              <div class="pandemic-vaccines content-section">
-                <!-- Pandemic Vaccines -->
-                <div class="infogram-embed" data-id="c2291b81-e199-47b5-95a4-b4a78e5ab7c0" data-type="interactive" data-title="Untitled infographic"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/c2291b81-e199-47b5-95a4-b4a78e5ab7c0" style="color:#989898!important;text-decoration:none!important;" target="_blank">Untitled infographic</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
-=======
-            <div class="pandemic-vaccines content-section">
-                <!-- <div class="infogram-embed" data-id="c2291b81-e199-47b5-95a4-b4a78e5ab7c0" data-type="interactive" data-title="Untitled infographic"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/c2291b81-e199-47b5-95a4-b4a78e5ab7c0" style="color:#989898!important;text-decoration:none!important;" target="_blank">Untitled infographic</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
->>>>>>> e90f30203b6cb1a60987204315dce0077d5cd58b
+            <div class="content-section" id="pandemic-vaccines">
+                <div id="the-line"></div>
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Các Loại Vaccine COVID-19</h1>
+                </div>
+                <div class="pandemic-vaccines">
+                    <div class="container">
+                        <input type="radio" name="dot" id="p-one">
+                        <input type="radio" name="dot" id="p-two">
+                        <input type="radio" name="dot" id="p-three">
+                        
+                        <div class="main-card">
+                            <div class="cards">
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/vaccines/astra.jpg">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">AstraZeneca</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" href="https://vnvc.vn/astrazeneca/" target="_blank" rel="noopener noreferrer" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/vaccines/sputnik.jpg">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Sputnik V</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" href="https://vnvc.vn/sputnik-v/" target="_blank" rel="noopener noreferrer" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/vaccines/moderna.jpeg">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Moderna</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" href="https://vnvc.vn/moderna/" target="_blank" rel="noopener noreferrer" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                    Tại Việt Nam hiện nay có 6 loại vaccine phòng COVID-19 đã được Bộ Y tế cấp phép sử dụng bao gồm: vắc xin Moderna (Mỹ), 
-                    vắc xin Sinovac, vắc xin Astra Zecera (Anh), vắc xin Pfizer (Mỹ - Đức), vắc xin Sinopharm - Sinovax (Trung Quốc), vắc xin Spunik (Nga)
-                    <img src="http://bvdklangson.com.vn/sites/default/files/infovaccine_uybu_0.jpg"  width="1200" height="600" >
-                    <p>Ngoài ra Việt Nam cũng đang tích cực trong việc sản xuất vaccine. Có 5 loại vaccine đang được Việt Nam sản xuất đó là:</p>
-                     <table>
-                         <tr>
-                             <th>STT</th>
-                             <th>  Tên vaccine</th>
-                             <th>Tiến độ</th>
-                             <th>Nhà sản xuất</th>
-                         </tr>
-                         <tr>
-                             <th>    1</th>
-                             <th>Vaccine Nano Covax</th>
-                             <th>Hiện tại, công ty Nanogen phối hợp với Học viện Quân y và Viện Pasteur 
-                                 TP HCM đã thử nghiệm giai đoạn 3. Nhóm nghiên cứu đã hoàn thành 2 liều
-                                 cho 13.000 người thử nghiệm giai đoạn 3, bước vào quá trình theo dõi, 
-                                 đánh giá vaccine và nộp báo cáo cho Bộ Y tế.</th>
-                                 
-                             <th>Công ty Nanogen và Học viện Quân y</th>
-                         </tr>
-                         <tr>
-                             <th>    2</th>
-                             <th> Vaccine COVIVAC</th>
-                             <th>Ngày 7/8, Hội đồng Đạo đức trong nghiên cứu y sinh học Quốc gia đã 
-                                 họp thông qua đề cương nghiên cứu giai đoạn 2 vaccine COVIVAC.</th>
-                             <th> Viện Vaccine và Sinh phẩm Y tế trực thuộc Bộ Y tế (IVAC)</th>
-                        </tr>
-                        <tr>
-                            <th>    3</th>
-                            <th>Vaccine Sputnik V</th>
-                            <th>Ngày 21/7, Quỹ Đầu tư Trực tiếp Nga (RDIF) thông báo Việt Nam đã sản 
-                                 xuất lô vaccine COVID-19 Sputnik-V thử nghiệm đầu tiên do Nga nghiên 
-                                 cứu phát triển. </th>
-                            <th>công ty Công ty đối tác VABIOTECH bên phía Việt Nam</th>
-                        </tr>
-                        <tr>    
-                            <th>    4</th>
-                            <th>Vaccine VBC-COV19-154</th>
-                            <th>Tháng 12/2021, VinBioCare dự kiến sẽ hoàn thiện hồ sơ và gửi Bộ Y tế
-                                  xin cấp phép khẩn cấp có điều kiện để sử dụng VCB-COV19-154 tại Việt Nam. 
-                                  Dự kiến, lô vaccine đầu tiên sẽ được xuất xưởng vào đầu năm 2022.</th>
-                            <th>Arcturus Therapeutics (Mỹ) </th>
-                        </tr>
-                        <tr>
-                            <th>    5</th>
-                            <th> Vaccine tái tổ hợp Recombinant SARS-CoV-2 Spike Protein</th>
-                            <th>Ngày 27/07/2021, phó cục trưởng Cục Khoa học Công nghệ và đào tạo (bộ Y Tế)
-                                  Nguyễn Ngô Quang cho biết công nghệ được công ty Shionogi chuyển giao là công
-                                   nghệ sản xuất vaccine tái tổ hợp (Recombinant SARS-CoV-2 Spike Protein). </th>
-                            <th>Công ty Nhật Bản Shionogi </th>
-                        </tr>
-                    </table>
-                </p>
-             -->
+                            <div class="cards">
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/vaccines/janssen.jpg">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Janssen</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/janssen.html" target="_blank" rel="noopener noreferrer" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/vaccines/Pfizer.jpg">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Pfizer</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" href="https://vnvc.vn/pfizer/" target="_blank" rel="noopener noreferrer" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/vaccines/VeroCell.jpeg">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Vero Cell</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" href="https://vnvc.vn/sinopharm/" target="_blank" rel="noopener noreferrer" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cards">
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/vaccines/CoronaVac.jpg">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">CoronaVac</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" href="https://www.chp.gov.hk/files/pdf/factsheet_coronavac_vietnamese.pdf" target="_blank" rel="noopener noreferrer" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/vaccines/Covaxin.jpg">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Covaxin</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" href="https://www.qdnd.vn/y-te/cac-van-de/nhung-dieu-can-biet-ve-vac-xin-gia-re-covaxin-676387" target="_blank" rel="noopener noreferrer" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                            <img src="./assets/img/vaccines/COVAX-19.jpg">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">COVAX-19</div>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="btn btn-lg" href="https://www.sciencedirect.com/science/article/pii/S2772371221000048" target="_blank" rel="noopener noreferrer" role="button">Tìm hiểu thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="button">
+                          <label for="p-one" class=" active one"></label>
+                          <label for="p-two" class="two"></label>
+                          <label for="p-three" class="three"></label>
+                        </div>
+                      </div>
+                </div>
             </div>  
 
 
@@ -1896,8 +1938,8 @@
                         </a>
                     </div>
                     <div class="connection-logo col-4">
-                        <a href="https://suckhoedoisong.vn/" target="_blank" rel="noopener noreferrer">
-                            <img src="./assets/img/connection/Suc_Khoe_Doi_Song.png" alt="Sức Khỏe Đời Sống">
+                        <a href="https://vnvc.vn/en/home/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/connection/vnvc.png" alt="VNVC">
                         </a>
                     </div>
                 </div>
@@ -1926,7 +1968,7 @@
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/VuHwangg/CovidGate"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
 
@@ -1938,7 +1980,7 @@
                         <li><a href="#pandemic-at-home">Cách li tại nhà</a></li>
                         <li><a href="#formation-pandemic">Quá trình hình thành</a></li>
                         <li><a href="#pandemic-variations">Các loại biến thể</a></li>
-                        <li><a href="#">Các loại vaccine</a></li>
+                        <li><a href="#pandemic-vaccines">Các loại vaccine</a></li>
                     </ul>
                 </div> 
 
@@ -1976,6 +2018,9 @@
     <!-- src js của bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <!-- src js của chung website -->
     <script src="./js/script.js"></script>
 
