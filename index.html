@@ -32,53 +32,6 @@
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <div id="main">
 
-         <!-- Modal hiển thị lưu ý khi truy cập website -->
-
-         <div class="modal fade" id="noting-modal" tabindex="-1" role="dialog" aria-labelledby="notingModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="notingModalLabel">LƯU Ý QUAN TRỌNG</h4>
-                        
-                    </div>
-                    <div class="modal-body">
-                        <div class="banner" style="height: 100%; width: 100%; display: none;">
-                            <img src="./assets/img/COVID Gate Poster/covidgate-poster.png" height="100%" width="100%">
-                        </div>
-                        <p>
-                            <span>Website hiện tại vẫn đang trong giai đoạn hoàn thiện</span>, 
-                            vì vậy chúng tôi khuyên bạn nên sử dụng các thiết bị
-                            có kích thước màn hình lớn <span>(khoảng từ 10 inch đến 
-                            32 inch)</span> để có được trải nghiệm hoàn hảo nhất.
-                        </p>
-                        <div class="device-icon">
-                            <img src="./assets/img/noting/device-icons.png">
-                        </div>
-                        <p>
-                            Ngoài ra website còn rất nhiều những nội dung và tính 
-                            năng mới đang được phát triển và sẽ ra mắt trong tương 
-                            lai gần, hãy cùng đón chờ với chúng mình nhé.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tôi Đồng Ý</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-      
-            $('#noting-modal').modal('show');
-           
-            setTimeout(function() {
-              
-                var isShown = $('#noting-modal').hasClass('show');
-                console.log(isShown);
-              
-            }, 1000);
-      
-        </script>
-
         <!-- Header -->
         <header class="page-header">
 
@@ -203,6 +156,53 @@
                 </div>
             </div>
         </header>
+
+        <!-- Modal hiển thị lưu ý khi truy cập website -->
+
+        <div class="modal fade" id="noting-modal" tabindex="-1" role="dialog" aria-labelledby="notingModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="notingModalLabel">LƯU Ý QUAN TRỌNG</h4>
+                        
+                    </div>
+                    <div class="modal-body">
+                        <div class="banner" style="height: 100%; width: 100%; display: none;">
+                            <img src="./assets/img/COVID Gate Poster/covidgate-poster.png" height="100%" width="100%">
+                        </div>
+                        <p>
+                            <span>Website hiện tại vẫn đang trong giai đoạn hoàn thiện</span>, 
+                            vì vậy chúng tôi khuyên bạn nên sử dụng các thiết bị
+                            có kích thước màn hình lớn <span>(khoảng từ 10 inch đến 
+                            32 inch)</span> để có được trải nghiệm hoàn hảo nhất.
+                        </p>
+                        <div class="device-icon">
+                            <img src="./assets/img/noting/device-icons.png">
+                        </div>
+                        <p>
+                            Ngoài ra website còn rất nhiều những nội dung và tính 
+                            năng mới đang được phát triển và sẽ ra mắt trong tương 
+                            lai gần, hãy cùng đón chờ với chúng mình nhé.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tôi Đồng Ý</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+      
+            $('#noting-modal').modal('show');
+           
+            setTimeout(function() {
+              
+                var isShown = $('#noting-modal').hasClass('show');
+                console.log(isShown);
+              
+            }, 1000);
+      
+        </script>
 
         <!-- Carousel - Băng Chuyền Ảnh -->
         <div class="carousel slide carousel-main" id="carousel-main" data-bs-ride="carousel">
