@@ -754,9 +754,9 @@ ul {
 
 /* tiêu đề, khung header*/
 #header-trang {
-  height: 90px;
+  height: 65px;
   width: 100%;
-  background-color: #78abd3;
+  background-color: rgba(70, 84, 163, 1) ;
   position: fixed;
   top: 0;
   left: 0;
@@ -765,20 +765,22 @@ ul {
   z-index: 1000;
 }
 /*home- quay về trang chủ*/
-#header-trang #home {
+#navbar-logo-trang{
+  
+}
+#nav-process-trang{
+  
 }
 
-#header-trang .heading-name-trang h2 {
+
+
+#header-trang h2 {
   text-align: center !important;
   color: #fff;
-}
-#header-trang .heading-name-trang {
-  text-align: center;
-  color: #fff;
+  padding-bottom: 40px !important;
+
 }
 
-#header-trang .heading-name-trang #nav-process-trang {
-}
 
 #main #content {
   height: 1500px;
@@ -791,43 +793,6 @@ ul {
   float: right;
 }
 
-#box-nav {
-  z-index: 10000;
-}
-
-#nav-heading-trang {
-  margin-top: 100px;
-  z-index: 10000;
-}
-/*tạo nav*/
-#nav-heading-trang li {
-  /* display: inline-block; */
-  text-align: center;
-}
-
-#nav-heading-trang li a {
-  /*chỉnh màu + căn giữa nav*/
-  color: white;
-  text-decoration: none;
-  line-height: 60px; /*cho c.cao chữ = c.cao header để căn giữa*/
-  padding: 0 40px;
-  display: inline-block;
-}
-
-#nav-heading-trang li:hover a {
-  color: black;
-  background-color: #ccc;
-}
-
-.nav-process-trang{
-    padding-left: 16%;
-}
-
-#box-nav {
-  height: 500px;
-  width: 178px;
-  background-color: rgba(70, 84, 163, 0.9);
-}
 
 #content1.news-content-1 {
   height: 800px;
@@ -855,7 +820,6 @@ ul {
 }
 #content #carouse-content1-trang {
 }
-
 
 
 #footer-trang {
